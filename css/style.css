@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .site-footer {
     background-color: var(--footer-bg-color);
     padding: 3rem 1.5rem 1.5rem;
@@ -140,3 +141,24 @@
 .footer-bottom-links a:hover {
     text-decoration: underline;
 }
+=======
+
+
+/* ====================================== Darkaoui Space Start Here*/
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+/* ====================================== Darkaoui Space End Here*/
+
+>>>>>>> 193dc1f (Header in progress)
