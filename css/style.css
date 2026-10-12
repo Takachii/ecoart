@@ -140,18 +140,3 @@
 .footer-bottom-links a:hover {
     text-decoration: underline;
 }
-
-@media (min-width: 1024px) {
-    .footer-container {
-        grid-template-columns: repeat(4, 1fr);
-        align-items: start;
-    }
-}
-
-@media (min-width: 768px) {
-    .footer-bottom {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
