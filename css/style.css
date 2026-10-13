@@ -66,6 +66,282 @@ nav li:hover{
     font-weight: bold;
 }
 
+/* ------------------------------- Main */
+main{
+        display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 34px;
+}
+
+.main-desc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main h1{
+    color: var(--accent-green);
+}
+
+main a:first-of-type{
+    background-color: var(--accent-btn);
+    padding: 10px;
+}
+main a:last-of-type{
+    background-color: var(--price-bg);
+    padding: 10px;
+}
+
+main a{
+    border: transparent;
+    border-radius: 4px;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+main a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.main-btns{
+    display: flex;
+    gap: 10px;
+}
+
+main img{
+    width: 30%;
+    border-radius: 7px;
+
+}
+
+/* --------------------------------- Statistics */
+.stqs{
+    display: flex;
+    gap: 18px;
+    margin: 41px auto;
+    width: 88%;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 24px;
+    background: #E6F0E8;
+}
+.stqs .number{
+        font-size: 33px;
+    font-weight: 700;
+}
+
+/* --------------------------------- */
+:root {
+  --bg-color: #f2f5f0;
+  --card-bg: #f9fbf8;
+  --footer-bg-color: #ECF6EE;
+  --primary-dark: #1b382b;
+  --secondary-dark: #14422D;
+  --accent-green: #254d3b;
+  --accent-btn: #1b4332;
+  --border-color: #d8e2d4;
+  --text-main: #2d3732;
+  --text-muted: #5c6b63;
+  --price-bg: #a84325;
+  --primary-font: 'Space Grotesk';
+  --secondary-font: 'Atkinson Hyperlegible Next';
+
+  /* extra token for the orange badge (not in your palette) */
+  --accent-orange: #f4977a;
+}
+
+/* ---------- Section ---------- */
+.circular-streams {
+  padding: 2rem 1.5rem;
+  background-color: var(--footer-bg-color);
+  font-family: var(--secondary-font), system-ui, sans-serif;
+  color: var(--text-main);
+}
+
+.circular-streams-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--secondary-dark);
+}
+
+.circular-streams-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Card ---------- */
+.stream-card {
+  --badge-bg: var(--accent-green);
+  display: flex;
+}
+
+.stream-card--wood    { --badge-bg: var(--accent-green); }
+.stream-card--textile { --badge-bg: var(--price-bg); }
+.stream-card--glass   { --badge-bg: var(--secondary-dark); }
+.stream-card--plastic { --badge-bg: var(--accent-orange); }
+
+.stream-card-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+}
+
+/* Header: badge + deposit */
+.stream-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem 1rem 0;
+}
+
+.stream-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--badge-bg);
+  border-radius: 999px;
+}
+
+.stream-card-badge::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.stream-card-deposit {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+      display: flex;
+}
+
+.stream-card-deposit-value {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Body: title + description */
+.stream-card-body {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.stream-card-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-dark);
+}
+
+.stream-card-description {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Media: pinned to the bottom, full-bleed */
+.stream-card-media {
+  margin: auto 0 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.stream-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Responsive ---------- */
+/* @media (max-width: 1024px) {
+  .circular-streams-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .circular-streams-list {
+    grid-template-columns: 1fr;
+  }
+} */
+
+/* ============================ My Work End here(Don't touch this comment) */
+
+
+.features-bar {
+    background-color: #E6F0E8;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: var(--primary-font, sans-serif);
+    font-size: 14px;
+    color: #2D3748;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.feature-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.desc-text {
+    color: #4A5568;
+}
+
+.separator-dot {
+    color: #718096;
+    font-weight: bold;
+}
+
+.vertical-divider {
+    color: #CBD5E0;
+    font-weight: 300;
+}
+
 .site-footer {
     background-color: var(--footer-bg-color);
     padding: 3rem 1.5rem 1.5rem;
@@ -217,126 +493,96 @@ nav li:hover{
     text-decoration: underline;
 }
 
-
-
-/* ====================================== Darkaoui Space Start Here*/
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Atkinson Hyperlegible Next;
-}
-
-body{
-    background: #F2FCF4E5;
-    height: 100vh;
-}
-
-header{
-    background: #F2FCF4E5;
-    height: 57px;
-    box-shadow: 0 0 2px gray;
-}
-
-header .logo-space{
-    font-family: Space Grotesk;
-    font-weight: 700;
-    font-size: 20px;
-    vertical-align: super;
-    text-decoration: none;
-    color: black;
-}
-header span{
-    vertical-align: super;
-    margin-left: 5px;
-}
-
-.header-child{
+.container-catalog {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    height: stretch;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
     align-items: center;
-    gap: 35px;
+    padding: 2.4rem 1rem;
+    background-color: #F4F7F2;
 }
 
-nav ul a{
-    text-decoration: none;
-    color: black;
-}
-    
-ul li{
-    color: black;
-
+.container-catalog-left {
+    width: 55%;
 }
 
-nav li:hover{
-    cursor: pointer; 
-    opacity: 0.6;
+.container-catalog-left p {
+    font-family: var(--secondary-font);
 }
 
-.active{
-    background: #14422D;
-    color: #9FCFB2 !important;
-    padding: 5px;
-    border-radius: 6px;
-    font-weight: bold;
-}
-/* ------------------------------- Main */
-main{
-        display: flex;
-    justify-content: center;
-    gap: 13px;
-    margin-top: 34px;
+.container-catalog-left h1 {
+    font-family: var(--primary-font);
+    font-size: 3.4rem;
+    font-weight: 800;
 }
 
-.main-desc{
-    width: 60%;
+.container-catalog-right {
+    width: 420px;
+    height: 122px;
+    background-color: #ECF6EE;
+    border-radius: 10px;
+    display: flex;
+    align-self: end;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-left: 2rem;
+}
+
+.stat-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-main h1{
-    color: var(--accent-green);
 }
 
-main a:first-of-type{
-    background-color: var(--accent-btn);
-    padding: 10px;
-}
-main a:last-of-type{
-    background-color: var(--price-bg);
-    padding: 10px;
-}
-
-main a{
-    border: transparent;
-    border-radius: 4px;
-    color: white;
-    width: fit-content;
-    text-decoration: none;
-}
-main a:hover{
-    cursor: pointer;
-    opacity: 0.8;
+.stat-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
 }
 
-.main-btns{
-    display: flex;
-    gap: 10px;
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1b3b2b;
 }
 
-main img{
-    width: 30%;
-    border-radius: 7px;
-
+.stat-item:last-child .stat-number {
+    color: #8c4a32;
 }
 
-/* ====================================== Darkaoui Space End Here*/
+.stat-unit {
+    font-size: 1rem;
+    font-weight: 600;
+}
 
+.stat-sub {
+    font-size: 0.65rem;
+    color: #777;
+    margin-top: 0.1rem;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 60%;
+    background-color: #e0e5df;
+}
+
+.catalog-p1 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #A0522D;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.catalog-p1::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    background-color: #A0522D;
+    border-radius: 50%;
+    vertical-align: middle;
+}
