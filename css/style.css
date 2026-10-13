@@ -212,6 +212,55 @@ nav li:hover{
     border-radius: 6px;
     font-weight: bold;
 }
+/* ------------------------------- Main */
+main{
+        display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 34px;
+}
+
+.main-desc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main h1{
+    color: var(--accent-green);
+}
+
+main a:first-of-type{
+    background-color: var(--accent-btn);
+    padding: 10px;
+}
+main a:last-of-type{
+    background-color: var(--price-bg);
+    padding: 10px;
+}
+
+main a{
+    border: transparent;
+    border-radius: 4px;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+main a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.main-btns{
+    display: flex;
+    gap: 10px;
+}
+
+main img{
+    width: 30%;
+    border-radius: 7px;
+
+}
 
 /* ====================================== Darkaoui Space End Here*/
 
