@@ -132,6 +132,163 @@ main img{
     font-weight: 700;
 }
 
+/* --------------------------------- */
+:root {
+  --bg-color: #f2f5f0;
+  --card-bg: #f9fbf8;
+  --footer-bg-color: #ECF6EE;
+  --primary-dark: #1b382b;
+  --secondary-dark: #14422D;
+  --accent-green: #254d3b;
+  --accent-btn: #1b4332;
+  --border-color: #d8e2d4;
+  --text-main: #2d3732;
+  --text-muted: #5c6b63;
+  --price-bg: #a84325;
+  --primary-font: 'Space Grotesk';
+  --secondary-font: 'Atkinson Hyperlegible Next';
+
+  /* extra token for the orange badge (not in your palette) */
+  --accent-orange: #f4977a;
+}
+
+/* ---------- Section ---------- */
+.circular-streams {
+  padding: 2rem 1.5rem;
+  background-color: var(--footer-bg-color);
+  font-family: var(--secondary-font), system-ui, sans-serif;
+  color: var(--text-main);
+}
+
+.circular-streams-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--secondary-dark);
+}
+
+.circular-streams-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Card ---------- */
+.stream-card {
+  --badge-bg: var(--accent-green);
+  display: flex;
+}
+
+.stream-card--wood    { --badge-bg: var(--accent-green); }
+.stream-card--textile { --badge-bg: var(--price-bg); }
+.stream-card--glass   { --badge-bg: var(--secondary-dark); }
+.stream-card--plastic { --badge-bg: var(--accent-orange); }
+
+.stream-card-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+}
+
+/* Header: badge + deposit */
+.stream-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem 1rem 0;
+}
+
+.stream-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--badge-bg);
+  border-radius: 999px;
+}
+
+.stream-card-badge::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.stream-card-deposit {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+      display: flex;
+}
+
+.stream-card-deposit-value {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Body: title + description */
+.stream-card-body {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.stream-card-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-dark);
+}
+
+.stream-card-description {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Media: pinned to the bottom, full-bleed */
+.stream-card-media {
+  margin: auto 0 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.stream-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Responsive ---------- */
+/* @media (max-width: 1024px) {
+  .circular-streams-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .circular-streams-list {
+    grid-template-columns: 1fr;
+  }
+} */
+
 /* ============================ My Work End here(Don't touch this comment) */
 
 
