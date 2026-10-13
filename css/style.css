@@ -65,6 +65,7 @@ nav li:hover{
     border-radius: 6px;
     font-weight: bold;
 }
+
 /* ------------------------------- Main */
 main{
         display: flex;
@@ -114,6 +115,25 @@ main img{
     border-radius: 7px;
 
 }
+
+/* --------------------------------- Statistics */
+.stqs{
+    display: flex;
+    gap: 18px;
+    margin: 41px auto;
+    width: 88%;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 24px;
+    background: #E6F0E8;
+}
+.stqs .number{
+        font-size: 33px;
+    font-weight: 700;
+}
+
+/* ============================ My Work End here(Don't touch this comment) */
+
 
 .features-bar {
     background-color: #E6F0E8;
