@@ -1,3 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Atkinson Hyperlegible Next;
+}
+
+body{
+    background: #F2FCF4E5;
+    height: 100vh;
+}
+
+header{
+    background: #F2FCF4E5;
+    height: 57px;
+    box-shadow: 0 0 2px gray;
+}
+
+header .logo-space{
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 20px;
+    vertical-align: super;
+    text-decoration: none;
+    color: black;
+}
+header span{
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+.header-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: stretch;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+    
+ul li{
+    color: black;
+
+}
+
+nav li:hover{
+    cursor: pointer; 
+    opacity: 0.6;
+}
+
+.active{
+    background: #14422D;
+    color: #9FCFB2 !important;
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
 .site-footer {
     background-color: var(--footer-bg-color);
     padding: 3rem 1.5rem 1.5rem;
@@ -148,78 +216,3 @@
 .footer-bottom-links a:hover {
     text-decoration: underline;
 }
-
-
-
-/* ====================================== Darkaoui Space Start Here*/
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Atkinson Hyperlegible Next;
-}
-
-body{
-    background: #F2FCF4E5;
-    height: 100vh;
-}
-
-header{
-    background: #F2FCF4E5;
-    height: 57px;
-    box-shadow: 0 0 2px gray;
-}
-
-header .logo-space{
-    font-family: Space Grotesk;
-    font-weight: 700;
-    font-size: 20px;
-    vertical-align: super;
-    text-decoration: none;
-    color: black;
-}
-header span{
-    vertical-align: super;
-    margin-left: 5px;
-}
-
-.header-child{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    height: stretch;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 35px;
-}
-
-nav ul a{
-    text-decoration: none;
-    color: black;
-}
-    
-ul li{
-    color: black;
-
-}
-
-nav li:hover{
-    cursor: pointer; 
-    opacity: 0.6;
-}
-
-.active{
-    background: #14422D;
-    color: #9FCFB2 !important;
-    padding: 5px;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-/* ====================================== Darkaoui Space End Here*/
-
