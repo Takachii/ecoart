@@ -586,3 +586,21 @@ main img{
     border-radius: 50%;
     vertical-align: middle;
 }
+.tag{
+    background-color: #5c6b63;
+    border-radius: 12PX;
+    margin-left: 15px;
+    
+}
+.selected{
+    color:var(--card-bg);
+    background-color: var(--secondary-dark);
+    border-radius: 15px;
+}
+.categories,button{
+    border-radius: 15px;
+    margin-left: 15px;
+}
+.titre{
+    margin-left: 15px;
+}
