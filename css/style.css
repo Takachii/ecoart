@@ -84,23 +84,33 @@ main h1{
     color: var(--accent-green);
 }
 
-main a:first-of-type{
-    background-color: var(--accent-btn);
-    padding: 10px;
+/* main a:first-of-type{
+    
 }
 main a:last-of-type{
     background-color: var(--price-bg);
     padding: 10px;
-}
+} */
 
-main a{
+.main-green-btn{
+    background-color: var(--accent-btn);
+    padding: 10px;
     border: transparent;
     border-radius: 4px;
     color: white;
     width: fit-content;
     text-decoration: none;
 }
-main a:hover{
+.main-red-btn{
+    background-color: var(--price-bg);
+    padding: 10px;
+    border: transparent;
+    border-radius: 4px;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+.main-red-btn:hover, .main-green-btn:hover{
     cursor: pointer;
     opacity: 0.8;
 }
@@ -132,28 +142,9 @@ main img{
     font-weight: 700;
 }
 
-/* --------------------------------- */
-:root {
-  --bg-color: #f2f5f0;
-  --card-bg: #f9fbf8;
-  --footer-bg-color: #ECF6EE;
-  --primary-dark: #1b382b;
-  --secondary-dark: #14422D;
-  --accent-green: #254d3b;
-  --accent-btn: #1b4332;
-  --border-color: #d8e2d4;
-  --text-main: #2d3732;
-  --text-muted: #5c6b63;
-  --price-bg: #a84325;
-  --primary-font: 'Space Grotesk';
-  --secondary-font: 'Atkinson Hyperlegible Next';
 
-  /* extra token for the orange badge (not in your palette) */
-  --accent-orange: #f4977a;
-}
-
-/* ---------- Section ---------- */
-.circular-streams {
+/* ---------- Section 4 ---------- */
+.cards-container1, .cards-container2 {
   padding: 2rem 1.5rem;
   background-color: var(--footer-bg-color);
   font-family: var(--secondary-font), system-ui, sans-serif;
@@ -179,24 +170,22 @@ main img{
 }
 
 /* ---------- Card ---------- */
-.stream-card {
-  --badge-bg: var(--accent-green);
+.card {
   display: flex;
 }
 
-.stream-card--wood    { --badge-bg: var(--accent-green); }
-.stream-card--textile { --badge-bg: var(--price-bg); }
-.stream-card--glass   { --badge-bg: var(--secondary-dark); }
-.stream-card--plastic { --badge-bg: var(--accent-orange); }
-
-.stream-card-inner {
+.card-content{
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: fit-content;
   overflow: hidden;
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: 0.75rem;
+}
+.reverse-dir{
+  flex-direction: column-reverse;
 }
 
 /* Header: badge + deposit */
@@ -217,7 +206,7 @@ main img{
   font-size: 0.7rem;
   font-weight: 500;
   color: #fff;
-  background-color: var(--badge-bg);
+  background-color: var(--accent-green);
   border-radius: 999px;
 }
 
@@ -288,6 +277,21 @@ main img{
     grid-template-columns: 1fr;
   }
 } */
+
+/* -------------------------------- Section 5 */
+
+.price-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.price-add > p{
+    font-weight: bold;
+    color: var(--accent-green);
+    /* var(--badge-bg) */
+}
 
 /* ============================ My Work End here(Don't touch this comment) */
 
