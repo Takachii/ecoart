@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- ========================= CSS Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/output.css">
+
     <title>Accueil</title>
 </head>
 <body>
@@ -34,7 +38,7 @@
     </header>
     <!-- ================================ -->
 
-    <main>
+    <main class="main">
         <div class="main-desc">
             <h1>Donner une seconde vie
                 aux matières, créer du
@@ -97,7 +101,7 @@
     </div>
     <!-- ==================================== Section 3 -->
     <section class="cards-container1">
-        <h2 class="circular-streams-title">Les 4 Grandes Filières Circulaires</h2>
+        <h2 class="section-title">Les 4 Grandes Filières Circulaires</h2>
         
         <ul class="circular-streams-list">
     
@@ -202,10 +206,8 @@
 
     <!-- ==================================== Section 4 -->
 
-
-
     <section class="cards-container2">
-        <h2 class="circular-streams-title">Nouveautés & Coups de Cœur</h2>
+        <h2 class="section-title">Nouveautés & Coups de Cœur</h2>
         
         <ul class="circular-streams-list">
     
@@ -302,6 +304,71 @@
         </ul>
     </section>
     
+    <!-- ==================================== Section 5 (With TailWind css) -->
+
+    <section class="flex flex-col ">
+        <div class="text-center">
+            <p class="text-2xl text-green-900 font-bold m-4 text-center">
+                Une Éthique Sans Concession</p>
+            <p class="w-1/2 text-center text-gray-700 m-auto">
+                
+                Nous redéfinissons le luxe contemporain : la valeur d'un objet ne réside pas dans l'extraction
+                de nouvelles ressources mais dans la dignité de sa transformation.
+            </p>
+        </div>
+        <div class="flex justify-around my-14 ">
+            <div class="w-3/12 bg-gray-200 p-4 rounded">
+                <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
+                    01
+                </div>
+                <div class="text-xl text-green-800 font-bold py-1">
+                    Collecte Locale & Traçable
+                </div>
+                <div class="text-gray-700">
+                    100% de nos matières sont sourcées à moins
+                    de 250 km des ateliers. Un passeport
+                    numérique infalsifiable retrace le bâtiment
+                    d'origine de votre meuble ou l'histoire du tissu
+                    surcyclé.
+                </div>
+            </div>
+
+            <div class="w-3/12 bg-gray-200 p-4 rounded">
+                <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
+                    02
+                </div>
+                <div class="text-xl text-green-800 font-bold py-1">
+                    Savoir-Faire d'Exception
+                </div>
+                <div class="text-gray-700">
+                    Sublimer la patine du temps exige une
+                    virtuosité technique supérieure au neuf. Nos
+                    artisans conjuguent gestes ancestraux des
+                    Compagnons et technologies de découpe
+                    douce.
+                </div>
+            </div>
+
+
+            <div class="w-3/12 bg-gray-200 p-4 rounded">
+                <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
+                    03
+                </div>
+                <div class="text-xl text-green-800 font-bold py-1">
+                   Zéro Déchet & Éco-
+                    Durabilité
+                </div>
+                <div class="text-gray-700">
+                    Dans nos ateliers partenaires, rien ne se perd :
+                    les sciures réchauffent les séchoirs, les micro-
+                    chutes de cuir deviennent poignées et les
+                    emballages sont tous réutilisables en boucle
+                    consigne.
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ================================ -->
     <footer class="site-footer">
