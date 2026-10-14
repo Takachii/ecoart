@@ -1,32 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
 
+    <title>EcoArt | Produits</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
 <body>
+
+    <header>
+        <div class="header-child">
+            <a href="index.html" class="logo-space"> 
+                <img src="./assets/images/logo.png" alt="">
+                <span>EcoArt</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="produits.html">Catalogue</a></li>
+                    <li><a href="services.html">Ateliers & Services</a></li>
+                    <li><a href="artisans.html">Nos Artisans</a></li>
+                    <li><a href="contact.html">Impact & Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
    <main>
     <div class="main-container">
         <section class="content-section">
             <div class="sub-container 1">
                  <div class="sub-container 2">
-                     <img src="audit.svg" alt="audit"><span class="text">AUDIT DE CIRCULARITE & DIALOGUE OUVERT</span>
+                     <img src="assets/icons/audit.svg" alt="audit"><span class="text">AUDIT DE CIRCULARITE & DIALOGUE OUVERT</span>
                      <h1>Notre Enpreinte Positive & Parlons-on</h1>
                      <p>Mesurer notre impact tangible, certifier chaque gramme détourné des décharges et co-construire l'artisanat régénératif de demain</p>
                  </div>
-                 <div>
-                   <img src="brownbg.svg" alt="brown circle">
-                </div>
-                <div>
-                    <div><p>Mise A Jour Certifiée</p></div>
-                    <div><p>T1 2025.Norme ADEME</p></div>
+                 <div class="certif-badge">
+    
+                  <img src="assets/icons/brownbg.svg" alt="icon" />
+
+    
+                   <div class="certif-text">
+                    <div>Mise a Jour Certifiée</div>
+                    <div>T1 2025 &middot; Norme ADEME</div>
+                    </div>
                 </div>
 
             </div>
 
             <div>
-                <div><img src="rebuts.svg" alt="rebuts"><div>+34% vs 2024</div></div>
+                <div><img src="assets/icons/rebuts.svg" alt="rebuts"><div>+34% vs 2024</div></div>
                 <div>
                     <div><h1>18450 Kg</h1></div>
                     <div><h4>Rebuts noble valorisés</h4></div>
@@ -37,7 +70,7 @@
 
             <div>
                 <div>
-                    <div><img src="co2.svg" alt="co2"></div><div><p>Evitement direct</p></div>
+                    <div><img src="assets/icons/co2.svg" alt="co2"></div><div><p>Evitement direct</p></div>
                 </div>
                 <div>
                     <div><h2>32,8t CO2e</h2></div>
@@ -48,7 +81,7 @@
 
             <div>
                 <div>
-                    <div><img src="eau.svg" alt="eau"></div><div><p>Filière séche</p></div>
+                    <div><img src="assets/icons/eau.svg" alt="eau"></div><div><p>Filière séche</p></div>
                 </div>
                 <div>
                     <div><h2>142 000 L</h2></div>
@@ -59,7 +92,8 @@
 
             <div>
                 <div>
-                    <div><img src="transmission.svg" alt="transmission"></div><div><p>Social & inclusion</p></div>
+                    <div><img src="assets/icons/transmission.svg" alt="transmission"></div>
+                    <div><p>Social & inclusion</p></div>
                 </div>
                 <div>
                     <div><h2>800 hrs</h2></div>
@@ -75,7 +109,61 @@
         </section>
     </div>
    </main>
-   
+     <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="footer-col">
+                <div class="brand">
+                    <img src="assets/images/logo.png" alt="EcoArt Logo">
+                    <h3>EcoArt</h3>
+                </div>
+                <p>Plateforme d'artisanat circulaire valorisant
+                    les rebuts nobles. Conception numérique
+                    sobre, traçabilité certifiée et réduction de
+                    l'empreinte carbone matériel.
+                </p>
+                <div class="eco-badge">
+                    <img src="assets/icons/selected.svg" alt="icon selected">
+                    Index Éco-Index : A
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Filière Circulaire</h3>
+                <ul class="footer-list">
+                    <li>Bois de réemploi & chêne sauvé</li>
+                    <li>Verre recyclé au four solaire</li>
+                    <li>Textiles surcyclés d'ateliers</li>
+                    <li>Métaux ferreux reconditionnés</li>
+                    <li>Charte zéro déchet d'atelier</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Labels & Certifications</h3>
+                <div class="cert-card">
+                    <strong>Label Upcycling Certifié UE</strong>
+                    <p>Norme traçabilité matière brute à 100%</p>
+                </div>
+                <div class="cert-card">
+                    <strong>Garantie Artisans d'Art</strong>
+                    <p>Transmission et fabrication locale</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter Sobre</h3>
+                <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <small>Désinscription en 1 clic. Données hébergées en France.</small>
+            </div>
+
+        </div>
+
+    </footer>
+    
 </body>
-</head>
 </html>

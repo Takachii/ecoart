@@ -1,11 +1,15 @@
 :root {
     --bg-color: #f2f5f0;
     --card-bg: #f9fbf8;
+    --footer-bg-color: #ECF6EE;
     --primary-dark: #1b382b;
+    --secondary-dark: #14422D;
     --accent-green: #254d3b;
     --accent-btn: #1b4332;
     --border-color: #d8e2d4;
     --text-main: #2d3732;
     --text-muted: #5c6b63;
     --price-bg: #a84325;
+    --primary-font: 'Space Grotesk';
+    --secondary-font: 'Atkinson Hyperlegible Next';
 }
