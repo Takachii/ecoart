@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- ========================= CSS Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/output.css">
+
     <title>Accueil</title>
 </head>
 <body>
@@ -34,7 +38,7 @@
     </header>
     <!-- ================================ -->
 
-    <main>
+    <main class="main">
         <div class="main-desc">
             <h1>Donner une seconde vie
                 aux matières, créer du
@@ -45,8 +49,8 @@
                 — en objets d'exception conçus par 42 maîtres artisans.</p>
             
             <div class="main-btns">
-                <a href="#">Explorer le catalogue</a>
-                <a href="#">Participer à un atelier</a>
+                <a href="#" class="main-green-btn">Explorer le catalogue</a>
+                <a href="#" class="main-red-btn">Participer à un atelier</a>
                 <!-- <button>Explorer le catalogue </button> -->
                 <!-- <button>Participer à un atelier </button> -->
             </div>
@@ -55,7 +59,7 @@
         <img src="./assets/images/main-img.jpeg" alt="Vase">
     </main>
 
-    <!-- ================================= -->
+    <!-- ================================= Statistics  -->
 
     <div class="stqs">
         <div class="stq-container">
@@ -95,21 +99,21 @@
             </div>
         </div>
     </div>
-    <!-- ==================================== -->
-    <section class="circular-streams">
-        <h2 class="circular-streams-title">Les 4 Grandes Filières Circulaires</h2>
+    <!-- ==================================== Section 3 -->
+    <section class="cards-container1">
+        <h2 class="section-title">Les 4 Grandes Filières Circulaires</h2>
         
         <ul class="circular-streams-list">
     
-        <li class="stream-card stream-card--wood">
-        <article class="stream-card-inner">
-            <div class="stream-card-header">
-            <span class="stream-card-badge">Filière 01</span>
-            <p class="stream-card-deposit">
-                <span class="stream-card-deposit-label">Gisement :</span>
-                <data class="stream-card-deposit-value">4,8 T</data>
-            </p>
-        </div>
+        <li class="card ">
+            <article class="card-content ">
+                <div class="stream-card-header">
+                    <span class="stream-card-badge">Filière 01</span>
+                    <p class="stream-card-deposit">
+                        <span class="stream-card-deposit-label">Gisement :</span>
+                        <data class="stream-card-deposit-value">4,8 T</data>
+                    </p>
+                </div>
     
             <div class="stream-card-body">
             <h3 class="stream-card-title">Bois de Réemploi</h3>
@@ -119,14 +123,14 @@
             </p>
             </div>
     
-            <figure class="stream-card-media">
+            <div class="stream-card-media">
             <img class="stream-card-image" src="./assets/images/wood-img.jpeg" alt="Planches de chêne de réemploi dans un atelier">
-            </figure>
+            </div>
         </article>
         </li>
     
-        <li class="stream-card stream-card--textile">
-        <article class="stream-card-inner">
+        <li class="card">
+        <article class="card-content">
             <div class="stream-card-header">
             <span class="stream-card-badge">Filière 02</span>
             <p class="stream-card-deposit">
@@ -143,14 +147,14 @@
             </p>
             </div>
     
-            <figure class="stream-card-media">
+            <div class="stream-card-media">
             <img class="stream-card-image" src="./assets/images/tissues.jpg" alt="Chutes de tissus et de lin surcyclés">
-            </figure>
+            </div>
         </article>
         </li>
     
-        <li class="stream-card stream-card--glass">
-        <article class="stream-card-inner">
+        <li class="card">
+        <article class="card-content">
             <div class="stream-card-header">
             <span class="stream-card-badge">Filière 03</span>
             <p class="stream-card-deposit">
@@ -167,14 +171,14 @@
             </p>
             </div>
     
-            <figure class="stream-card-media">
+            <div class="stream-card-media">
             <img class="stream-card-image" src="./assets/images/glasses.jpg" alt="Carafe et verres en verre recyclé soufflé">
-            </figure>
+            </div>
         </article>
         </li>
     
-        <li class="stream-card stream-card--plastic">
-        <article class="stream-card-inner">
+        <li class="card">
+        <article class="card-content">
             <div class="stream-card-header">
             <span class="stream-card-badge">Filière 04</span>
             <p class="stream-card-deposit">
@@ -191,15 +195,180 @@
             </p>
             </div>
     
-            <figure class="stream-card-media">
+            <div class="stream-card-media">
             <img class="stream-card-image" src="./assets/images/plastic.jpg" alt="Plateau en plastique recyclé façon terrazzo">
-            </figure>
+            </div>
         </article>
         </li>
     
     </ul>
     </section>
+
+    <!-- ==================================== Section 4 -->
+
+    <section class="cards-container2">
+        <h2 class="section-title">Nouveautés & Coups de Cœur</h2>
+        
+        <ul class="circular-streams-list">
     
+            <li class="stream-card">
+                <article class="card-content reverse-dir">
+                    <div class="stream-card-header">
+                    </div>
+                        <div class="stream-card-body">
+                        <h3 class="stream-card-title">Lampe d'Appoint "Sillon"</h3>
+                        <p class="stream-card-description">
+                            Socle façonné dans une poutre de
+                            grange bretonne de 1890 et câble textile.
+                        </p>
+                        <div class="price-add">
+                            <p>145 €</p>
+                            <button class="main-green-btn">Ajouter +</button>
+                        </div>
+                    </div>
+            
+                    <div class="stream-card-media">
+                        <img class="stream-card-image" src="./assets/images/lamp.jpeg" alt="Planches de chêne de réemploi dans un atelier">
+                    </div>
+                </article>
+            </li>
+        
+            <li class="stream-card">
+                <article class="card-content reverse-dir">
+                    <div class="stream-card-header">
+                    </div>
+                        <div class="stream-card-body">
+                        <h3 class="stream-card-title">Soliflore "Ondée"</h3>
+                        <p class="stream-card-description">
+                            Bouteilles champenoises fondues au
+                            four électrique alimenté par…
+                        </p>
+                        <div class="price-add">
+                            <p>68 €</p>
+                            <button class="main-green-btn">Ajouter +</button>
+                        </div>
+                    </div>
+
+
+            
+                    <div class="stream-card-media">
+                    <img class="stream-card-image" src="./assets/images/glass-vase.jpg" alt="Planches de chêne de réemploi dans un atelier">
+                    </div>
+                </article>
+            </li>
+        
+            <li class="stream-card">
+                <article class="card-content reverse-dir">
+                    <div class="stream-card-header">
+                    </div>
+                        <div class="stream-card-body">
+                        <h3 class="stream-card-title">Plateau "Granulat"</h3>
+                        <p class="stream-card-description">
+                            Élaboré à partir de 240 bouchons
+                            collectés par une association sportive…
+                        </p>
+                        <div class="price-add">
+                            <p>82 €</p>
+                            <button class="main-green-btn">Ajouter +</button>
+                        </div>
+                    </div>
+            
+                    <div class="stream-card-media">
+                    <img class="stream-card-image" src="./assets/images/plastic-plate2.jpg" alt="Planches de chêne de réemploi dans un atelier">
+                    </div>
+                </article>
+            </li>
+        
+            <li class="stream-card">
+                <article class="card-content reverse-dir">
+                    <div class="stream-card-header">
+                    </div>
+                        <div class="stream-card-body">
+                        <h3 class="stream-card-title">Cabas "Alizé 04"</h3>
+                        <p class="stream-card-description">
+                            Spinnaker de régate réformé assemblé à
+                            des chutes de sellerie équestre…
+                        </p>
+                        <div class="price-add">
+                            <p>115 €</p>
+                            <button class="main-green-btn">Ajouter +</button>
+                        </div>
+                    </div>
+            
+                    <div class="stream-card-media">
+                    <img class="stream-card-image" src="./assets/images/bag.jpg" alt="Planches de chêne de réemploi dans un atelier">
+                    </div>
+                </article>
+            </li>
+        
+        </ul>
+    </section>
+    
+    <!-- ==================================== Section 5 (With TailWind css) -->
+
+    <section class="flex flex-col ">
+        <div class="text-center">
+            <p class="text-2xl text-green-900 font-bold m-4 text-center">
+                Une Éthique Sans Concession</p>
+            <p class="w-1/2 text-center text-gray-700 m-auto">
+                
+                Nous redéfinissons le luxe contemporain : la valeur d'un objet ne réside pas dans l'extraction
+                de nouvelles ressources mais dans la dignité de sa transformation.
+            </p>
+        </div>
+        <div class="flex justify-around my-14 ">
+            <div class="w-3/12 bg-gray-200 p-4 rounded">
+                <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
+                    01
+                </div>
+                <div class="text-xl text-green-800 font-bold py-1">
+                    Collecte Locale & Traçable
+                </div>
+                <div class="text-gray-700">
+                    100% de nos matières sont sourcées à moins
+                    de 250 km des ateliers. Un passeport
+                    numérique infalsifiable retrace le bâtiment
+                    d'origine de votre meuble ou l'histoire du tissu
+                    surcyclé.
+                </div>
+            </div>
+
+            <div class="w-3/12 bg-gray-200 p-4 rounded">
+                <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
+                    02
+                </div>
+                <div class="text-xl text-green-800 font-bold py-1">
+                    Savoir-Faire d'Exception
+                </div>
+                <div class="text-gray-700">
+                    Sublimer la patine du temps exige une
+                    virtuosité technique supérieure au neuf. Nos
+                    artisans conjuguent gestes ancestraux des
+                    Compagnons et technologies de découpe
+                    douce.
+                </div>
+            </div>
+
+
+            <div class="w-3/12 bg-gray-200 p-4 rounded">
+                <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
+                    03
+                </div>
+                <div class="text-xl text-green-800 font-bold py-1">
+                   Zéro Déchet & Éco-
+                    Durabilité
+                </div>
+                <div class="text-gray-700">
+                    Dans nos ateliers partenaires, rien ne se perd :
+                    les sciures réchauffent les séchoirs, les micro-
+                    chutes de cuir deviennent poignées et les
+                    emballages sont tous réutilisables en boucle
+                    consigne.
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ================================ -->
     <footer class="site-footer">
