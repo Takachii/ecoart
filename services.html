@@ -1,220 +1,466 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoArt - Apprenez l'art de l'upcycling</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
+    <!--header-->
+    <header>
+        <div class="header-child">
+            <a href="index.html" class="logo-space">
+                <img src="./assets/images/logo.png" alt="">
+                <span>EcoArt</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="produits.html">Catalogue</a></li>
+                    <li><a href="services.html">Ateliers & Services</a></li>
+                    <li><a href="artisans.html">Nos Artisans</a></li>
+                    <li><a href="contact.html">Impact & Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- Main -->
     <main>
-        
+
         <!-- Container -->
         <div>
-
-            <!-- 1. Intro Header Hero Section -->
-            <section>
-                <div>
-                    <div>
-                        <span><img src="assets/icons/Icon-cap.svg" alt=""> Transmission Circulaire & Savoir-Faire</span>
-                        <h1>Apprenez l'art de l'upcycling avec nos artisans</h1>
-                        <p>Ateliers pratiques, immersion en manufacture et transmission de techniques traditionnelles adaptées aux matières de réemploi. Repartez avec une création d'art singulière façonnée par vos mains.</p>
-                        
-                        <!-- Pill Nav Filter Shortcuts -->
-                        <div>
-                            <span>FILIÈRES :</span>
-                            <button>Tous les Ateliers (4)</button>
-                            <button>Menuiserie & Bois</button>
-                            <button>Verrerie d'art</button>
-                            <button>Textile & Teinture</button>
-                            <button>Plastique Terrazzo</button>
+            <div class="intro-header-hero">
+                <div class="container">
+                    <div class="div">
+                        <div class="container-2">
+                            <div class="background">
+                                <div class="icon-wrapper"><img class="icon" src="img/icon.svg" />
+                                </div>
+                                <div class="text">Transmission Circulaire &amp; Savoir-Faire</div>
+                            </div>
+                            <p class="heading-apprenez-l">Apprenez l&#39;art de l&#39;upcycling avec nos<br />artisans
+                            </p>
+                            <p class="text-wrapper">Ateliers pratiques, immersion en manufacture et transmission de
+                                techniques<br />traditionnelles adaptées aux matières de réemploi. Repartez avec une
+                                création<br />d&#39;art singulière façonnée par vos mains.</p>
+                        </div>
+                        <div class="live-impact-capacity">
+                            <div class="container-3">
+                                <div class="div-wrapper">
+                                    <div class="text-2">MATIÈRES SAUVÉES</div>
+                                </div>
+                                <div class="paragraph">
+                                    <div class="text-3">2.4</div>
+                                    <div class="text-4">t</div>
+                                </div>
+                                <div class="text-5">Rebuts revalorisés</div>
+                            </div>
+                            <div class="container-3">
+                                <div class="div-wrapper">
+                                    <div class="text-2">GROUPES RÉDUITS</div>
+                                </div>
+                                <div class="paragraph">
+                                    <div class="text-6">8</div>
+                                    <div class="text-7"> max</div>
+                                </div>
+                                <div class="text-5">Accompagnement dédié</div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div>
-                        <div>
-                            <span>MATIÈRES SAUVÉES</span>
-                            <span>2.4<span>t</span></span>
-                            <span>Rebuts revalorisés</span>
+                    <div class="pill-nav-filter">
+                        <div class="margin">
+                            <div class="text-2">FILIÈRES :</div>
                         </div>
-                        <div>
-                            <span>GROUPES RÉDUITS</span>
-                            <span>8<span>max</span></span>
-                            <span>Accompagnement dédié</span>
-                        </div>
+                        <button class="button">
+                            <div class="text-8">Tous les Ateliers (4)</div>
+                        </button>
+                        <button class="button-2">
+                            <div class="text-9">Menuiserie &amp; Bois</div>
+                        </button>
+                        <button class="button-2">
+                            <div class="text-9">Verrerie d&#39;art</div>
+                        </button>
+                        <button class="button-2">
+                            <div class="text-9">Textile &amp; Teinture</div>
+                        </button>
+                        <button class="button-2">
+                            <div class="text-9">Plastique Terrazzo</div>
+                        </button>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- 2. Ateliers Grid Section -->
-            <section>
-                <div>
-                    <div>
-                        <h2>Sessions Disponibles</h2>
-                        <div>Ateliers animés par des maîtres artisans diplômés en éco-conception.</div>
+            <div class="ateliers-grid">
+                <div class="container">
+                    <div class="div">
+                        <div class="div-wrapper">
+                            <div class="text">Sessions Disponibles</div>
+                        </div>
+                        <div class="div-wrapper">
+                            <p class="text-wrapper">Ateliers animés par des maîtres artisans diplômés en éco-conception.
+                            </p>
+                        </div>
                     </div>
-                    <span><img src="assets/icons/Icon-fleu.svg" alt="icon">Matériel & EPI 100% inclus</span>
+                    <div class="container-2">
+                        <div class="div"><img class="icon" src="img/icon-13.svg" /></div>
+                        <p class="text-2">Matériel &amp; EPI 100% inclus</p>
+                    </div>
                 </div>
-
-                <!-- 4 Workshop Cards Grid -->
-                <div>
-                    
-                   <!-- 4 Workshop Cards Grid -->
-<div>
-    
-    <!-- Article - Card 1: Bois -->
-    <article>
-        <div>
-            <span><img src="assets/icons/Icon-ring.svg" alt=""> Bois & Chêne de charpente</span>
-            <span>110 €</span>
-        </div>
-        <div>
-            <div>
-                <span><img src="assets/icons/Icon-clock.svg" alt=""> 3h30</span>
-                <span><img src="assets/icons/Icon-signal.svg" alt=""> Débutant • Accessible</span>
-                <span><img src="assets/icons/Icon-user.svg" alt=""> Max 6 pers.</span>
-            </div>
-            <h3>Atelier Menuiserie : Table basse ou Étagère en Chêne Récupéré</h3>
-            <p>Apprenez les assemblages à mi-bois, le rabotage traditionnel et la finition aux huiles naturelles sur d'anciennes poutres parisiennes déclassées.</p>
-            <div>
-                <span>Prochaines dates : <strong>3 places restantes</strong></span>
-                <div>
-                    <span>Sam. 14 Oct (14h00)</span>
-                    <span>Mer. 18 Oct (18h30)</span>
-                    <span>Sam. 28 Oct (09h30)</span>
+                <div class="element-workshop-cards">
+                    <div class="article-card-bois">
+                        <div class="background">
+                            <div class="div-2"></div>
+                            <div class="overlay-overlayblur-wrapper">
+                                <div class="overlay-overlayblur">
+                                    <div class="div"><img class="img" src="img/icon-16.svg" /></div>
+                                    <p class="text-3">Bois &amp; Chêne de charpente</p>
+                                </div>
+                            </div>
+                            <div class="background-shadow-wrapper">
+                                <div class="background-shadow">
+                                    <div class="text-4">110 €</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-3">
+                            <div class="container-4">
+                                <div class="container">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-2" src="img/icon.svg" /></div>
+                                        <div class="text-2">3h30</div>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-3" src="img/icon-10.svg" /></div>
+                                        <div class="text-2">Débutant • Accessible</div>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-4" src="img/icon-9.svg" /></div>
+                                        <div class="text-5">Max 6 pers.</div>
+                                    </div>
+                                </div>
+                                <div class="heading">
+                                    <p class="atelier-menuiserie">Atelier Menuiserie : Table basse ou Étagère en
+                                        Chêne<br />Récupéré</p>
+                                </div>
+                                <div class="div-wrapper">
+                                    <p class="p">Apprenez les assemblages à mi-bois, le rabotage traditionnel et la
+                                        finition<br />aux huiles naturelles sur d&#39;anciennes poutres parisiennes
+                                        déclassées.</p>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="background-2">
+                                    <div class="container">
+                                        <div class="div">
+                                            <div class="text-2">Prochaines dates :</div>
+                                        </div>
+                                        <div class="div">
+                                            <div class="text-3">3 places restantes</div>
+                                        </div>
+                                    </div>
+                                    <div class="container-5">
+                                        <div class="background-3">
+                                            <div class="text-6">Sam. 14 Oct (14h00)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Mer. 18 Oct (18h30)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Sam. 28 Oct (09h30)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="container-6">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-5" src="img/icon-19.svg" /></div>
+                                        <div class="text-wrapper">Outillage &amp; bois fournis</div>
+                                    </div>
+                                    <div class="link">
+                                        <div class="text-7">Sélectionner</div>
+                                        <div class="div"><img class="icon-6" src="img/icon-4.svg" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <div class="background">
+                            <div class="div-3"></div>
+                            <div class="overlay-overlayblur-wrapper">
+                                <div class="overlay-overlayblur">
+                                    <div class="div"><img class="icon-7" src="img/icon-24.svg" /></div>
+                                    <div class="text-3">Bouteilles &amp; Flacons réemployés</div>
+                                </div>
+                            </div>
+                            <div class="background-shadow-wrapper">
+                                <div class="background-shadow">
+                                    <div class="text-4">85 €</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-7">
+                            <div class="container-4">
+                                <div class="container">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-2" src="img/icon-17.svg" /></div>
+                                        <div class="text-2">2h30</div>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-3" src="img/icon-21.svg" /></div>
+                                        <div class="text-2">Débutant</div>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-4" src="img/image.svg" /></div>
+                                        <div class="text-5">Max 8 pers.</div>
+                                    </div>
+                                </div>
+                                <div class="heading">
+                                    <p class="text-wrapper-2">Atelier Verrerie &amp; Luminaire Upcyclé</p>
+                                </div>
+                                <div class="div-wrapper">
+                                    <p class="p">Maîtrisez la coupe à froid au fil de verre, le polissage au lapidaire
+                                        et le<br />câblage électrique en tissu pour fabriquer une suspension
+                                        design<br />contemporaine.</p>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="background-2">
+                                    <div class="container">
+                                        <div class="div">
+                                            <div class="text-2">Prochaines dates :</div>
+                                        </div>
+                                        <div class="div">
+                                            <div class="text-3">2 places restantes</div>
+                                        </div>
+                                    </div>
+                                    <div class="container-5">
+                                        <div class="background-3">
+                                            <div class="text-6">Ven. 13 Oct (17h30)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Sam. 21 Oct (10h30)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Dim. 29 Oct (14h00)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="container-6">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-8" src="img/icon-12.svg" /></div>
+                                        <p class="text-wrapper">Cordon coton &amp; douille CE</p>
+                                    </div>
+                                    <div class="link">
+                                        <div class="text-7">Sélectionner</div>
+                                        <div class="div"><img class="icon-6" src="img/icon-2.svg" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-card-2">
+                        <div class="background">
+                            <div class="div-4"></div>
+                            <div class="overlay-overlayblur-wrapper">
+                                <div class="overlay-overlayblur">
+                                    <div class="div"><img class="icon-9" src="img/icon-15.svg" /></div>
+                                    <p class="text-3">Chutes denim &amp; lin normand</p>
+                                </div>
+                            </div>
+                            <div class="background-shadow-wrapper">
+                                <div class="background-shadow">
+                                    <div class="text-4">75 €</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-3">
+                            <div class="container-4">
+                                <div class="container">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-2" src="img/icon-20.svg" /></div>
+                                        <div class="text-2">3h00</div>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-3" src="img/icon-23.svg" /></div>
+                                        <div class="text-2">Tous niveaux</div>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-4" src="img/icon-3.svg" /></div>
+                                        <div class="text-5">Max 8 pers.</div>
+                                    </div>
+                                </div>
+                                <div class="heading">
+                                    <p class="text-wrapper-2">Atelier Couture &amp; Revalorisation Textile</p>
+                                </div>
+                                <div class="div-wrapper">
+                                    <p class="p">Techniques de patronage zéro déchet, points de surpiqûre renforcés
+                                        et<br />sashiko japonais pour concevoir votre besace ou tote bag
+                                        hautement<br />résistant.</p>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="background-2">
+                                    <div class="container">
+                                        <div class="div">
+                                            <div class="text-2">Prochaines dates :</div>
+                                        </div>
+                                        <div class="div">
+                                            <div class="text-3">4 places restantes</div>
+                                        </div>
+                                    </div>
+                                    <div class="container-5">
+                                        <div class="background-3">
+                                            <div class="text-6">Sam. 14 Oct (09h30)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Jeu. 19 Oct (18h30)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Sam. 04 Nov (14h00)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="container-6">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-10" src="img/icon-14.svg" /></div>
+                                        <div class="text-wrapper">Machines &amp; mercerie inclus</div>
+                                    </div>
+                                    <div class="link">
+                                        <div class="text-7">Sélectionner</div>
+                                        <div class="div"><img class="icon-6" src="img/icon-5.svg" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-card-3">
+                        <div class="background">
+                            <div class="div-5"></div>
+                            <div class="overlay-overlayblur-wrapper">
+                                <div class="overlay-overlayblur">
+                                    <div class="div"><img class="icon-11" src="img/icon-6.svg" /></div>
+                                    <div class="text-3">PEHD &amp; Bouchons triés</div>
+                                </div>
+                            </div>
+                            <div class="background-shadow-wrapper">
+                                <div class="background-shadow">
+                                    <div class="text-4">65 €</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-3">
+                            <div class="container-4">
+                                <div class="container">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-2" src="img/icon-8.svg" /></div>
+                                        <div class="text-2">2h00</div>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-3" src="img/icon-11.svg" /></div>
+                                        <p class="text-2">Débutant • Familial (+12 ans)</p>
+                                    </div>
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-4" src="img/icon-7.svg" /></div>
+                                        <div class="text-5">Max 8 pers.</div>
+                                    </div>
+                                </div>
+                                <div class="heading">
+                                    <p class="text-wrapper-2">Atelier Fusion Plastique &amp; Design Terrazzo</p>
+                                </div>
+                                <div class="div-wrapper">
+                                    <p class="p">Broyez des plastiques post-consommation, composez votre motif minéral
+                                        ou<br />terrazzo polychrome et thermoformez vos sous-verres ou
+                                        vide-poches<br />écologiques.</p>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="background-2">
+                                    <div class="container">
+                                        <div class="div">
+                                            <div class="text-2">Prochaines dates :</div>
+                                        </div>
+                                        <div class="div">
+                                            <div class="text-3">1 place restante</div>
+                                        </div>
+                                    </div>
+                                    <div class="container-5">
+                                        <div class="background-3">
+                                            <div class="text-6">Dim. 15 Oct (15h00)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Mer. 25 Oct (14h30)</div>
+                                        </div>
+                                        <div class="background-3">
+                                            <div class="text-6">Sam. 11 Nov (11h00)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="margin">
+                                <div class="container-6">
+                                    <div class="container-2">
+                                        <div class="div"><img class="icon-12" src="img/icon-22.svg" /></div>
+                                        <p class="text-wrapper">Set de 4 pièces réalisé</p>
+                                    </div>
+                                    <div class="link">
+                                        <div class="text-7">Sélectionner</div>
+                                        <div class="div"><img class="icon-6" src="img/icon-18.svg" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <span><img src="assets/icons/Icon-wrench.svg" alt=""> Outillage & bois fournis</span>
-                <button>Sélectionner <img src="assets/icons/Icon-flech.svg" alt=""></button>
-            </div>
-        </div>
-    </article>
-
-    <!-- Article - Card 2: Verrerie -->
-    <article>
-        <div>
-            <span><img src="assets/icons/Icon-coffe.svg" alt=""> Bouteilles & Flacons réemployés</span>
-            <span>85 €</span>
-        </div>
-        <div>
-            <div>
-                <span><img src="assets/icons/Icon-clock.svg" alt=""> 2h30</span>
-                <span><img src="assets/icons/Icon-signal.svg" alt=""> Débutant</span>
-                <span><img src="assets/icons/Icon-user.svg" alt=""> Max 8 pers.</span>
-            </div>
-            <h3>Atelier Verrerie & Luminaire Upcyclé</h3>
-            <p>Maîtrisez la coupe à froid au fil de verre, le polissage au lapidaire et le câblage électrique en tissu pour fabriquer une suspension design contemporaine.</p>
-            <div>
-                <span>Prochaines dates : <strong>2 places restantes</strong></span>
-                <div>
-                    <span>Ven. 13 Oct (17h30)</span>
-                    <span>Sam. 21 Oct (10h30)</span>
-                    <span>Dim. 29 Oct (14h00)</span>
-                </div>
-            </div>
-            <div>
-                <span><img src="assets/icons/Icon-flash.svg" alt=""> Cordon coton & douille CE</span>
-                <button>Sélectionner <img src="assets/icons/Icon-flech.svg" alt=""></button>
-            </div>
-        </div>
-    </article>
-
-    <!-- Article - Card 3: Textile -->
-    <article>
-        <div>
-            <span><img src="assets/icons/Icon-chutes.svg" alt=""> Chutes denim & lin normand</span>
-            <span>75 €</span>
-        </div>
-        <div>
-            <div>
-                <span><img src="assets/icons/Icon-clock.svg" alt=""> 3h00</span>
-                <span><img src="assets/icons/Icon-signal.svg" alt=""> Tous niveaux</span>
-                <span><img src="assets/icons/Icon-user.svg" alt=""> Max 8 pers.</span>
-            </div>
-            <h3>Atelier Couture & Revalorisation Textile</h3>
-            <p>Techniques de patronage zéro déchet, points de surpiqûre renforcés et sashiko japonais pour concevoir votre besace ou tote bag hautement résistant.</p>
-            <div>
-                <span>Prochaines dates : <strong>4 places restantes</strong></span>
-                <div>
-                    <span>Sam. 14 Oct (09h30)</span>
-                    <span>Jeu. 19 Oct (18h30)</span>
-                    <span>Sam. 04 Nov (14h00)</span>
-                </div>
-            </div>
-            <div>
-                <span><img src="assets/icons/Icon-mercerie.svg" alt=""> Machines & mercerie inclus</span>
-                <button>Sélectionner <img src="assets/icons/Icon-flech.svg" alt=""></button>
-            </div>
-        </div>
-    </article>
-
-    <!-- Article - Card 4: Plastique Terrazzo -->
-    <article>
-        <div>
-            <span><img src="assets/icons/Icon-PEHD.svg" alt=""> PEHD & Bouchons triés</span>
-            <span>65 €</span>
-        </div>
-        <div>
-            <div>
-                <span><img src="assets/icons/Icon-clock.svg" alt=""> 2h00</span>
-                <span><img src="assets/icons/Icon-signal.svg" alt=""> Débutant • Familial (+12 ans)</span>
-                <span><img src="assets/icons/Icon-user.svg" alt=""> Max 8 pers.</span>
-            </div>
-            <h3>Atelier Fusion Plastique & Design Terrazzo</h3>
-            <p>Broyez des plastiques post-consommation, composez votre motif minéral ou terrazzo polychrome et thermoformez vos sous-verres ou vide-poches écologiques.</p>
-            <div>
-                <span>Prochaines dates : <strong>1 place restante</strong></span>
-                <div>
-                    <span>Dim. 15 Oct (15h00)</span>
-                    <span>Mer. 25 Oct (14h30)</span>
-                    <span>Sam. 11 Nov (11h00)</span>
-                </div>
-            </div>
-            <div>
-                <span><img src="assets/icons/Icon-pen.svg" alt=""> Set de 4 pièces réalisé</span>
-                <button>Sélectionner <img src="assets/icons/Icon-flech.svg" alt=""></button>
-            </div>
-        </div>
-    </article>
-
-</div>
-                </div>
-            </section>
 
             <!-- 3. Interactive Booking Form Section -->
             <section>
                 <div>
-                    
+
                     <!-- Left Side: Context & Guarantee Details -->
                     <div>
                         <span>RÉSERVATION IMMÉDIATE</span>
                         <h2>Réservez votre place d’atelier</h2>
-                        <p>Validez votre créneau en direct. Aucun paiement débité immédiatement : notre coopérative artisanale confirme chaque disponibilité sous 2 heures ouvrées.</p>
-                        
+                        <p>Validez votre créneau en direct. Aucun paiement débité immédiatement : notre coopérative
+                            artisanale confirme chaque disponibilité sous 2 heures ouvrées.</p>
+
                         <div>
                             <div>
                                 <div><img src="assets/icons/Icon-check.svg" alt=""></div>
                                 <div>
                                     <h4>Garantie & Sécurité Atelier</h4>
-                                    <p>Équipements de protection individuels aux normes (lunettes, gants, masques filtrants) fournis gracieusement.</p>
+                                    <p>Équipements de protection individuels aux normes (lunettes, gants, masques
+                                        filtrants) fournis gracieusement.</p>
                                 </div>
                             </div>
                             <div>
                                 <div><img src="assets/icons/Icon-chair.svg" alt=""></div>
                                 <div>
                                     <h4>Accessibilité Universelle</h4>
-                                    <p>Tous nos ateliers sont de plain-pied, adaptés aux personnes à mobilité réduite ou neurodivergentes sur demande.</p>
+                                    <p>Tous nos ateliers sont de plain-pied, adaptés aux personnes à mobilité réduite ou
+                                        neurodivergentes sur demande.</p>
                                 </div>
                             </div>
                             <div>
                                 <div><img src="assets/icons/Icon-calendar.svg" alt=""></div>
                                 <div>
                                     <h4>Flexibilité & Report</h4>
-                                    <p>Report sans frais jusqu'à 48 heures avant la session, ou bon cadeau transférable à un proche.</p>
+                                    <p>Report sans frais jusqu'à 48 heures avant la session, ou bon cadeau transférable
+                                        à un proche.</p>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +480,7 @@
                     <!-- Right Side: The Booking Form -->
                     <div>
                         <form>
-                            
+
                             <!-- Step 1: Workshop Selection -->
                             <div>
                                 <label>1. Atelier sélectionné *</label>
@@ -292,13 +538,15 @@
                             <!-- Accessibility & Needs -->
                             <div>
                                 <label>Besoins spécifiques & accessibilité (PMR, allergies, accompagnateur...)</label>
-                                <textarea placeholder="Précisez tout besoin spécifique pour préparer au mieux votre accueil en manufacture..."></textarea>
+                                <textarea
+                                    placeholder="Précisez tout besoin spécifique pour préparer au mieux votre accueil en manufacture..."></textarea>
                             </div>
 
                             <!-- Consent Checkboxes -> Label -->
                             <div>
                                 <input type="checkbox" id="terms">
-                                <label for="terms">J'accepte le règlement intérieur d'atelier et la charte de sécurité des machines outils partagées.</label>
+                                <label for="terms">J'accepte le règlement intérieur d'atelier et la charte de sécurité
+                                    des machines outils partagées.</label>
                             </div>
 
                             <!-- Live Summary & CTA Action -->
@@ -307,7 +555,8 @@
                                     <span>ESTIMATION TOTALE</span>
                                     <div>110 € <span>TTC</span></div>
                                 </div>
-                                <button type="submit"><img src="assets/icons/Icon-check-cercl.svg" alt=""> Confirmer ma pré-réservation</button>
+                                <button type="submit"><img src="assets/icons/Icon-check-cercl.svg" alt=""> Confirmer ma
+                                    pré-réservation</button>
                             </div>
 
                         </form>
@@ -318,6 +567,63 @@
 
         </div>
     </main>
+    <!--footer-->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <div class="brand">
+                    <img src="assets/images/logo.png" alt="EcoArt Logo">
+                    <h3>EcoArt</h3>
+                </div>
+                <p>Plateforme d'artisanat circulaire valorisant
+                    les rebuts nobles. Conception numérique
+                    sobre, traçabilité certifiée et réduction de
+                    l'empreinte carbone matériel.
+                </p>
+                <div class="eco-badge">
+                    <img src="assets/icons/selected.svg" alt="icon selected">
+                    Index Éco-Index : A
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Filière Circulaire</h3>
+                <ul class="footer-list">
+                    <li>Bois de réemploi & chêne sauvé</li>
+                    <li>Verre recyclé au four solaire</li>
+                    <li>Textiles surcyclés d'ateliers</li>
+                    <li>Métaux ferreux reconditionnés</li>
+                    <li>Charte zéro déchet d'atelier</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Labels & Certifications</h3>
+                <div class="cert-card">
+                    <strong>Label Upcycling Certifié UE</strong>
+                    <p>Norme traçabilité matière brute à 100%</p>
+                </div>
+                <div class="cert-card">
+                    <strong>Garantie Artisans d'Art</strong>
+                    <p>Transmission et fabrication locale</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter Sobre</h3>
+                <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <small>Désinscription en 1 clic. Données hébergées en France.</small>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
