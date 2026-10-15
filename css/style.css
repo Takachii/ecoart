@@ -1056,20 +1056,8 @@ main .content-section > .sub-container:first-child > div:last-child > div > div:
 }
 
 
-/* ================================
-   IMPACT SECTION — GENERAL
-================================ */
 
-main {
-    width: 100%;
-    min-height: 100vh;
-    padding: 0;
-    background: #f2faf4;
-    color: #183f2d;
-    font-family: Inter, -apple-system, BlinkMacSystemFont,
-                 "Segoe UI", Arial, sans-serif;
-    box-sizing: border-box;
-}
+
 
 main *,
 main *::before,
@@ -1461,4 +1449,17 @@ main *::after {
     flex: 2;
     min-width: 0;
 
+}
+main.impact-main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    background: #f2faf4;
+}
+
+main.impact-main .main-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
 }
