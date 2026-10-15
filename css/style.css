@@ -66,6 +66,268 @@ nav li:hover{
     font-weight: bold;
 }
 
+/* ------------------------------- Main */
+main{
+        display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 34px;
+}
+
+.main-desc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main h1{
+    color: var(--accent-green);
+}
+
+main a:first-of-type{
+    background-color: var(--accent-btn);
+    padding: 10px;
+}
+main a:last-of-type{
+    background-color: var(--price-bg);
+    padding: 10px;
+}
+
+main a{
+    border: transparent;
+    border-radius: 4px;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+main a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.main-btns{
+    display: flex;
+    gap: 10px;
+}
+
+main img{
+    width: 2%;
+    border-radius: 7px;
+
+}
+
+/* --------------------------------- Statistics */
+.stqs{
+    display: flex;
+    gap: 18px;
+    margin: 41px auto;
+    width: 88%;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 24px;
+    background: #E6F0E8;
+}
+.stqs .number{
+        font-size: 33px;
+    font-weight: 700;
+}
+
+/* --------------------------------- */
+:root {
+  --bg-color: #f2f5f0;
+  --card-bg: #f9fbf8;
+  --footer-bg-color: #ECF6EE;
+  --primary-dark: #1b382b;
+  --secondary-dark: #14422D;
+  --accent-green: #254d3b;
+  --accent-btn: #1b4332;
+  --border-color: #d8e2d4;
+  --text-main: #2d3732;
+  --text-muted: #5c6b63;
+  --price-bg: #a84325;
+  --primary-font: 'Space Grotesk';
+  --secondary-font: 'Atkinson Hyperlegible Next';
+
+  /* extra token for the orange badge (not in your palette) */
+  --accent-orange: #f4977a;
+}
+
+/* ---------- Section ---------- */
+.circular-streams {
+  padding: 2rem 1.5rem;
+  background-color: var(--footer-bg-color);
+  font-family: var(--secondary-font), system-ui, sans-serif;
+  color: var(--text-main);
+}
+
+.circular-streams-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--secondary-dark);
+}
+
+.circular-streams-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Card ---------- */
+.stream-card {
+  --badge-bg: var(--accent-green);
+  display: flex;
+}
+
+.stream-card--wood    { --badge-bg: var(--accent-green); }
+.stream-card--textile { --badge-bg: var(--price-bg); }
+.stream-card--glass   { --badge-bg: var(--secondary-dark); }
+.stream-card--plastic { --badge-bg: var(--accent-orange); }
+
+.stream-card-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+}
+
+/* Header: badge + deposit */
+.stream-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem 1rem 0;
+}
+
+.stream-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--badge-bg);
+  border-radius: 999px;
+}
+
+.stream-card-badge::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.stream-card-deposit {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+      display: flex;
+}
+
+.stream-card-deposit-value {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Body: title + description */
+.stream-card-body {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.stream-card-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-dark);
+}
+
+.stream-card-description {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Media: pinned to the bottom, full-bleed */
+.stream-card-media {
+  margin: auto 0 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.stream-card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.features-bar {
+    background-color: #E6F0E8;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: var(--primary-font, sans-serif);
+    font-size: 14px;
+    color: #2D3748;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.feature-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.desc-text {
+    color: #4A5568;
+}
+
+.separator-dot {
+    color: #718096;
+    font-weight: bold;
+}
+
+.vertical-divider {
+    color: #CBD5E0;
+    font-weight: 300;
+}
+
 .site-footer {
     background-color: var(--footer-bg-color);
     padding: 3rem 1.5rem 1.5rem;
@@ -216,6 +478,7 @@ nav li:hover{
 .footer-bottom-links a:hover {
     text-decoration: underline;
 }
+
 
 main {
     width: 100%;
@@ -666,4 +929,536 @@ main .content-section > .sub-container:first-child > div:last-child > div > div:
     color: #244D36;
     font-size: 12px;
     font-weight: 700;
+
+.container-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 1rem;
+    background-color: #F4F7F2;
+}
+
+.container-catalog-left {
+    width: 55%;
+}
+
+.container-catalog-left p {
+    font-family: var(--secondary-font);
+}
+
+.container-catalog-left h1 {
+    font-family: var(--primary-font);
+    font-size: 3.4rem;
+    font-weight: 800;
+}
+
+.container-catalog-right {
+    width: 420px;
+    height: 122px;
+    background-color: #ECF6EE;
+    border-radius: 10px;
+    display: flex;
+    align-self: end;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-left: 2rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.2rem;
+}
+
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1b3b2b;
+}
+
+.stat-item:last-child .stat-number {
+    color: #8c4a32;
+}
+
+.stat-unit {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.stat-sub {
+    font-size: 0.65rem;
+    color: #777;
+    margin-top: 0.1rem;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 60%;
+    background-color: #e0e5df;
+}
+
+.catalog-p1 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #A0522D;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.catalog-p1::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    background-color: #A0522D;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+.container {
+    width: 100%;         /* Takes 50% of the parent element/page */
+    margin: 0 auto;     /* Centers the container horizontally */
+    box-sizing: border-box;
+}
+
+/* Optional: Make it responsive on smaller screens/mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;    /* Takes full width on mobile devices */
+    }
+}
+/* Container holding the grid sections */
+.your-container-class {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* Adjust spacing between cards */
+}
+
+/* For the main wide breakdown card (Répartition par Matière Surchargée) */
+.repartition-card {
+  flex: 1 1 65%; /* Takes up most of the row width */
+  min-width: 300px;
+}
+
+/* For the side card (e.g., "Méthodologie de Calcul") */
+.side-card {
+  flex: 1 1 30%; /* Takes up the remaining side space */
+  min-width: 280px;
+}
+
+
+/* ================================
+   IMPACT SECTION — GENERAL
+================================ */
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    background: #f2faf4;
+    color: #183f2d;
+    font-family: Inter, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+main *,
+main *::before,
+main *::after {
+    box-sizing: border-box;
+}
+
+/* Main content wrapper */
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+/* ================================
+   2. IMPACT STATISTICS CARDS
+================================ */
+
+/* Container of the four statistics */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+/* Individual statistic card */
+.stat-card {
+    min-width: 0;
+    min-height: 225px;
+    padding: 20px;
+    background: #eaf5ed;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/* Card header: icon + badge */
+.stat-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.stat-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #dcece0;
+    border-radius: 6px;
+    color: #17452f;
+}
+
+.stat-card-badge {
+    padding: 4px 9px;
+    border-radius: 20px;
+    background: #f3faf4;
+    color: #17452f;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Large numerical value */
+.stat-card h2,
+.stat-value {
+    margin: 0 0 4px;
+    color: #17452f;
+    font-size: clamp(28px, 3.2vw, 52px);
+    font-weight: 750;
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+/* Highlight units in terracotta */
+.stat-card .unit {
+    color: #a34d31;
+    font-size: 0.43em;
+    font-weight: 650;
+    letter-spacing: 0;
+}
+
+/* Statistic title */
+.stat-card h3 {
+    margin: 0 0 8px;
+    color: #202a24;
+    font-size: clamp(15px, 1.45vw, 21px);
+    font-weight: 650;
+    line-height: 1.35;
+}
+
+/* Statistic description */
+.stat-card p {
+    margin: 0;
+    color: #48534c;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* ================================
+   3. MATERIALS + METHODOLOGY
+================================ */
+
+.impact-details {
+    display: grid;
+    grid-template-columns: minmax(0, 2.1fr) minmax(280px, 0.9fr);
+    gap: 24px;
+    align-items: stretch;
+    width: 100%;
+}
+
+/* Left: material distribution */
+.material-card {
+    min-width: 0;
+    padding: 24px 20px;
+    background: #eaf5ed;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+/* Small uppercase label */
+.material-card .eyebrow {
+    display: block;
+    margin-bottom: 4px;
+    color: #355745;
+    font-size: 11px;
+    font-weight: 650;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Materials heading */
+.material-card h2 {
+    margin: 0 0 16px;
+    color: #17452f;
+    font-size: clamp(25px, 3vw, 38px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+}
+
+/* Description */
+.material-card .description {
+    margin: 0 0 24px;
+    padding-top: 16px;
+    border-top: 1px solid #d3e5d7;
+    color: #48534c;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Each material row */
+.material-item {
+    margin-bottom: 17px;
+}
+
+.material-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Material name + percentage */
+.material-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.material-name {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+    color: #202a24;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.material-percentage {
+    flex-shrink: 0;
+    color: #17452f;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.material-item:nth-of-type(2) .material-percentage,
+.material-item:nth-of-type(2) .material-color {
+    color: #a34d31;
+}
+
+/* Colored square */
+.material-color {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+    background: #17452f;
+}
+
+/* Percentage progress track */
+.material-progress {
+    width: 100%;
+    height: 13px;
+    overflow: hidden;
+    background: #dfece2;
+    border-radius: 20px;
+}
+
+/* Filled progress bar */
+.material-progress-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: #17452f;
+}
+
+.material-item:nth-of-type(2) .material-progress-fill {
+    background: #a34d31;
+}
+
+.material-item:nth-of-type(3) .material-progress-fill {
+    background: #416e57;
+}
+
+.material-item:nth-of-type(4) .material-progress-fill {
+    background: #f29a7b;
+}
+
+/* ================================
+   4. METHODOLOGY CARD
+================================ */
+
+.methodology-card {
+    min-width: 0;
+    min-height: 100%;
+    padding: 28px 26px;
+    background: #17452f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgb(15 50 32 / 12%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Independent audit badge */
+.methodology-card .eyebrow {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 14px;
+    padding: 6px 11px;
+    border-radius: 20px;
+    background: #30654a;
+    color: #c1d9c9;
+    font-size: 10px;
+    font-weight: 650;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Methodology heading */
+.methodology-card h2 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: clamp(22px, 2.1vw, 28px);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Methodology paragraph */
+.methodology-card p {
+    margin: 0;
+    color: #b9d3c1;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Audit certifications list */
+.methodology-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+    padding: 20px 0 0;
+    border-top: 1px solid rgb(255 255 255 / 14%);
+    list-style: none;
+}
+
+.methodology-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.methodology-list li img,
+.methodology-list li svg {
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    color: #b9e4c6;
+}
+
+/* ================================
+   5. RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 1000px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-bottom: 30px;
+    }
+
+    .impact-details {
+        grid-template-columns: minmax(0, 1.5fr) minmax(250px, 1fr);
+        gap: 18px;
+    }
+
+    .stat-card {
+        min-height: 205px;
+    }
+}
+
+@media (max-width: 700px) 
+    .main-container {
+        padding: 0 14px 28px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .stat-card {
+        min-height: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .stat-card-header {
+        margin-bottom: 14px;
+    }
+
+    .stat-card h2,
+    .stat-value {
+        font-size: 36px;
+    }
+
+    .impact-details {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .material-card,
+    .methodology-card {
+        padding: 22px 18px;
+        border-radius: 10px;
+    }
+
+    .material-card h2 {
+        font-size: 29px;
+    }
+
+    .methodology-card {
+        min-height: 360px;
+    }
+
+    .material-item-header {
+        align-items: flex-start;
+    }
+#kk{
+    
+    flex: 2;
+    min-width: 0;
+
 }
