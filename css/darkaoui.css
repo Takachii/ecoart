@@ -83,7 +83,7 @@ nav li:hover{
     flex-direction: column;
     justify-content: space-around;
 }
-main h1{
+.main h1{
     color: var(--accent-green);
 }
 
@@ -303,14 +303,25 @@ main img{
 .workshop{
     box-shadow: 0 0 1px gray;
     overflow: hidden;
-
+    margin-bottom: 20px;
 
 }
 .workshop .img{
     background-image: url("/assets/images/carpenter.jpeg");
     background-size: cover;
     width: 169%;
+}
 
+/* ---------------------------- Evaluation */
+.evl-card{
+    box-shadow: 0 0 1px gray;
+    padding: 12px;
+}
+
+.evl-card div{
+    color: var(--accent-green);
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 /* ============================ My Work End here(Don't touch this comment) ==================== */
