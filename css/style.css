@@ -600,7 +600,30 @@ main img{
 .categories,button{
     border-radius: 15px;
     margin-left: 15px;
+    
 }
 .titre{
     margin-left: 15px;
 }
+.stats{
+    background: #ECF6EE;
+    padding: 25px;
+    border-radius: 12px;
+    margin-left: 750px;
+}
+.stats-heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 10px;
+    color: #14422D;
+}
+.stat-card{
+    background:white;
+    padding: 15px;
+    border-radius: 7px;
+    
+}
+
+
+    
