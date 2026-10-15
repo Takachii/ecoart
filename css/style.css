@@ -2432,7 +2432,6 @@ main img{
   margin-top: -0.67px;
   font-family: "Space Grotesk-Bold", Helvetica;
   font-weight: 700;
-<<<<<<< feature/setup-ilyass
   color: #ffffff;
   font-size: 13px;
   text-align: center;
@@ -2440,7 +2439,7 @@ main img{
   line-height: 16px;
   white-space: nowrap;
 }
-=======
+
   color: #14532d;
 }
 
@@ -2482,10 +2481,6 @@ main img{
     border-radius: 7px;
     
 }
-
-
-    
-=======
 
 .main-produits {
     display: grid;
@@ -2661,7 +2656,142 @@ main img{
   font-weight: 700;
   color: #14532d;
 }
->>>>>>> main
+
+.tag{
+    background-color: #5c6b63;
+    border-radius: 12PX;
+    margin-left: 15px;
+    
+}
+.selected{
+    color:var(--card-bg);
+    background-color: var(--secondary-dark);
+    border-radius: 15px;
+}
+.categories,button{
+    border-radius: 15px;
+    margin-left: 15px;
+    
+}
+.titre{
+    margin-left: 15px;
+}
+.stats{
+    background: #ECF6EE;
+    padding: 25px;
+    border-radius: 12px;
+    margin-left: 750px;
+}
+.stats-heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 10px;
+    color: #14422D;
+}
+.stat-card{
+    background:white;
+    padding: 15px;
+    border-radius: 7px;
+    
+}
+
+
+    
+=======
+
+.main-produits {
+    display: grid;
+}
+
+.filter-container {
+  width: 100%;
+  background: #ffffff;
+  padding: 1rem;
+}
+
+/* Rows Layout */
+.filter-top-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.filter-bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+/* Labels */
+.filter-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 6px;
+}
+
+/* Filter Groups */
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Search Bar */
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+  max-width: 350px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  background-color: #f0fdf4; /* Light eco-green tint */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #334155;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.search-box input:focus {
+  border-color: #14532d;
+}
+
+.search-box input::placeholder {
+  color: #94a3b8;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #94a3b8;
+}
 
 /* Filter Pills / Buttons */
 .pill {
