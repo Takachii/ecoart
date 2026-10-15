@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 *{
     margin: 0;
     padding: 0;
@@ -298,7 +299,21 @@ main img{
     /* var(--badge-bg) */
 }
 
-/* ============================ My Work End here(Don't touch this comment) */
+/* -------------------------- Workshop */
+.workshop{
+    box-shadow: 0 0 1px gray;
+    overflow: hidden;
+
+
+}
+.workshop .img{
+    background-image: url("/assets/images/carpenter.jpeg");
+    background-size: cover;
+    width: 169%;
+
+}
+
+/* ============================ My Work End here(Don't touch this comment) ==================== */
 
 
 .features-bar {
