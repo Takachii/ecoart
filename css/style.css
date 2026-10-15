@@ -70,7 +70,7 @@ nav li:hover{
 
 /* ------------------------------- Main */
 main{
-        display: flex;
+    display: flex;
     justify-content: center;
     gap: 13px;
     margin-top: 34px;
