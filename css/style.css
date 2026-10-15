@@ -2440,9 +2440,6 @@ main img{
   white-space: nowrap;
 }
 
-  color: #14532d;
-}
-
 .tag{
     background-color: #5c6b63;
     border-radius: 12PX;
@@ -2695,10 +2692,6 @@ main img{
     border-radius: 7px;
     
 }
-
-
-    
-=======
 
 .main-produits {
     display: grid;
