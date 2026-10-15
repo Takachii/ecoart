@@ -508,7 +508,7 @@ main img{
   align-items: flex-start;
   padding: 40px 0px;
   position: relative;
-  background-color: #ecf6ee;
+  background-color:var(--footer-bg-color);
 }
 
 .intro-header-hero .container {
@@ -1392,6 +1392,15 @@ main img{
   width: 15px;
   height: 15px;
 }
+/*la deuxieme section de la pege services*/
+.interactive-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  position: relative;
+  background-color: #e1ebe3;
+}
 
 .catalog-p1::before {
     content: "";
@@ -1577,4 +1586,856 @@ main img{
 .counter-highlight {
   font-weight: 700;
   color: #14532d;
+}
+.interactive-booking .container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 688px;
+  height: fit-content;
+  gap: 40px;
+}
+
+.interactive-booking .left-side-context {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / 6;
+  align-self: start;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.interactive-booking .div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 6px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #944931;
+  font-size: 11px;
+  letter-spacing: 1.1px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.interactive-booking .heading {
+  padding: 4px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .r-servez-votre-place {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #151d19;
+  font-size: 36px;
+  letter-spacing: -0.72px;
+  line-height: 44px;
+}
+
+.interactive-booking .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .validez-votre-cr {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #414943;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+}
+
+.interactive-booking .feature-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .background-shadow {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px #0000000d;
+}
+
+.interactive-booking .margin {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .icon {
+  position: relative;
+  width: 18.67px;
+  height: 23.33px;
+}
+
+.interactive-booking .container-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .text-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #151d19;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.interactive-booking .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #414943;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 20px;
+}
+
+.interactive-booking .img {
+  position: relative;
+  width: 16.33px;
+  height: 23.33px;
+}
+
+.interactive-booking .icon-2 {
+  position: relative;
+  width: 24.5px;
+  height: 25.67px;
+}
+
+.interactive-booking .div-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #e6f0e8;
+  border-radius: 8px;
+}
+
+.interactive-booking .container-3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .icon-3 {
+  position: relative;
+  width: 14px;
+  height: 20px;
+}
+
+.interactive-booking .text-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Bold", Helvetica;
+  font-weight: 700;
+  color: #151d19;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.interactive-booking .text-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #414943;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.interactive-booking .text-4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #14422d;
+  font-size: 11px;
+  letter-spacing: 0.66px;
+  line-height: 14px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.interactive-booking .right-side-the {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 6 / 13;
+  align-self: start;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.interactive-booking .right-side-the-2 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff01;
+  box-shadow:
+    0px 2px 4px -2px #0000001a,
+    0px 4px 6px -1px #0000001a;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.interactive-booking .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .step-workshop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .div-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: transparent;
+  font-size: 13px;
+  letter-spacing: 0.52px;
+  line-height: 16px;
+}
+
+.interactive-booking .span {
+  color: #151d19;
+  letter-spacing: 0.07px;
+}
+
+.interactive-booking .text-wrapper-2 {
+  color: #ba1a1a;
+  letter-spacing: 0.07px;
+}
+
+.interactive-booking .options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 32px 8px 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ecf6ee;
+  border-radius: 4px;
+}
+
+.interactive-booking .container-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1px 0px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.interactive-booking .text-wrapper-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #151d19;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  line-height: 21px;
+}
+
+.interactive-booking .div-4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .container-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.interactive-booking .input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ecf6ee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.interactive-booking .container-6 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.interactive-booking .container-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.interactive-booking .paragraph {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 1px;
+  padding: 1px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .text-wrapper-4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #151d19;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.interactive-booking .button-menu {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 20px;
+  align-items: flex-start;
+  padding: 2px;
+  position: relative;
+}
+
+.interactive-booking .image {
+  position: relative;
+  width: 16px;
+  height: 15px;
+}
+
+.interactive-booking .container-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0px 0px 3px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.interactive-booking .container-9 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #e6f0e8;
+  border-radius: 4px;
+}
+
+.interactive-booking .text-5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-family: "Atkinson Hyperlegible Next-Bold", Helvetica;
+  font-weight: 700;
+  color: #151d19;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.16px;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.interactive-booking .container-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  align-items: flex-start;
+  padding: 8px 0px;
+  position: relative;
+  background-color: #ecf6ee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.interactive-booking .container-10 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .container-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  overflow: scroll;
+}
+
+.interactive-booking .container-11::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.interactive-booking .text-6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #151d19;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.interactive-booking .rectangle-align {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .rectangle {
+  position: relative;
+  align-self: stretch;
+  width: 15px;
+  opacity: 0;
+}
+
+.interactive-booking .margin-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 0px 0px 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .text-7 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #414943;
+  font-size: 11px;
+  letter-spacing: 0.66px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.interactive-booking .container-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0px 0px 1px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.interactive-booking .text-wrapper-5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #151d19;
+  font-size: 13px;
+  letter-spacing: 0.52px;
+  line-height: 16px;
+}
+
+.interactive-booking .step-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 4px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .input-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9px 16px 10px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #ecf6ee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.interactive-booking .text-wrapper-6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #9ca3af;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  line-height: normal;
+}
+
+.interactive-booking .container-13 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  padding: 4px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .accessibility-needs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 0px 0px 7px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .textarea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #ecf6ee;
+  border-radius: 4px;
+  overflow: scroll;
+}
+
+.interactive-booking .textarea::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.interactive-booking .pr-cisez-tout-besoin {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #9ca3af;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  line-height: 24px;
+}
+
+.interactive-booking .consent-checkboxes {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 4px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .input-margin {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .input-3 {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  border-radius: 2.5px;
+  border: 1px solid;
+  border-color: #767676;
+}
+
+.interactive-booking .container-14 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 68.8px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .paragraph-2 {
+  position: relative;
+  width: 113.58px;
+  height: 48px;
+}
+
+.interactive-booking .text-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #414943;
+  font-size: 11px;
+  letter-spacing: 0.66px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+.interactive-booking .text-9 {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #14422d;
+  font-size: 26px;
+  letter-spacing: -0.26px;
+  line-height: 34px;
+  white-space: nowrap;
+}
+
+.interactive-booking .text-10 {
+  position: absolute;
+  top: 25px;
+  left: 70px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #414943;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.interactive-booking .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #944931;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px #0000000d;
+}
+
+.interactive-booking .icon-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.interactive-booking .icon-4 {
+  position: relative;
+  width: 16.67px;
+  height: 16.67px;
+}
+
+.interactive-booking .text-11 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -0.67px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.52px;
+  line-height: 16px;
+  white-space: nowrap;
 }
