@@ -422,3 +422,107 @@
 .add-button:hover {
   background-color: #1e4d35;
 }
+
+.product-grid-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.product-grid-nav p {
+  margin: 0;
+}
+
+.product-grid-nav-center {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.product-grid-nav-center button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #1a2e22;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.product-grid-nav-center button:first-child,
+.product-grid-nav-center button.active {
+  background-color: #1a2e22;
+  color: #ffffff;
+}
+
+.packaging-banner {
+  display: flex;
+  justify-content: center;
+  background-color: #E1EBE3;
+  height: 15rem;
+}
+
+.packaging-banner-box {
+  display: flex;
+  background-color: white;
+  margin: 34px 20px;
+  width: 29rem;
+  border-radius: 8px;
+}
+
+.pack-banner-box-icon {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+  margin: 1.4rem 1.4rem;
+
+  border-radius: 8px;
+
+  background-color: #14422D;
+
+}
+
+.pack-banner-box-icon-cs {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+  margin: 1.4rem 1.4rem;
+
+  border-radius: 8px;
+
+  background-color: #944931;
+
+}
+
+.pack-banner-box-icon img {
+  width: 1.7rem;
+}
+
+.pack-banner-box-text {
+  width: 20rem;
+}
+
+.pack-banner-box-text h2 {
+  font-family: var(--primary-font);
+  margin-top: 1.6rem;
+}
+
+.pack-banner-box-text p {
+  font-family: var(--secondary-font);
+  margin-top: 0.3rem;
+}
