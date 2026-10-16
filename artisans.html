@@ -4,21 +4,11 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta rel="stylesheet" href="css/style.css">
+    <meta rel="stylesheet" href="css/responsive.css">
+    <meta rel="stylesheet" href="css/variables.css">
+    <meta rel="stylesheet" href="css/artisans.css">
     <title>EcoArt | Produits</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-</head>
-<body>
-
     <header>
         <div class="header-child">
             <a href="index.html" class="logo-space"> 
@@ -36,65 +26,307 @@
             </nav>
         </div>
     </header>
+            
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/artisans.css">
+
+</head>
+<body>
+    
+  <main class="father">
+
     <div class="intro">
-        <img src="/assets/icons/solaid.svg.svg" alt="">
-    <span class="tag">COLLECTIF LOCAL & CIRCULAIRE</span>
-        <div class="titre">
-            <h1>Les Mains derrière les Matières</h1>
-            <p>Découvrez les éco-artisans du réseau EcoArt.
-          À la croisée de l'héritage d'atelier et de la stricte
-          valorisation des rebuts industriels, chaque geste
-          redéfinit l'usage sans puiser de nouvelle ressource.</p>
+      
+      <img class="icon" src="assets/icons/solaid.svg.svg" alt="">
+      <span class="tag">COLLECTIF LOCAL & CIRCULAIRE</span>
+      
+      <h1>Les Mains derrière les Matières</h1>
+      <p>
+        Découvrez les éco-artisans du réseau EcoArt. À la croisée de l'héritage
+        d'atelier et de la stricte valorisation des rebuts industriels, chaque
+        geste redéfinit l'usage sans puiser de nouvelle ressource.
+      </p>
+
+      <div class="categories">
+        <button  class="selected">Tous les Ateliers (24)</button>
+        <button >Bois de Réemploi</button>
+        <button >Verre Culot & Solaire</button>
+        <button >Textiles Surcyclés</button>
+        <button >Polymères & Composites</button>
+      </div>
+    </div>
+
+    <aside class="stats">
+      <div class="stats-top">
+        <strong>CHARTE D'EXIGENCE 2025</strong>
+        <span>✓ 100% Auditée</span>
+      </div>
+
+      <p>
+        Nos artisans souscrivent à un cahier des charges rigoureux : traçabilité
+        des gisements et recyclabilité complète en fin de cycle de vie.
+      </p>
+
+      <div class="stats-cards">
+        <div>
+          <h2>84%</h2>
+          <span>Rebuts valorisés / création</span>
         </div>
-        <div class="categories">
-          <button class="selected">Tous les Ateliers (24)</button>
-          <button>Bois de Réemploi</button>
-          <button>Verre Culot & Solaire</button>
-          <button>Textiles Surcyclés</button>
-          <button>Polymères & Composites</button>
+        <div>
+          <h2>4.9/5</h2>
+          <span>Indice de réparabilité</span>
         </div>
       </div>
 
-      <aside class="stats">
-        <div class="stats-heading">
-          <strong>CHARTE D'EXIGENCE 2025</strong>
-          <span>✓ 100% Auditée</span>
-        </div>
+      <p>Flux de matières détournées (Mois courant)</p>
+      <small>Bois • Verre • Textiles • Polymères</small>
+    </aside>
 
-        <p>
-          Nos artisans souscrivent à un cahier des charges
-          rigoureux : traçabilité des gisements et recyclabilité
-          complète en fin de cycle de vie.
-        </p>
+  </main>
 
-        <div class="stats-cards">
-          <div class="stat-card">
-            <h2>84%</h2>
-            <span>Rebuts valorisés/création</span>
-          </div>
-        </div>
+
   
-    <div class="stat-card">
-        <h2>4.9/5</h2>
-        <span>Indice de réparabilité</span>
+  <section class="artisans">
 
+    
+    <article class="card">
+      <div class="card-top">
+        <img src="assets/images/antoine.png.png" alt="Antoine Mercier">
+        <div>
+          <span class="job">ÉBÉNISTE D'ART & UPCYCLING</span>
+          <h2>Antoine Mercier</h2>
+          <p><img src="assets/icons/localisation.svg" alt=""> Lyon (69) • Atelier La Fuste</p>
+        </div>
+        <span class="badge">Anime 2 ateliers / mois</span>
+      </div>
 
-    </div>
-    <p>Flux de matières détournées (Mois courant)</p>
-    <small>  Bois  Verre Textiles Polymères</small>
-      </aside>
-      <div class="artisans">
-                <img src="assets/images/antoine.png.png" alt="">
+      <p class="quote">
+        « Chaque poutre de déconstruction industrielle conserve la mémoire des
+        siècles passés. Mon rôle n'est pas d'effacer les fentes et les nœuds,
+        mais de les magnifier dans du mobilier architectural épuré. »
+      </p>
+
+    
+
+      <h3>CRÉATIONS SIGNATURES RÉCENTES</h3>
+      <div class="creations">
+        <div>
+          <img src="assets/images/verretable.png" alt="Banc Brut">
+          <span>Banc Brut</span>
+        </div>
+        <div>
+          <img src="assets/images/table.png" alt="Console 1880">
+          <span>Console 1880</span>
+        </div>
+        <div>
+          <img src="assets/images/marron.png" alt="Duo Pyramide">
+          <span>Duo Pyramide</span>
+        </div>
+      </div>
+
+      <div class="card-bottom">
+        <a href="#">Explorer ses 8 créations →</a>
+        <button type="button">Réserver son atelier</button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <img src="assets/images/claire.png" alt="Claire Dupuis">
+        <div>
+          <span class="job">MAÎTRE VERRIÈRE & THERMOFORMAGE</span>
+          <h2>Claire Dupuis</h2>
+          <p><img src="assets/icons/localisation.svg" alt=""> Nantes (44) • Studio Calcin</p>
+        </div>
+        <span class="badge">Anime 4 ateliers / mois</span>
+      </div>
+
+      <p class="quote">
+        « Le verre est infiniment réincarnable. En collectant les bouteilles
+        d'huîtres et le calcin de verrières maraîchères de Loire-Atlantique,
+        nous recréons des pièces aux inclusions minérales uniques au monde. »
+      </p>
+
+      <ul class="tags">
+        <li>Bouteilles de mer & cullet</li>
+        <li>Four hybride solaire / biométhane</li>
+        <li class="co2">-3.4 kg CO₂ / carafe</li>
+      </ul>
+
+      <h3>CRÉATIONS SIGNATURES RÉCENTES</h3>
+      <div class="creations">
+        <div>
+          <img src="assets/images/carafe.png" alt="Carafe Écume">
+          <span>Carafe Écume</span>
+        </div>
+        <div>
+          <img src="assets/images/gobelets.png" alt="Gobelets Moiré">
+          <span>Gobelets Moiré</span>
+        </div>
+        <div>
+          <img src="assets/images/suspension.png" alt="Suspension Calcin">
+          <span>Suspension Calcin</span>
+        </div>
+      </div>
+
+      <div class="card-bottom">
+        <a href="#">Explorer ses 12 créations →</a>
+        <button type="button">Réserver son atelier</button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <img src="assets/images/fatou.png" alt="Fatou Diallo">
+        <div>
+          <span class="job">DESIGNER TEXTILE & ZÉRO CHUTE</span>
+          <h2>Fatou Diallo</h2>
+          <p><img src="assets/icons/localisation.svg" alt=""> Lille (59) • Manufacture Trame</p>
+        </div>
+        <span class="badge">Anime 3 ateliers / mois</span>
+      </div>
+
+      <p class="quote">
+        « Le Nord possède un patrimoine textile exceptionnel désormais dormant.
+        En reprenant les fins de séries de draperies et toiles de lin
+        délaissées, nous tissons un mobilier d'assise et des tapisseries
+        pérennes sans fil vierge. »
+      </p>
+
+      <ul class="tags">
+        <li>Fins de séries lin & chanvre</li>
+        <li>Teintures végétales (garance, pelures)</li>
+        <li class="co2">1 200 L d'eau épargnés</li>
+      </ul>
+
+      <h3>CRÉATIONS SIGNATURES RÉCENTES</h3>
+      <div class="creations">
+        <div>
+          <img src="assets/images/tenture.png" alt="Tenture Sillons">
+          <span>Tenture Sillons</span>
+        </div>
+        <div>
+          <img src="assets/images/pouf.png" alt="Pouf Galet">
+          <span>Pouf Galet</span>
+        </div>
+        <div>
+          <img src="assets/images/linge.png" alt="Linge Héritage">
+          <span>Linge Héritage</span>
+        </div>
+      </div>
+
+      <div class="card-bottom">
+        <a href="#">Explorer ses 15 créations →</a>
+        <button type="button">Réserver son atelier</button>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <img src="assets/images/marc.png" alt="Marc Leroux">
+        <div>
+          <span class="job">ARTISAN MATIÉRISTE & POLYMÈRES</span>
+          <h2>Marc Leroux</h2>
+          <p><img src="assets/icons/localisation.svg" alt=""> Bordeaux (33) • Lab NéoMatière</p>
+        </div>
+        <span class="badge">Anime 2 ateliers / mois</span>
+      </div>
+
+      <p class="quote">
+        « Le plastique post-consommation possède les qualités structurelles du
+        marbre ou du corian s'il est compressé à basse température. Nous
+        broyons les bouchons et les filets ostréicoles locaux pour composer un
+        terrazzo indestructible. »
+      </p>
+
+      <ul class="tags">
+        <li>Polyéthylène & filets de pêche</li>
+        <li>Compression thermo-mécanique</li>
+        <li class="co2">14 kg plastique détourné / plateau</li>
+      </ul>
+
+      <h3>CRÉATIONS SIGNATURES RÉCENTES</h3>
+      <div class="creations">
+        <div>
+          <img src="assets/images/plateau.png" alt="Plateau Marbré">
+          <span>Plateau Marbré</span>
+        </div>
+        <div>
+          <img src="assets/images/gueridon.png" alt="Guéridon Écume">
+          <span>Guéridon Écume</span>
+        </div>
+        <div>
+          <img src="assets/images/organiseur.png" alt="Organiseur Monolithe">
+          <span>Organiseur Monolithe</span>
+        </div>
+      </div>
+
+      <div class="card-bottom">
+        <a href="#">Explorer ses 9 créations →</a>
+        <button type="button">Réserver son atelier</button>
+      </div>
+    </article>
+
+  </section>
+  
+                <div class="location-stats">                         
+                    <div>
+                        <h3>24</h3>
+                        <p>Ateliers référencés</p>
+                    </div>
+
+                    <div>
+                        <h3>100%</h3>
+                        <p>Traçabilité matière</p>
+                    </div>
+
+                    <div>
+                        <h3>92 km</h3>
+                        <p>Distance gisement moyenne</p>
+                    </div>
+
+                </div>
 
             </div>
+
+
             
 
- 
+            <div class="location-map">
 
-  
+                <iframe
+                    title="Carte des artisans EcoArt à Lille"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40492.59219140442!2d3.0056406740309805!3d50.63107333632503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d579b3256e11%3A0x40af13e81646360!2sLille%2C%20France!5e0!3m2!1sen!2sma!4v1792148739276!5m2!1sen!2sma"
+                    width="450"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
+            </div>
+
+        </section>
+
+    </main>
 
 
-    <footer class="site-footer">
+
+    
+            
+
+
+
+
+
+
+     <footer class="site-footer">
         <div class="footer-container">
             
             <div class="footer-col">
@@ -122,8 +354,8 @@
                     <li>Métaux ferreux reconditionnés</li>
                     <li>Charte zéro déchet d'atelier</li>
                 </ul>
-            </div >
-            
+            </div>
+
             <div class="footer-col">
                 <h3>Labels & Certifications</h3>
                 <div class="cert-card">
