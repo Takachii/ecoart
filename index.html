@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- ========================= CSS Framework -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/output.css">
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
 
     <title>Accueil</title>
 </head>
@@ -28,6 +28,7 @@
                 <span>EcoArt</span>
             </a>
             <nav>
+                <span>|||</span>
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="produits.html">Catalogue</a></li>
@@ -42,7 +43,7 @@
 
     <main class="main">
         <div class="main-desc">
-            <h1>Donner une seconde vie
+            <h1 class="text-3xl font-bold">Donner une seconde vie
                 aux matières, créer du
                 beau pour demain.</h1>
             
@@ -102,12 +103,12 @@
         </div>
     </div>
     <!-- ==================================== Section 3 -->
-    <section class="cards-container1">
+    <section class="section-container">
         <h2 class="section-title">Les 4 Grandes Filières Circulaires</h2>
         
-        <ul class="circular-streams-list">
+        <ul class="cards-container">
     
-        <li class="card ">
+        <li class="card">
             <article class="card-content ">
                 <div class="stream-card-header">
                     <span class="stream-card-badge">Filière 01</span>
@@ -208,10 +209,10 @@
 
     <!-- ==================================== Section 4 -->
 
-    <section class="cards-container2">
+    <section class="section-container">
         <h2 class="section-title">Nouveautés & Coups de Cœur</h2>
         
-        <ul class="circular-streams-list">
+        <ul class="cards-container">
     
             <li class="stream-card">
                 <article class="card-content reverse-dir">
@@ -312,14 +313,14 @@
         <div class="text-center">
             <p class="text-2xl text-green-900 font-bold m-4 text-center">
                 Une Éthique Sans Concession</p>
-            <p class="w-1/2 text-center text-gray-700 m-auto">
+            <p class="w-10/12 text-center text-gray-700 m-auto">
                 
                 Nous redéfinissons le luxe contemporain : la valeur d'un objet ne réside pas dans l'extraction
                 de nouvelles ressources mais dans la dignité de sa transformation.
             </p>
         </div>
-        <div class="flex justify-around my-14 ">
-            <div class="w-3/12 bg-gray-200 p-4 rounded">
+        <div class="ethique-cards flex justify-around  ">
+            <div class="card bg-gray-200 p-4 rounded">
                 <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
                     01
                 </div>
@@ -335,7 +336,7 @@
                 </div>
             </div>
 
-            <div class="w-3/12 bg-gray-200 p-4 rounded">
+            <div class="card bg-gray-200 p-4 rounded">
                 <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
                     02
                 </div>
@@ -352,7 +353,7 @@
             </div>
 
 
-            <div class="w-3/12 bg-gray-200 p-4 rounded">
+            <div class="card bg-gray-200 p-4 rounded">
                 <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
                     03
                 </div>
@@ -378,7 +379,7 @@
         alt="Carpenter in his workshop"> -->
         <div class="img"></div>
         
-        <div class="py-2">
+        <div class="p-2">
             <h2 class="section-title pt-1.5">Atelier : Façonnez votre plateau
                         en Terrazzo Écologique</h2>
             <div class="text-gray-700">
@@ -413,7 +414,7 @@
     <section class="flex flex-col w-11/12 m-auto">
         <h2 class="section-title text-center">Ce que disent nos collectionneurs et makers</h2>
 
-        <div class="flex justify-between gap-5">
+        <div class="flex justify-between gap-5 flex-wrap">
             <div class="evl-card">
                 <div class="flex justify-between">
                         Antoine L.
@@ -486,7 +487,7 @@
             Explorez des créations numérotées ou privatisez un atelier pour vos équipes.
             Rejoignez notre communauté de plus de 3 500 passionnés de design durable.
         </p>
-        <div class="mt-7 flex gap-5 w-fit mx-auto">
+        <div class="btns-container mt-7 flex gap-5 w-fit mx-auto">
 
             <a href="#" class="main-red-btn bg-gray-50 text-black">
                 Découvrir les pièces disponibles
