@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <link rel="stylesheet" href="css/produits.css">
+
 </head>
 <body>
 
@@ -38,7 +40,7 @@
     </header>
 
     <main class="main-produits">
-        <section class="feature-container">
+        <section>
  
             <div class="features-bar">
                 
@@ -92,23 +94,23 @@
         </section>
 
         <section class="filter-container">
-            
+
             <div class="filter-top-row">
-            
+
                 <div class="search-box">
-                    <!-- <img src="" alt=""> -->
+                    <img class="search-icon" src="assets/icons/search-input.svg" alt="search icon">
                     <input type="text" placeholder="Rechercher bois, carafe, chêne, lin">
                 </div>
 
                 <div class="filter-group">
                     <span class="filter-label">Espaces:</span>
                     <div class="pill-list">
-                    <button class="pill active">Tous</button>
-                    <button class="pill">Salon</button>
-                    <button class="pill">Art de la table</button>
-                    <button class="pill">Luminaire</button>
-                    <button class="pill">Décoration</button>
-                    <button class="pill">Mobilier</button>
+                        <button class="pill active">Tous</button>
+                        <button class="pill">Salon</button>
+                        <button class="pill">Art de la table</button>
+                        <button class="pill">Luminaire</button>
+                        <button class="pill">Décoration</button>
+                        <button class="pill">Mobilier</button>
                     </div>
                 </div>
 
@@ -133,19 +135,438 @@
                 <div class="filter-group">
                     <span class="filter-label">Matière revalorisée:</span>
                     <div class="pill-list">
-                    <button class="pill pill-primary active">
-                        <!-- <img src="" alt=""> -->
-                        Toutes les matières
-                    </button>
-                    <button class="pill">🌳 Bois revalorisé</button>
-                    <button class="pill">〰️ Tissus & Textiles</button>
-                    <button class="pill">🍷 Verre surcyclé</button>
-                    <button class="pill">♻️ Plastiques techniques</button>
+                        <button class="pill pill-primary active">
+                            <img src="assets/icons/infini.svg" alt="">
+                            Toutes les matières
+                        </button>
+                        <button class="pill">
+                            <img src="assets/icons/tree.svg" alt="">
+                            Bois revalorisé
+                        </button>
+                        <button class="pill">
+                            <img src="assets/icons/tere.svg" alt="">
+                            Tissus & Textiles
+                        </button>
+                        <button class="pill">
+                            <img src="assets/icons/cup.svg" alt="">
+                            Verre surcyclé
+                        </button>
+                        <button class="pill">
+                            <img src="assets/icons/triangle.svg" alt="">
+                            Plastiques techniques
+                        </button>
                     </div>
                 </div>
 
                 <div class="items-counter">
                     <span class="counter-highlight">8 pièces uniques</span> disponibles
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-1.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-2.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-3.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-4.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-5.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-6.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-7.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="card-image-container">
+                        <img src="assets/images/card-product-grid-8.png" alt="">
+                        
+                        <div class="badge badge-left">
+                        <span class="icon"></span> 100% Bouteilles de vin recyclées
+                        </div>
+                        
+                        <div class="badge badge-right">
+                        -4.2 kg CO₂
+                        </div>
+                        
+                        <div class="badge badge-bottom">
+                        Série numérotée • 12 ex.
+                        </div>
+                    </div>
+
+                    <div class="card-content-products">
+                        <div class="card-meta">
+                        <span class="category">ART DE LA TABLE</span>
+                        <span class="creator">✔ Atelier SolVerre (Lyon)</span>
+                        </div>
+                        
+                        <h2 class="card-title"></h2>
+                        
+                        <p class="card-description">
+                        Fondue au four solaire basse température à partir de verre cullet...
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="price-container">
+                        <span class="price">48 €</span>
+                        <span class="tax">TVA incluse</span>
+                        </div>
+                        <button class="add-button">
+                        🛒 Ajouter
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-grid-nav">
+
+                <div class="product-grid-nav-left">
+                    <p>Affichage de 1 à 8 sur 24 créations disponibles</p>
+                </div>
+
+                <div class="product-grid-nav-center">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                </div>
+
+                <div class="product-grid-nav-right">
+                    <p>Page 1 sur 3</p>
+                </div>
+
+            </div>
+
+            <div class="packaging-banner">
+
+                <div class="packaging-banner-box">
+
+                    <div class="pack-banner-box-icon">
+                        <img src="assets/images/eco-white.svg" alt="eco white">
+                    </div>
+
+                    <div class="pack-banner-box-text">
+                        <h2>Emballage Zéro Plastique</h2>
+                        <p>Calage en copeaux de bois d'atelier non
+                            traité et sachets d'amidon de maïs 100%
+                            compostables à domicile.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="packaging-banner-box">
+
+                    <div class="pack-banner-box-icon-cs">
+                        <img src="assets/icons/tran.svg" alt="eco white">
+                    </div>
+
+                    <div class="pack-banner-box-text">
+                        <h2>Fret Éco-Responsable</h2>
+                        <p>Expéditions groupées bi-hebdomadaires
+                            privilégiant le rail et la livraison finale en
+                            vélo-cargo.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="packaging-banner-box">
+
+                    <div class="pack-banner-box-icon">
+                        <img src="assets/icons/checklist.svg" alt="eco white">
+                    </div>
+
+                    <div class="pack-banner-box-text">
+                        <h2>Passeport Numérique</h2>
+                        <p>Chaque pièce inclut un certificat de
+                            provenance horodaté détaillant le site exact
+                            de valorisation du matériau.
+                        </p>
+                    </div>
+
                 </div>
 
             </div>
