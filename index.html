@@ -16,18 +16,19 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- ========================= CSS Framework -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/output.css">
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
 
     <title>Accueil</title>
 </head>
 <body>
     <header>
         <div class="header-child">
-            <a href="index.html" class="logo-space"> 
+            <a href="index.html" class="logo-space flex"> 
                 <img src="./assets/images/logo.png" alt="">
                 <span>EcoArt</span>
             </a>
             <nav>
+                <span>|||</span>
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="produits.html">Catalogue</a></li>
@@ -42,7 +43,7 @@
 
     <main class="main">
         <div class="main-desc">
-            <h1>Donner une seconde vie
+            <h1 class="text-3xl font-bold">Donner une seconde vie
                 aux matières, créer du
                 beau pour demain.</h1>
             
@@ -51,8 +52,8 @@
                 — en objets d'exception conçus par 42 maîtres artisans.</p>
             
             <div class="main-btns">
-                <a href="#" class="main-green-btn">Explorer le catalogue</a>
-                <a href="#" class="main-red-btn">Participer à un atelier</a>
+                <a href="produits.html" class="main-green-btn">Explorer le catalogue</a>
+                <a href="artisans.html" class="main-red-btn">Participer à un atelier</a>
                 <!-- <button>Explorer le catalogue </button> -->
                 <!-- <button>Participer à un atelier </button> -->
             </div>
@@ -102,12 +103,12 @@
         </div>
     </div>
     <!-- ==================================== Section 3 -->
-    <section class="cards-container1">
+    <section class="section-container">
         <h2 class="section-title">Les 4 Grandes Filières Circulaires</h2>
         
-        <ul class="circular-streams-list">
+        <ul class="cards-container">
     
-        <li class="card ">
+        <li class="card">
             <article class="card-content ">
                 <div class="stream-card-header">
                     <span class="stream-card-badge">Filière 01</span>
@@ -208,10 +209,10 @@
 
     <!-- ==================================== Section 4 -->
 
-    <section class="cards-container2">
+    <section class="section-container">
         <h2 class="section-title">Nouveautés & Coups de Cœur</h2>
         
-        <ul class="circular-streams-list">
+        <ul class="cards-container">
     
             <li class="stream-card">
                 <article class="card-content reverse-dir">
@@ -223,10 +224,10 @@
                             Socle façonné dans une poutre de
                             grange bretonne de 1890 et câble textile.
                         </p>
-                        <div class="price-add">
+                        <a href="produits.html" class="price-add">
                             <p>145 €</p>
                             <button class="main-green-btn">Ajouter +</button>
-                        </div>
+                        </a>
                     </div>
             
                     <div class="stream-card-media">
@@ -245,13 +246,11 @@
                             Bouteilles champenoises fondues au
                             four électrique alimenté par…
                         </p>
-                        <div class="price-add">
+                        <a href="produits.html" class="price-add">
                             <p>68 €</p>
                             <button class="main-green-btn">Ajouter +</button>
-                        </div>
+                        </a>
                     </div>
-
-
             
                     <div class="stream-card-media">
                     <img class="stream-card-image" src="./assets/images/glass-vase.jpg" alt="Planches de chêne de réemploi dans un atelier">
@@ -269,10 +268,10 @@
                             Élaboré à partir de 240 bouchons
                             collectés par une association sportive…
                         </p>
-                        <div class="price-add">
+                        <a href="produits.html" class="price-add">
                             <p>82 €</p>
                             <button class="main-green-btn">Ajouter +</button>
-                        </div>
+                        </a>
                     </div>
             
                     <div class="stream-card-media">
@@ -291,10 +290,10 @@
                             Spinnaker de régate réformé assemblé à
                             des chutes de sellerie équestre…
                         </p>
-                        <div class="price-add">
+                        <a href="produits.html" class="price-add">
                             <p>115 €</p>
                             <button class="main-green-btn">Ajouter +</button>
-                        </div>
+                        </a>
                     </div>
             
                     <div class="stream-card-media">
@@ -312,14 +311,14 @@
         <div class="text-center">
             <p class="text-2xl text-green-900 font-bold m-4 text-center">
                 Une Éthique Sans Concession</p>
-            <p class="w-1/2 text-center text-gray-700 m-auto">
+            <p class="w-10/12 text-center text-gray-700 m-auto">
                 
                 Nous redéfinissons le luxe contemporain : la valeur d'un objet ne réside pas dans l'extraction
                 de nouvelles ressources mais dans la dignité de sa transformation.
             </p>
         </div>
-        <div class="flex justify-around my-14 ">
-            <div class="w-3/12 bg-gray-200 p-4 rounded">
+        <div class="ethique-cards flex justify-around  ">
+            <div class="card bg-gray-200 p-4 rounded">
                 <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
                     01
                 </div>
@@ -335,7 +334,7 @@
                 </div>
             </div>
 
-            <div class="w-3/12 bg-gray-200 p-4 rounded">
+            <div class="card bg-gray-200 p-4 rounded">
                 <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
                     02
                 </div>
@@ -352,7 +351,7 @@
             </div>
 
 
-            <div class="w-3/12 bg-gray-200 p-4 rounded">
+            <div class="card bg-gray-200 p-4 rounded">
                 <div class="bg-green-800 w-fit p-2 rounded-lg text-white">
                     03
                 </div>
@@ -372,15 +371,13 @@
     </section>
 
     <!-- ==================================== Workshop section -->
-     <hr class="w-1/2 mb-9 mx-auto">
+     <hr class="w-1/2 my-9 mx-auto">
     <section class="workshop flex gap-3.5 w-11/12 m-auto bg-gray-100 rounded">
         <!-- <img src="/assets/images/carpenter.jpeg" 
         alt="Carpenter in his workshop"> -->
-        <div class="img">
-
-        </div>
+        <div class="img"></div>
         
-        <div>
+        <div class="p-2">
             <h2 class="section-title pt-1.5">Atelier : Façonnez votre plateau
                         en Terrazzo Écologique</h2>
             <div class="text-gray-700">
@@ -405,10 +402,101 @@
                     <span class=" text-xl font-bold text-green-900">85 €</span> / participant
                 </div>
                 <!-- To contact -->
-                <a href="#" class="main-red-btn">Réserver mon créneau</a> 
+                <a href="contact.html" class="main-red-btn">Réserver mon créneau</a> 
             </div>
         </div>
     </section>
+
+    <!-- ================================== Evaluation Section -->
+     <hr class="w-1/2 my-9 mx-auto">
+    <section class="flex flex-col w-11/12 m-auto">
+        <h2 class="section-title text-center">Ce que disent nos collectionneurs et makers</h2>
+
+        <div class="flex justify-between gap-5 flex-wrap">
+            <div class="evl-card">
+                <div class="flex justify-between">
+                        Antoine L.
+                    <div class="flex ">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                    </div>
+                </div>
+                <p>
+                    « J'ai commandé la table basse en chêne de
+                    charpente. Le QR code m'a appris qu'elle venait d'une
+                    halle marchande du XIXe siècle à 30 km de chez moi.
+                    C'est du véritable luxe porteur de sens. »
+                </p>
+            </div>
+
+            <div class="evl-card">
+                <div class="flex justify-between">
+                        Chloé M.
+                    <div class="flex ">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                    </div>
+                </div>
+                <p>
+                    « L'atelier de soufflage de verre recyclé était magique.
+                    On comprend la valeur du geste et on ne regarde plus
+                    jamais une bouteille de la même manière. Expérience
+                    humaine inoubliable ! »
+                </p>
+            </div>
+
+            <div class="evl-card">
+                <div class="flex justify-between">
+                        Maxime B.
+                    <div class="flex ">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                        <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
+                    </div>
+                </div>
+                <p>
+                    « En tant qu'artisan maroquinier, EcoArt m'a permis
+                    d'écouler toutes mes chutes de sellerie noble auprès
+                    d'un public qui apprécie l'authenticité plutôt que la
+                    production de masse. »
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- ================================== The last section -->
+     <hr class="w-1/2 my-9 mx-auto">
+     <section class="bg-green-900 p-7">
+        <p class="text-2xl text-white text-center">
+            Prêt à transformer votre intérieur avec des pièces chargées d'histoire ?
+        </p>
+        <p class="text-gray-300 text-center">
+            Explorez des créations numérotées ou privatisez un atelier pour vos équipes.
+            Rejoignez notre communauté de plus de 3 500 passionnés de design durable.
+        </p>
+        <div class="btns-container mt-7 flex gap-5 w-fit mx-auto">
+
+            <a href="produits.html" class="main-red-btn bg-gray-50 text-black">
+                Découvrir les pièces disponibles
+            </a>
+            <a href="services.html" class="main-red-btn">
+                Nous proposer un gisement matière
+            </a>
+        </div>
+
+     </section>
+
 
 
 
