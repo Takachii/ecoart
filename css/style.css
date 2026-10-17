@@ -1,8 +1,7 @@
-@import "tailwindcss";
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Atkinson Hyperlegible Next, system-ui, sans-serif;
 }
 
@@ -11,9 +10,20 @@ body {
 }
 
 header{
-    background: #F2FCF4E5;
+    background: #F2FCF4;
     height: 57px;
     box-shadow: 0 0 2px gray;
+    z-index: 100;
+}
+
+.header-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 header .logo-space {
@@ -22,11 +32,19 @@ header .logo-space {
   font-size: 20px;
   text-decoration: none;
   color: black;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-header span {
-  vertical-align: super;
-  margin-left: 5px;
+.logo-space img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+header .logo-space span {
+  margin-left: 0;
 }
 
 nav ul {
@@ -173,7 +191,8 @@ main img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: fit-content;
+  min-width: 0;
+  height: 100%;
   overflow: hidden;
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -609,7 +628,7 @@ main img {
 }
 
 .categories,
-button {
+.categories button {
   border-radius: 15px;
   margin-left: 15px;
 }
