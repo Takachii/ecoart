@@ -1,0 +1,458 @@
+@import "tailwindcss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Atkinson Hyperlegible Next;
+}
+
+body{
+    background: #F2FCF4E5;
+    height: 100vh;
+}
+
+header{
+    background: #f2fcf4;
+    height: 57px;
+    box-shadow: 0 0 2px gray;
+    position: fixed;
+    width: stretch;
+    top: 0;
+
+}
+
+header .logo-space{
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 20px;
+    vertical-align: super;
+    text-decoration: none;
+    color: black;
+}
+header span{
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+.header-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: stretch;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+    
+ul li{
+    color: black;
+
+}
+
+nav li:hover{
+    cursor: pointer; 
+    opacity: 0.6;
+}
+
+.active{
+    background: #14422D;
+    color: #9FCFB2 !important;
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* ------------------------------- Main */
+.main{
+        display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 100px;
+}
+
+.main-desc{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.main h1{
+    color: var(--accent-green);
+}
+
+
+.main-green-btn{
+    background-color: var(--accent-btn);
+    padding: 10px;
+    border: transparent;
+    border-radius: 4px;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+.main-red-btn{
+    background-color: var(--price-bg);
+    padding: 10px;
+    border: transparent;
+    border-radius: 4px;
+    color: white;
+    width: fit-content;
+    text-decoration: none;
+}
+.main-red-btn:hover, .main-green-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.main-btns{
+    display: flex;
+    gap: 10px;
+}
+
+main img{
+    width: 30%;
+    border-radius: 7px;
+
+}
+
+/* --------------------------------- Statistics */
+.stqs{
+    display: flex;
+    gap: 18px;
+    margin: 41px auto;
+    width: 88%;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 24px;
+    background: #E6F0E8;
+}
+.stqs .number{
+    font-size: 33px;
+    font-weight: 700;
+    display: flex;
+    gap: 19px;
+
+}
+
+
+/* ---------- Section 4 ---------- */
+.section-container{
+  padding: 2rem 1.5rem;
+  background-color: var(--footer-bg-color);
+  font-family: var(--secondary-font), system-ui, sans-serif;
+  color: var(--text-main);
+}
+
+.section-title {
+  margin: 0 0 1.25rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--secondary-dark);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------- Card ---------- */
+.card {
+  display: flex;
+      margin: auto;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  height: fit-content;
+  overflow: hidden;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+}
+.reverse-dir{
+  flex-direction: column-reverse;
+}
+
+/* Header: badge + deposit */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem 1rem 0;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--accent-green);
+  border-radius: 999px;
+}
+
+.card-badge::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.card-deposit {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+      display: flex;
+}
+
+.card-deposit-value {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Body: title + description */
+.card-body {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.card-title {
+  margin: 0 0 0.5rem;
+  font-family: var(--primary-font), system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary-dark);
+}
+
+.card-description {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Media: pinned to the bottom, full-bleed */
+.card-media {
+  margin: auto 0 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* -------------------------------- Section 5 */
+
+.price-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.price-add > p{
+    font-weight: bold;
+    color: var(--accent-green);
+    /* var(--badge-bg) */
+}
+
+.ethique-cards{
+    gap: 24px;
+    width: 96%;
+    margin: 22px auto;
+    flex-wrap: wrap;
+}
+.ethique-cards .card{
+    width: 280px;
+    min-width: 240px;
+    flex-direction: column;
+}
+
+/* -------------------------- Workshop */
+.workshop{
+    box-shadow: 0 0 1px gray;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+.workshop .img{
+    background-image: url("/assets/images/carpenter.jpeg");
+    background-size: cover;
+    width: 169%;
+}
+
+/* ---------------------------- Evaluation */
+.evl-cards{
+    flex-wrap: wrap;
+}
+.evl-card{
+    box-shadow: 0 0 1px gray;
+    padding: 12px;
+    width: 250px;
+    min-width: 200px;
+}
+
+.evl-card div{
+    color: var(--accent-green);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+/* ################################################### Media Queries */
+
+nav span{
+    display: none;
+}
+
+/* ------------------------ Main */
+@media(min-width:1024px){
+    .main-btns a{
+        font-size: x-large;
+    }
+    .main-desc p{
+        font-size: x-large;
+    }
+    .main-desc{
+        justify-content: unset;
+        gap: 15px;
+    }
+}
+
+/* ------------------ NavBar */
+@media(max-width:800px){
+    nav ul{
+        display: none;    
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        right: -20px;
+        top: 58px;
+        padding: 19px 12px;
+        width: 232px;
+        height: 100vh;
+        background: #f2fcf4;
+        box-shadow: 0 0 5px gray;
+    }
+    nav span{
+        font-weight: 900;
+        display: block;
+        transform: rotate(90deg);
+        padding: 24px;
+    }
+    nav span:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    nav span:hover ~ ul {
+        display: flex; 
+    }
+    nav ul:hover{
+        display: flex; 
+    }
+    /* ------------------------ workshop */
+    .workshop{
+        flex-direction: column;
+        width: 90% !important;
+    }
+    .workshop .img{
+        width: auto;
+        height: 300px;
+    }
+}
+/* -------------------------  */
+@media(max-width:675px){
+    .stqs{
+        flex-wrap: wrap;
+    }
+    .main img{
+        height: 30%;
+        /* align-self: end; */
+    }
+    .main-btns{
+        /* flex-direction: column; */
+        width: 88vw;
+
+    }
+    .btns-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-desc p{
+        width: 88vw;
+    }
+}
+/* ------------------------ Evaluation */
+@media(max-width: 880px){
+    .evl-card{
+        width: stretch;
+    }
+}
+
+/* ------------------- */
+@media(max-width:700px){
+    .cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media(max-width: 490px){
+    .cards-container .card-content{
+        width: stretch;
+    }
+}
+@media(max-width: 525px){
+    .main img{
+        display: none;
+    }
+    .main-desc{
+        margin: 0 13px;
+        width: stretch;
+    }
+    .main-btns{
+        flex-direction: row;
+    }
+}
+
+
+/* ------------------- */
+@media(max-width: 930px){
+    .cards-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* ============================ My Work End here(Don't touch this comment) ==================== */
