@@ -1,11 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Impact &amp; Contact - EcoArt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
+
+<header class="site-header">
+    <a class="logo" href="#"><img src="assets/images/logo.png" alt="">EcoArt</a>
+    <nav aria-label="Navigation principale">
+        <a href="#">Accueil</a>
+        <a href="#">Catalogue</a>
+        <a href="#">Ateliers &amp; Services</a>
+        <a href="#" class="active">Nos Artisans</a>
+        <a href="#">Impact &amp; Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <span class="tag">Audit de circularité &amp; dialogue ouvert</span>
+            <h1>Notre Empreinte Positive &amp; Parlons-en</h1>
+            <p>Mesurer notre impact tangible, certifier chaque gramme détourné des décharges et co-construire l'artisanat régénératif de demain.</p>
+        </div>
+        <p class="update"><span class="dot"></span>Mise à jour certifiée<br><strong>T1 2025 · Norme ADEME</strong></p>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <article class="stat">
+            <div class="stat-top"><img src="assets/icons/stat1.svg" alt=""><span>+34% vs 2024</span></div>
+            <p class="stat-value">18450 <small>kg</small></p>
+            <h2>Rebuts nobles valorisés</h2>
+            <p>Chutes d'ateliers, bois de charpente et rebuts industriels recyclés.</p>
+        </article>
+        <article class="stat">
+            <div class="stat-top"><img src="assets/icons/stat2.svg" alt=""><span>Évitement direct</span></div>
+            <p class="stat-value">32,8 <small>t CO₂e</small></p>
+            <h2>Émissions évitées</h2>
+            <p>Comparé à la production industrielle d'équivalents neufs non-circulaires.</p>
+        </article>
+        <article class="stat">
+            <div class="stat-top"><img src="assets/icons/stat3.svg" alt=""><span>Filière sèche</span></div>
+            <p class="stat-value">142000 <small>L</small></p>
+            <h2>Eau potable préservée</h2>
+            <p>Procédés de décapage et teinture végétale à circuit fermé.</p>
+        </article>
+        <article class="stat">
+            <div class="stat-top"><img src="assets/icons/stat4.svg" alt=""><span>Social &amp; Inclusion</span></div>
+            <p class="stat-value">820 <small>hrs</small></p>
+            <h2>Transmission &amp; Ateliers</h2>
+            <p>Apprentissage de la réparation, du surcyclage et insertion locale.</p>
+        </article>
+    </section>
+
+    <!-- Impact: left + right -->
+    <section class="impact">
+        <div id="left1" class="panel">
+            <header class="materials-header">
+                <div>
+                    <span class="label">Typologie des flux</span>
+                    <h2>Répartition par Matière Surcyclée</h2>
+                </div>
+                <div class="certif-badge">
+                    <img src="assets/icons/confirmed.svg" alt="">
+                    <span class="certif-text">100% Revalorisé</span>
+                </div>
+            </header>
+
+            <p>Chaque flux de déchet est répertorié par son origine d'extraction géolocalisée (dans un rayon moyen de 48 km autour des ateliers régionaux).</p>
+
+            <ul class="materials">
+                <li style="--c:#1a4531; --w:40%"><div><span class="text">Bois massif de réemploi &amp; chêne sauvé</span><span>40%</span></div><i></i></li>
+                <li style="--c:#9a4a2f; --w:25%"><div><span class="text">Lin &amp; toiles de coton upcyclés</span><span>25%</span></div><i></i></li>
+                <li style="--c:#2f6b4a; --w:20%"><div><span class="text">Verre calcin soufflé artisanal</span><span>20%</span></div><i></i></li>
+                <li style="--c:#f4876a; --w:15%"><div><span class="text">Plastiques techniques thermo-pressés</span><span>15%</span></div><i></i></li>
+            </ul>
+
+            <article class="cycle">
+                <span class="ring" aria-hidden="true"></span>
+                <div>
+                    <h3>Cycle Neutre Matière</h3>
+                    <p>Zéro transport aérien, collage bio-sourcé sans solvant volatile.</p>
+                </div>
+                <a href="#">Télécharger le rapport RSE <img src="assets/icons/upright.svg" alt=""></a>
+            </article>
+        </div>
+
+        <div id="right1">
+            <article class="audit">
+                <header>
+                    <span class="tag">Audit indépendant</span>
+                    <img src="assets/icons/shield.svg" alt="">
+                </header>
+                <h2>Méthodologie de Calcul Éco-Index</h2>
+                <p>Tous nos indicateurs sont audités semestriellement selon les règles de l'Analyse de Cycle de Vie (ACV) du berceau au réemploi.</p>
+                <ul class="checks">
+                    <li><img src="assets/icons/valid.svg" alt="">Norme ISO 14044 pour le bilan matière</li>
+                    <li><img src="assets/icons/valid.svg" alt="">Certification Ateliers d'Art de France</li>
+                    <li><img src="assets/icons/valid.svg" alt="">Index Éco-responsabilité numérique : 94/100</li>
+                </ul>
+            </article>
+
+            <article class="trace">
+                <img src="assets/icons/matiere.svg" alt="Bois de réemploi assemblé à la main">
+                <div>
+                    <span class="label rust">Traçabilité matière</span>
+                    <h3>Le carnet d'identité de l'objet</h3>
+                    <p>Chaque création EcoArt est frappée d'un numéro de lot mentionnant son site d'extraction d'origine.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="visit">
+           <span class="label rust">Proximité &amp; rencontre</span>
+            <h2>Atelier Central &amp; Pôle Créatif</h2>
+            <p>Venez toucher les matières, échanger avec les maîtres artisans ou déposer vos gisements réemployables.</p>
+
+            <ul class="infos">
+                <li><img src="assets/icons/adress.svg" alt=""><div><strong>Adresse de l'Atelier</strong>42 Rue des Fondeurs Circulaires<br>75011 Paris, France</div></li>
+                <li><img src="assets/icons/directe.svg" alt=""><div><strong>Ligne Directe &amp; Courriel</strong>+33 (0)1 89 45 20 10<br><a href="mailto:contact@ecoart-artisans.fr">contact@ecoart-artisans.fr</a></div></li>
+                <li><img src="assets/icons/horaire.svg" alt=""><div><strong>Horaires de Visite &amp; Dépôt</strong>Mardi au Samedi : 09h30 — 18h30<br>Dimanche &amp; Lundi : Réservé aux chantiers d'upcycling</div></li>
+            </ul>
+
+            <p class="mobility"><strong>Mobilité douce recommandée</strong>Métro Ligne 9 (Charonne) à 200 m · Station Vélib' #11028 devant la cour pavée · Station de recharge pour vélos cargo disponible sur place.</p>
+
+            <figure>
+                <img src="assets/images/manufactrure.svg" alt="Établi de l'atelier EcoArt avec outils et bois">
+                <figcaption>La Manufacture EcoArt, espace collaboratif et recyclerie ouverte.</figcaption>
+            </figure>
+        </div>
+
+        <form class="form" action="#" method="post">
+            <span class="label">Écrivez-nous</span>
+            <h2>Initier un Échange ou un Projet</h2>
+            <p>Que vous soyez un particulier en quête d'une pièce sur-mesure, une entreprise pour vos cadeaux d'affaires RSE ou un artisan cherchant à rejoindre la coopérative.</p>
+
+            <div class="row">
+                <label>Nom &amp; Prénom *<input type="text" name="nom" placeholder="Claire Delatour" required></label>
+                <label>Adresse Courriel *<input type="email" name="email" placeholder="claire.delatour@domaine.fr" required></label>
+            </div>
+            <label>Nature de la demande *
+                <select name="sujet" required>
+                    <option value="" selected disabled>Sélectionnez une catégorie…</option>
+                    <option>Pièce sur-mesure</option>
+                    <option>Cadeaux d'affaires RSE</option>
+                    <option>Rejoindre la coopérative</option>
+                    <option>Dépôt de matériaux</option>
+                </select>
+            </label>
+            <label>Votre Message Détaillé *
+                <textarea name="message" rows="5" placeholder="Parlez-nous de vos dimensions souhaitées, vos flux de matières à réemployer, vos volumes ou vos délais…" required></textarea>
+            </label>
+            <label class="consent"><input type="checkbox" required>J'accepte que mes coordonnées soient traitées par EcoArt pour répondre à ma demande. Données hébergées en France sur serveurs bas-carbone, supprimées sous 90 jours sans suite commerciale.</label>
+
+            <div class="submit-row">
+                <button type="submit">Envoyer mon message éco-responsable <img src="assets/icons/send.svg" alt=""></button>
+                <small>Réponse artisanale sous 24h ouvrées</small>
+            </div>
+        </form>
+    </section>
+
+    <!-- Map -->
     
+    <section class="map" aria-label="Carte du réseau d'ateliers">
+      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.704375360696!2d-9.237788524549819!3d32.29292517386964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYouCode%20Safi!5e0!3m2!1sfr!2sma!4v1792149263536!5m2!1sfr!2sma" width="max-width" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+
+        <article>
+            <h3>Réseau des 14 Ateliers Partenaires</h3>
+            <p>En plus du tiers-lieu parisien, nos ateliers de forge, verrerie solaire et tissage se déploient en Nouvelle-Aquitaine, Auvergne-Rhône-Alpes et Bretagne.</p>
+            <a href="#">Découvrir la carte complète des artisans</a>
+        </article>
+       
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <span class="label rust">Foire aux questions</span>
+        <h2>Questions Fréquentes sur notre Impact</h2>
+        <details>
+            <summary>Comment les émissions de CO₂ évitées sont-elles calculées ?</summary>
+            <p>Nous comparons chaque pièce à son équivalent neuf industriel, selon la méthode ACV auditée chaque semestre.</p>
+        </details>
+        <details>
+            <summary>Puis-je apporter mes propres matériaux rebuts pour un projet ?</summary>
+            <p>Oui. Déposez-les à l'atelier central pendant les horaires de dépôt, nous évaluons leur potentiel de réemploi.</p>
+        </details>
+        <details>
+            <summary>Proposez-vous des formats d'ateliers pour les équipes RSE d'entreprises ?</summary>
+            <p>Oui, des ateliers d'une demi-journée ou d'une journée, sur site ou à la Manufacture. Écrivez-nous pour un devis.</p>
+        </details>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <a class="logo" href="#"><img src="assets/images/logo.png" alt="">EcoArt</a>
+            <p>Plateforme d'artisanat circulaire valorisant les rebuts nobles. Conception numérique sobre, traçabilité certifiée et réduction de l'empreinte carbone matériel.</p>
+            <span class="pill">Index Éco-Index : A</span>
+        </div>
+        <div>
+            <h3>Filière Circulaire</h3>
+            <ul>
+                <li>Bois de réemploi &amp; chêne sauvé</li>
+                <li>Verre recyclé au four solaire</li>
+                <li>Textiles surcyclés d'ateliers</li>
+                <li>Métaux ferreux reconditionnés</li>
+                <li>Charte zéro déchet d'atelier</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Labels &amp; Certifications</h3>
+            <ul class="labels">
+                <li><strong>Label Upcycling Certifié UE</strong>Norme traçabilité matière brute à 100%</li>
+                <li><strong>Garantie Artisans d'Art</strong>Transmission et fabrication locale</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Newsletter Sobre</h3>
+            <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
+            <form class="newsletter" action="#" method="post">
+                <input type="email" placeholder="votre.email@domaine.fr" aria-label="Adresse courriel" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+            <small>Désinscription en 1 clic. Données hébergées en France.</small>
+        </div>
+    </div>
+    <div class="legal">
+        <span>© 2025 EcoArt (NextLine client). Tous droits réservés.</span>
+        <span>Hébergement vert basse consommation</span>
+        <span>Tél : +33 (0)1 89 45 20 10</span>
+        <nav><a href="#">Mentions Légales</a><a href="#">Accessibilité : Conforme RGAA</a><a href="#">Charte Éco-conception</a></nav>
+    </div>
+</footer>
+
 </body>
 </html>

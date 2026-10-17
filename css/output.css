@@ -551,7 +551,7 @@ main img {
   line-height: 1.2;
   color: var(--secondary-dark);
 }
-.circular-streams-list {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
@@ -565,7 +565,7 @@ main img {
 .card-content {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 206px;
   height: fit-content;
   overflow: hidden;
   background-color: var(--card-bg);
