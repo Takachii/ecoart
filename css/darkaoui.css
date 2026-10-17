@@ -89,7 +89,7 @@ nav li:hover{
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 15px;
 }
 .main h1{
@@ -216,7 +216,7 @@ main img{
 }
 
 /* Header: badge + deposit */
-.stream-card-header {
+.card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -224,7 +224,7 @@ main img{
   padding: 1rem 1rem 0;
 }
 
-.stream-card-badge {
+.card-badge {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -237,7 +237,7 @@ main img{
   border-radius: 999px;
 }
 
-.stream-card-badge::before {
+.card-badge::before {
   content: "";
   width: 0.4rem;
   height: 0.4rem;
@@ -245,24 +245,24 @@ main img{
   border-radius: 50%;
 }
 
-.stream-card-deposit {
+.card-deposit {
   margin: 0;
   font-size: 0.7rem;
   color: var(--text-muted);
       display: flex;
 }
 
-.stream-card-deposit-value {
+.card-deposit-value {
   font-weight: 700;
   color: var(--text-main);
 }
 
 /* Body: title + description */
-.stream-card-body {
+.card-body {
   padding: 0.75rem 1rem 1rem;
 }
 
-.stream-card-title {
+.card-title {
   margin: 0 0 0.5rem;
   font-family: var(--primary-font), system-ui, sans-serif;
   font-size: 1.25rem;
@@ -271,7 +271,7 @@ main img{
   color: var(--primary-dark);
 }
 
-.stream-card-description {
+.card-description {
   margin: 0;
   font-size: 0.75rem;
   line-height: 1.5;
@@ -279,13 +279,13 @@ main img{
 }
 
 /* Media: pinned to the bottom, full-bleed */
-.stream-card-media {
+.card-media {
   margin: auto 0 0;
   aspect-ratio: 4 / 3;
   overflow: hidden;
 }
 
-.stream-card-image {
+.card-image {
   display: block;
   width: 100%;
   height: 100%;
@@ -380,20 +380,34 @@ nav span{
     display: none;
 }
 
+/* ------------------------ Main */
+@media(min-width:1024px){
+    .main-btns a{
+        font-size: x-large;
+    }
+    .main-desc p{
+        font-size: x-large;
+    }
+    .main-desc{
+        justify-content: unset;
+        gap: 15px;
+    }
+}
+
 /* ------------------ NavBar */
 @media(max-width:800px){
     nav ul{
         display: none;    
-    position: fixed;
-    flex-direction: column;
-    align-items: start;
-    right: -20px;
-    top: 58px;
-    padding: 19px 12px;
-    width: 232px;
-    height: 100vh;
-    background: #f2fcf4;
-    box-shadow: 0 0 5px gray;
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        right: -20px;
+        top: 58px;
+        padding: 19px 12px;
+        width: 232px;
+        height: 100vh;
+        background: #f2fcf4;
+        box-shadow: 0 0 5px gray;
     }
     nav span{
         font-weight: 900;
@@ -434,11 +448,16 @@ nav span{
         /* align-self: end; */
     }
     .main-btns{
-        flex-direction: column;
+        /* flex-direction: column; */
+        width: 88vw;
+
     }
     .btns-container{
         flex-direction: column;
         align-items: center;
+    }
+    .main-desc p{
+        width: 88vw;
     }
 }
 /* ------------------------ Evaluation */
