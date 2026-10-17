@@ -49,7 +49,7 @@ nav li:hover {
   opacity: 0.6;
 }
 
-/* main {
+main {
   display: flex;
   justify-content: center;
   gap: 13px;
@@ -117,7 +117,7 @@ main img {
   font-weight: 700;
   display: flex;
   gap: 19px;
-} */
+}
 
 .stats {
   background: #ECF6EE;
@@ -612,11 +612,6 @@ main img {
 button {
   border-radius: 15px;
   margin-left: 15px;
-}
-
-.counter-highlight {
-  font-weight: 700;
-  color: #14532d;
 }
 
 .titre {
