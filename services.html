@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoArt - Apprenez l'art de l'upcycling</title>
+    <meta name="description" content="Ateliers & Formations EcoArt : initiez-vous à l'artisanat circulaire avec nos maîtres artisans. Menuiserie chêne de réemploi, verrerie d'art et surcyclage.">
+    <title>EcoArt | Ateliers & Services - Savoir-Faire Circulaire</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +14,8 @@
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/ilyass.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 
@@ -29,6 +30,10 @@
                 <span>EcoArt</span>
             </a>
             <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu navigation">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span>|||</span>
+                </label>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="produits.html">Catalogue</a></li>
@@ -549,131 +554,87 @@
                             </div>
                         </div>
                         <div class="column-box">
-                            <div class="map-link">Plan d'accès</div>
+                            <a href="contact.html" class="map-link">Plan d'accès</a>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="booking-panel">
-                    <div class="booking-form" id="form">
-
+                <form class="booking-panel" id="form" action="#" method="POST">
+                    <div class="booking-form">
 
                         <div class="workshop-field">
                             <div class="text-box">
-                                <p class="field-label"><span class="label-text">1. Atelier sélectionné </span>
+                                <label for="atelier-select" class="field-label"><span class="label-text">1. Atelier sélectionné </span>
                                     <span class="required-star">*</span>
-                                </p>
+                                </label>
                             </div>
                             <div class="select-box">
                                 <div class="select-inner">
-                                    <select class="dropdown">
-                                        <option value="default">-- Sélectionnez une thématique d'atelier --</option>
-                                        <option value="">Atelier Menuiserie : Table basse ou Étagère en Chêne
-                                            Récupéré</option>
-                                        <option value="">Atelier Verrerie & Luminaire Upcyclé</option>
-                                        <option value="">Atelier Couture & Revalorisation Textile</option>
-                                        <option value="">Atelier Fusion Plastique & Design Terrazzo</option>
+                                    <select id="atelier-select" name="atelier" class="dropdown" required>
+                                        <option value="">-- Sélectionnez une thématique d'atelier --</option>
+                                        <option value="menuiserie">Atelier Menuiserie : Table basse ou Étagère en Chêne Récupéré</option>
+                                        <option value="verrerie">Atelier Verrerie & Luminaire Upcyclé</option>
+                                        <option value="textile">Atelier Couture & Revalorisation Textile</option>
+                                        <option value="plastique">Atelier Fusion Plastique & Design Terrazzo</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
 
-
                         <div class="form-row">
                             <div class="form-column">
                                 <div class="text-box">
-                                    <p class="field-label"><span class="label-text">2. Date souhaitée </span>
+                                    <label for="date-select" class="field-label"><span class="label-text">2. Date souhaitée </span>
                                         <span class="required-star">*</span>
-                                    </p>
+                                    </label>
                                 </div>
-                                <div class="date-box">
-                                    <div class="date-row">
-                                        <div class="center-row">
-                                            <div class="date-numbers">
-                                                <div class="date-number">10</div>
-                                                <div class="date-number">/</div>
-                                                <div class="date-number">14</div>
-                                                <div class="date-number">/</div>
-                                                <div class="date-number">2025</div>
-                                            </div>
-                                        </div>
-                                        <div class="calendar-button">
-                                            <div class="calendar-icon"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <input type="date" id="date-select" name="date" class="date-input" value="2025-10-14" required>
                             </div>
                             <div class="form-column">
                                 <div class="text-box">
-                                    <p class="field-label"><span class="label-text">Créneau horaire </span>
+                                    <label for="creneau-select" class="field-label"><span class="label-text">Créneau horaire </span>
                                         <span class="required-star">*</span>
-                                    </p>
+                                    </label>
                                 </div>
                                 <div class="select-box">
                                     <div class="select-inner">
-                                        <select class="dropdown">
-                                            <option value="default">Après-midi (14h00 - 17h30)</option>
-                                            <option value="default">Après-midi (14h30 - 18h00)</option>
-                                            <option value="default">Après-midi (15h00 - 18h30)</option>
-                                            <option value="default">Après-midi (15h30 - 19h00)</option>
+                                        <select id="creneau-select" name="creneau" class="dropdown" required>
+                                            <option value="14h00-17h30">Après-midi (14h00 - 17h30)</option>
+                                            <option value="14h30-18h00">Après-midi (14h30 - 18h00)</option>
+                                            <option value="15h00-18h30">Après-midi (15h00 - 18h30)</option>
+                                            <option value="15h30-19h00">Après-midi (15h30 - 19h00)</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-
                         <div class="form-row">
                             <div class="form-column">
                                 <div class="text-box">
-                                    <p class="field-label"><span class="label-text">3. Nombre de participants
-                                        </span>
+                                    <label for="participants-input" class="field-label"><span class="label-text">3. Nombre de participants </span>
                                         <span class="required-star">*</span>
-                                    </p>
+                                    </label>
                                 </div>
-                                <div class="counter">
-                                    <button class="counter-button">
-                                        <div class="counter-button-text">-</div>
-                                    </button>
-                                    <div class="counter-number-box">
-                                        <div class="counter-row">
-                                            <div class="center-row">
-                                                <div class="counter-number-wrap">
-                                                    <div class="counter-number">1</div>
-                                                </div>
-                                            </div>
-                                            <div class="counter-spacer-box">
-                                                <div class="counter-spacer"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="counter-button">
-                                        <div class="counter-button-text">+</div>
-                                    </button>
-                                    <div class="counter-hint-box">
-                                        <div class="counter-hint">(Max 6 en ligne)</div>
-                                    </div>
-                                </div>
+                                <input type="number" id="participants-input" name="participants" class="counter-input" min="1" max="6" value="1" required>
                             </div>
                             <div class="form-column">
                                 <div class="text-box">
-                                    <div class="plain-label">Niveau d'expérience</div>
+                                    <label for="niveau-select" class="plain-label">Niveau d'expérience</label>
                                 </div>
                                 <div class="select-box">
                                     <div class="select-inner">
-                                        <select class="dropdown">
-                                            <option value="default">Grand débutant (première fois)</option>
-                                            <option value="default">Débutant • Accessible</option>
-                                            <option value="default">Débutant</option>
-                                            <option value="default">Tous niveaux</option>
-                                            <option value="default">Débutant • Familial (+12 ans)</option>
+                                        <select id="niveau-select" name="niveau" class="dropdown">
+                                            <option value="grand-debutant">Grand débutant (première fois)</option>
+                                            <option value="accessible">Débutant • Accessible</option>
+                                            <option value="debutant">Débutant</option>
+                                            <option value="tous">Tous niveaux</option>
+                                            <option value="familial">Débutant • Familial (+12 ans)</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
 
                         <div class="contact-group">
                             <div class="text-box">
@@ -682,54 +643,43 @@
                             <div class="form-row">
                                 <div class="text-input-box">
                                     <div class="text-box">
-                                        <input type="text" placeholder="Nom*" class="text-input">
+                                        <input type="text" name="nom" placeholder="Nom *" class="text-input" required>
                                     </div>
                                 </div>
                                 <div class="text-input-box">
                                     <div class="text-box">
-                                        <input type="text" placeholder="Prènom*" class="text-input">
+                                        <input type="text" name="prenom" placeholder="Prénom *" class="text-input" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="contact-row">
                                 <div class="text-input-box">
                                     <div class="text-box">
-                                        <input type="tel" placeholder="Adresse e-mail *" class="text-input">
+                                        <input type="email" name="email" placeholder="Adresse e-mail *" class="text-input" required>
                                     </div>
                                 </div>
                                 <div class="text-input-box">
                                     <div class="text-box">
-                                        <input type="email" placeholder="Téléphone portable *" class="text-input">
+                                        <input type="tel" name="telephone" placeholder="Téléphone portable *" class="text-input" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-
                         <div class="accessibility-group">
                             <div class="text-box">
-                                <p class="plain-label">Besoins spécifiques & accessibilité (PMR, allergies,
-                                    accompagnateur...)</p>
+                                <label for="besoins-text" class="plain-label">Besoins spécifiques & accessibilité (PMR, allergies, accompagnateur...)</label>
                             </div>
-                            <div class="message-box">
-                                <div class="center-row">
-                                    <p class="message-placeholder">Précisez tout besoin spécifique pour préparer au
-                                        mieux votre accueil en <br />manufacture...</p>
-                                </div>
-                            </div>
+                            <textarea id="besoins-text" name="besoins" class="message-textarea" placeholder="Précisez tout besoin spécifique pour préparer au mieux votre accueil en manufacture..."></textarea>
                         </div>
-
 
                         <div class="consent-row">
                             <div class="checkbox-box">
-                                <input type="checkbox" class="checkbox">
+                                <input type="checkbox" id="consent-check" name="consent" class="checkbox" required>
                             </div>
-                            <p class="small-description">J'accepte le règlement intérieur d'atelier et la charte de
-                                sécurité
-                                des machines outils<br />partagées.</p>
+                            <label for="consent-check" class="small-description">J'accepte le règlement intérieur d'atelier et la charte de sécurité des machines outils partagées.</label>
                         </div>
                     </div>
-
 
                     <div class="info-bar">
                         <div class="total-box">
@@ -737,13 +687,13 @@
                             <div class="total-price">110 €</div>
                             <div class="total-tax">TTC</div>
                         </div>
-                        <button class="submit-button">
+                        <button type="submit" class="submit-button">
                             <div class="submit-icon-box"><img class="submit-icon"
-                                    src="assets/icons/Icon-confirmed.svg" /></div>
+                                    src="assets/icons/Icon-confirmed.svg" alt="" /></div>
                             <div class="submit-text">Confirmer ma pré-réservation</div>
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </main>
@@ -794,13 +744,26 @@
             <div class="footer-col">
                 <h3>Newsletter Sobre</h3>
                 <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" name="email" placeholder="votre.email@domaine.fr" required>
                     <button type="submit">S'inscrire</button>
                 </form>
                 <small>Désinscription en 1 clic. Données hébergées en France.</small>
             </div>
 
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-info">
+                <span>© 2025 EcoArt (NextLine client). Tous droits réservés.</span>
+                <span>Hébergement vert basse consommation</span>
+                <span>Tél : <a href="tel:+33189452010">+33 (0)1 89 45 20 10</a></span>
+            </div>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">Accessibilité : Conforme RGAA</a></li>
+                <li><a href="#">Charte Éco-conception</a></li>
+            </ul>
         </div>
 
     </footer>

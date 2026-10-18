@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- ========================= CSS Framework -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="css/output.css"> -->
+    <meta name="description" content="EcoArt relie le design contemporain à l'économie circulaire : mobilier d'exception, objets d'art upcyclés et ateliers de transmission avec 42 maîtres artisans.">
 
-    <title>Accueil</title>
+    <title>EcoArt | Accueil - Mobilier d'Art & Artisanat Circulaire</title>
 </head>
 
 <body>
@@ -32,7 +32,10 @@
                 <span>EcoArt</span>
             </a>
             <nav>
-                <span>|||</span>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu navigation">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span>|||</span>
+                </label>
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="produits.html">Catalogue</a></li>
@@ -558,13 +561,26 @@
             <div class="footer-col">
                 <h3>Newsletter Sobre</h3>
                 <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" name="email" placeholder="votre.email@domaine.fr" required>
                     <button type="submit">S'inscrire</button>
                 </form>
                 <small>Désinscription en 1 clic. Données hébergées en France.</small>
             </div>
 
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-info">
+                <span>© 2025 EcoArt (NextLine client). Tous droits réservés.</span>
+                <span>Hébergement vert basse consommation</span>
+                <span>Tél : <a href="tel:+33189452010">+33 (0)1 89 45 20 10</a></span>
+            </div>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">Accessibilité : Conforme RGAA</a></li>
+                <li><a href="#">Charte Éco-conception</a></li>
+            </ul>
         </div>
 
     </footer>
