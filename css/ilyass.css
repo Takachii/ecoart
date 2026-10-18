@@ -213,6 +213,9 @@
   position: relative;
   width: fit-content;
 }
+.text-7{
+   text-decoration: none;
+}
 .intro-header-hero .pill-nav-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1380,6 +1383,8 @@
   font-size: 16px;
   letter-spacing: 0.16px;
   line-height: normal;
+  border: none;
+  background-color: #ECF6EE;
 }
 .interactive-booking .container-13 {
   display: flex;
@@ -1449,23 +1454,7 @@
   position: relative;
   flex: 0 0 auto;
 }
-.interactive-booking .input-3 {
-  position: relative;
-  width: 13px;
-  height: 13px;
-  background-color: #ffffff;
-  border-radius: 2.5px;
-  border: 1px solid;
-  border-color: #767676;
-}
-.interactive-booking .container-14 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px 68.8px 0px 0px;
-  position: relative;
-  flex: 0 0 auto;
-}
+
 .interactive-booking .paragraph-2 {
   position: relative;
   width: 113.58px;
@@ -1637,6 +1626,8 @@
     font-size: 16px;
     line-height: 22px;
     overflow-wrap: anywhere;
+    border: none;
+    background-color: #ECF6EE;
 }
 /* Two-column form rows */
 .interactive-booking .div-4 {
@@ -1804,9 +1795,6 @@
     padding: 0;
 }
 
-.interactive-booking .p {
-    overflow-wrap: anywhere;
-}
 
 /* Total and submit button */
 .interactive-booking .div-2 {
@@ -1819,6 +1807,7 @@
     padding: 16px 0 0;
     box-sizing: border-box;
     border-top: 1px solid #e6f0e8;
+    padding: 12px;
 }
 
 .interactive-booking .paragraph-2 {
