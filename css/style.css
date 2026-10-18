@@ -9,7 +9,7 @@ body {
   background: #F2FCF4E5;
 }
 
-header{
+body > header {
     background: #F2FCF4;
     height: 57px;
     box-shadow: 0 0 2px gray;
