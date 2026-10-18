@@ -53,17 +53,15 @@ ecoart/
 ├── artisans.html           # Présentation des artisans
 ├── contact.html            # Impact écologique & formulaire
 ├── css/
-│   ├── variables.css       # variables CSS
+│   ├── variables.css       # Charte graphique & variables CSS
 │   ├── style.css           # Styles généraux
 │   ├── responsive.css      # Règles responsive & media queries
+│   ├── darkaoui.css        # Styles spécifiques à la page d'accueil
+│   ├── ilyass.css          # Styles spécifiques à la page services
 │   ├── produits.css        # Styles spécifiques à la page catalogue
-│   ├── produits.css        # Styles spécifiques à la page artisans
-│   └── artisans.css        # Styles spécifiques à la page contact & impact
-│   └── contact.css         # Styles spécifiques à la page 
-services
-│   └── services.css        # Styles spécifiques à la page
-index
-│   └── darkaoui.css        # Styles spécifiques à la page 
+│   ├── artisans.css        # Styles spécifiques à la page artisans
+│   └── contact.css         # Styles spécifiques à la page contact & impact
+│   └── output.css          # framework css output file
 ├── assets/
 │   ├── images/             # Photographies et visuels du projet
 │   └── icons/              # Icônes SVG
