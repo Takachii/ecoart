@@ -36,40 +36,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 h1, h2, h3, p { margin: 0; }
 button { font-family: var(--font-label); cursor: pointer; border: 0; }
 
-/* ---------- Header ---------- */
-header {
-  background: var(--bg-color);
-  box-shadow: 0 2px 10px rgba(31, 77, 58, 0.08);
-}
-.header-child {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo-space {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--green);
-}
-.logo-space img { width: 32px; height: 32px; border-radius: 6px; }
-nav ul { display: flex; align-items: center; gap: 8px; }
-nav a {
-  display: block;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-family: var(--font-label);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text);
-}
-nav a:hover { background: var(--chip); }
-nav a.active { background: var(--green); color: var(--white); }
 
 /* ---------- Hero ---------- */
 .father {
@@ -392,76 +358,6 @@ nav a.active { background: var(--green); color: var(--white); }
   border-radius: 4px;
 }
 
-/* ---------- Footer ---------- */
-.site-footer {
-  margin-top: 40px;
-  padding: 48px 0 40px;
-  background: #f0f7f2;
-}
-.footer-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr 1fr 1fr;
-  gap: 40px;
-}
-.footer-col h3 {
-  margin-bottom: 14px;
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--green);
-}
-.footer-col > p, .footer-col small {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--muted);
-}
-.footer-col small { display: block; margin-top: 10px; font-family: var(--font-label); font-size: 12px; }
-.brand { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-.brand img { width: 32px; height: 32px; border-radius: 6px; }
-.brand h3 { margin: 0; }
-.eco-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 16px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: var(--chip);
-  font-family: var(--font-label);
-  font-size: 12px;
-  color: var(--green);
-}
-.eco-badge img { width: 14px; height: 14px; }
-.footer-list li { padding: 3px 0; font-size: 14px; color: var(--muted); }
-.cert-card {
-  margin-bottom: 8px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  background: var(--chip);
-}
-.cert-card strong { display: block; font-size: 14px; font-weight: 600; color: var(--green); }
-.cert-card p { font-size: 14px; color: var(--muted); }
-.newsletter-form { display: flex; margin-top: 14px; }
-.newsletter-form input {
-  flex: 1;
-  min-width: 0;
-  padding: 6px 10px;
-  border: 0;
-  border-radius: 4px 0 0 4px;
-  background: white;
-  font-family: var(--font-label);
-  font-size: 13px;
-}
-.newsletter-form button {
-  padding: 6px 16px;
-  border-radius: 0 4px 4px 0;
-  background: var(--green);
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-}
 
 /* ---------- Focus ---------- */
 a:focus-visible, button:focus-visible, input:focus-visible {
@@ -473,15 +369,11 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 @media (max-width: 1024px) {
   .father { grid-template-columns: 1fr; gap: 32px; }
   .location { grid-template-columns: 1fr; }
-  .footer-container { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
-  .header-child { flex-direction: column; gap: 12px; }
-  nav ul { flex-wrap: wrap; justify-content: center; }
   .artisans { grid-template-columns: 1fr; }
   .card-top { grid-template-columns: 64px 1fr; }
   .badge { grid-column: 1 / -1; justify-self: start; margin-top: 0; }
   .location { padding: 24px; margin-inline: 16px; }
   .location-stats { gap: 24px; }
-  .footer-container { grid-template-columns: 1fr; }
 }

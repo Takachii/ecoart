@@ -51,7 +51,8 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 35px;
+  flex-wrap: wrap;
+  gap: clamp(10px, 1.8vw, 35px);
   margin: 0;
   padding: 0;
 }
@@ -67,11 +68,26 @@ nav li:hover {
   opacity: 0.6;
 }
 
+.active {
+  background: #14422D;
+  color: #9FCFB2 !important;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
 main {
+  display: block;
+  width: 100%;
+}
+
+main.main {
   display: flex;
   justify-content: center;
-  gap: 13px;
-  margin-top: 34px;
+  gap: 24px;
+  margin: 40px auto 0;
+  max-width: 1280px;
+  padding: 0 20px;
 }
 
 .main-desc {
@@ -425,55 +441,7 @@ main img {
   height: 256px;
 }
 
-.interactive-booking {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 40px 24px;
-  background-color: #e1ebe3;
-}
 
-.interactive-booking .container {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 40px;
-  width: 100%;
-}
-
-.interactive-booking .left-side-context {
-  grid-column: 1 / 6;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.interactive-booking .right-side-the {
-  grid-column: 6 / 13;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  position: relative;
-}
-
-.interactive-booking .form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
-}
-
-.interactive-booking .textarea,
-.interactive-booking .container-11 {
-  scrollbar-width: none; /* Firefox */
-}
-
-.interactive-booking .textarea::-webkit-scrollbar,
-.interactive-booking .container-11::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
 
 .site-footer {
   background-color: var(--footer-bg-color);

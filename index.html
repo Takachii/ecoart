@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
 
-    <!-- Tailwind first so custom CSS can override it -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/darkaoui.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- ========================= CSS Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
 
     <title>Accueil</title>
 </head>
+
 <body>
     <header>
         <div class="header-child">
-            <a href="index.html" class="logo-space flex"> 
+            <a href="index.html" class="logo-space flex">
                 <img src="./assets/images/logo.png" alt="">
                 <span>EcoArt</span>
             </a>
@@ -44,11 +52,11 @@
             <h1 class="text-5xl font-bold">Donner une seconde vie
                 aux matières, créer du
                 beau pour demain.</h1>
-            
+
             <p>EcoArt relie le design contemporain à l'économie régénérative. Nous transformons
                 les rebuts nobles — chutes de chêne séculaire, textiles dormants et verre soufflé
                 — en objets d'exception conçus par 42 maîtres artisans.</p>
-            
+
             <div class="main-btns">
                 <a href="produits.html" class="main-green-btn">Explorer le catalogue</a>
                 <a href="artisans.html" class="main-red-btn">Participer à un atelier</a>
@@ -70,7 +78,7 @@
                 </p>
                 <p><b>Matériaux revalorisés</b></p>
                 <p>Détournés des filières de destruction et
-                d'enfouissement</p>
+                    d'enfouissement</p>
             </div>
         </div>
         <div class="stq-container">
@@ -83,7 +91,7 @@
                 <p>Ébénistes, verriers, céramistes et
                     maroquiniers labellisés</p>
             </div>
-            
+
 
 
 
@@ -103,120 +111,124 @@
     <!-- ==================================== Section 3 -->
     <section class="section-container">
         <h2 class="section-title">Les 4 Grandes Filières Circulaires</h2>
-        
+
         <ul class="cards-container">
-    
-        <li class="card">
-            <article class="card-content ">
-                <div class="card-header">
-                    <span class="card-badge">Filière 01</span>
-                    <p class="card-deposit">
-                        <span class="card-deposit-label">Gisement :</span>
-                        <data class="card-deposit-value">4,8 T</data>
-                    </p>
-                </div>
-    
-            <div class="card-body">
-            <h3 class="card-title">Bois de Réemploi</h3>
-            <p class="card-description">
-                Chênes séculaires issus de déconstructions de granges normandes,
-                chutes massives d'ateliers et palettes traitées sans chimie.
-            </p>
-            </div>
-    
-            <div class="card-media">
-            <img class="card-image" src="./assets/images/wood-img.jpeg" alt="Planches de chêne de réemploi dans un atelier">
-            </div>
-        </article>
-        </li>
-    
-        <li class="card">
-        <article class="card-content">
-            <div class="card-header">
-            <span class="card-badge">Filière 02</span>
-            <p class="card-deposit">
-                <span class="card-deposit-label">Gisement :</span>
-                <data class="card-deposit-value">3,1 T</data>
-            </p>
-            </div>
-    
-            <div class="card-body">
-            <h3 class="card-title">Tissus &amp; Lin Surcyclés</h3>
-            <p class="card-description">
-                Fins de rouleaux haute couture, toiles de chanvre vintage et lins
-                lavés non utilisés collectés auprès de filatures des Hauts-de-France.
-            </p>
-            </div>
-    
-            <div class="card-media">
-            <img class="card-image" src="./assets/images/tissues.jpg" alt="Chutes de tissus et de lin surcyclés">
-            </div>
-        </article>
-        </li>
-    
-        <li class="card">
-        <article class="card-content">
-            <div class="card-header">
-            <span class="card-badge">Filière 03</span>
-            <p class="card-deposit">
-                <span class="card-deposit-label">Gisement :</span>
-                <data class="card-deposit-value">3,9 T</data>
-            </p>
-        </div>
-    
-            <div class="card-body">
-            <h3 class="card-title">Verre Fused &amp; Soufflé</h3>
-            <p class="card-description">
-                Bouteilles de domaines viticoles et chutes de miroiterie fondues
-                au four solaire pour créer des textures organiques bulleuses.
-            </p>
-            </div>
-    
-            <div class="card-media">
-            <img class="card-image" src="./assets/images/glasses.jpg" alt="Carafe et verres en verre recyclé soufflé">
-            </div>
-        </article>
-        </li>
-    
-        <li class="card">
-        <article class="card-content">
-            <div class="card-header">
-            <span class="card-badge">Filière 04</span>
-            <p class="card-deposit">
-                <span class="card-deposit-label">Gisement :</span>
-                <data class="card-deposit-value">2,4 T</data>
-            </p>
-        </div>
-    
-            <div class="card-body">
-            <h3 class="card-title">Plastique Terrazzo</h3>
-            <p class="card-description">
-                Bouchons PEHD et bouteilles collectés en circuits scolaires puis
-                thermocompressés pour façonner des plateaux ultra-résistants et marbrés.
-            </p>
-            </div>
-    
-            <div class="card-media">
-            <img class="card-image" src="./assets/images/plastic.jpg" alt="Plateau en plastique recyclé façon terrazzo">
-            </div>
-        </article>
-        </li>
-    
-    </ul>
+
+            <li class="card">
+                <article class="card-content ">
+                    <div class="card-header">
+                        <span class="card-badge">Filière 01</span>
+                        <p class="card-deposit">
+                            <span class="card-deposit-label">Gisement :</span>
+                            <data class="card-deposit-value">4,8 T</data>
+                        </p>
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title">Bois de Réemploi</h3>
+                        <p class="card-description">
+                            Chênes séculaires issus de déconstructions de granges normandes,
+                            chutes massives d'ateliers et palettes traitées sans chimie.
+                        </p>
+                    </div>
+
+                    <div class="card-media">
+                        <img class="card-image" src="./assets/images/wood-img.jpeg"
+                            alt="Planches de chêne de réemploi dans un atelier">
+                    </div>
+                </article>
+            </li>
+
+            <li class="card">
+                <article class="card-content">
+                    <div class="card-header">
+                        <span class="card-badge">Filière 02</span>
+                        <p class="card-deposit">
+                            <span class="card-deposit-label">Gisement :</span>
+                            <data class="card-deposit-value">3,1 T</data>
+                        </p>
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title">Tissus &amp; Lin Surcyclés</h3>
+                        <p class="card-description">
+                            Fins de rouleaux haute couture, toiles de chanvre vintage et lins
+                            lavés non utilisés collectés auprès de filatures des Hauts-de-France.
+                        </p>
+                    </div>
+
+                    <div class="card-media">
+                        <img class="card-image" src="./assets/images/tissues.jpg"
+                            alt="Chutes de tissus et de lin surcyclés">
+                    </div>
+                </article>
+            </li>
+
+            <li class="card">
+                <article class="card-content">
+                    <div class="card-header">
+                        <span class="card-badge">Filière 03</span>
+                        <p class="card-deposit">
+                            <span class="card-deposit-label">Gisement :</span>
+                            <data class="card-deposit-value">3,9 T</data>
+                        </p>
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title">Verre Fused &amp; Soufflé</h3>
+                        <p class="card-description">
+                            Bouteilles de domaines viticoles et chutes de miroiterie fondues
+                            au four solaire pour créer des textures organiques bulleuses.
+                        </p>
+                    </div>
+
+                    <div class="card-media">
+                        <img class="card-image" src="./assets/images/glasses.jpg"
+                            alt="Carafe et verres en verre recyclé soufflé">
+                    </div>
+                </article>
+            </li>
+
+            <li class="card">
+                <article class="card-content">
+                    <div class="card-header">
+                        <span class="card-badge">Filière 04</span>
+                        <p class="card-deposit">
+                            <span class="card-deposit-label">Gisement :</span>
+                            <data class="card-deposit-value">2,4 T</data>
+                        </p>
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="card-title">Plastique Terrazzo</h3>
+                        <p class="card-description">
+                            Bouchons PEHD et bouteilles collectés en circuits scolaires puis
+                            thermocompressés pour façonner des plateaux ultra-résistants et marbrés.
+                        </p>
+                    </div>
+
+                    <div class="card-media">
+                        <img class="card-image" src="./assets/images/plastic.jpg"
+                            alt="Plateau en plastique recyclé façon terrazzo">
+                    </div>
+                </article>
+            </li>
+
+        </ul>
     </section>
 
     <!-- ==================================== Section 4 -->
 
     <section class="section-container">
         <h2 class="section-title">Nouveautés & Coups de Cœur</h2>
-        
+
         <ul class="cards-container">
-    
+
             <li class="card">
                 <article class="card-content reverse-dir">
                     <div class="card-header">
                     </div>
-                        <div class="card-body">
+                    <div class="card-body">
                         <h3 class="card-title">Lampe d'Appoint "Sillon"</h3>
                         <p class="card-description">
                             Socle façonné dans une poutre de
@@ -227,18 +239,19 @@
                             <button class="main-green-btn">Ajouter +</button>
                         </a>
                     </div>
-            
+
                     <div class="card-media">
-                        <img class="card-image" src="./assets/images/lamp.jpeg" alt="Planches de chêne de réemploi dans un atelier">
+                        <img class="card-image" src="./assets/images/lamp.jpeg"
+                            alt="Planches de chêne de réemploi dans un atelier">
                     </div>
                 </article>
             </li>
-        
+
             <li class="card">
                 <article class="card-content reverse-dir">
                     <div class="card-header">
                     </div>
-                        <div class="card-body">
+                    <div class="card-body">
                         <h3 class="card-title">Soliflore "Ondée"</h3>
                         <p class="card-description">
                             Bouteilles champenoises fondues au
@@ -249,18 +262,19 @@
                             <button class="main-green-btn">Ajouter +</button>
                         </a>
                     </div>
-            
+
                     <div class="card-media">
-                    <img class="card-image" src="./assets/images/glass-vase.jpg" alt="Planches de chêne de réemploi dans un atelier">
+                        <img class="card-image" src="./assets/images/glass-vase.jpg"
+                            alt="Planches de chêne de réemploi dans un atelier">
                     </div>
                 </article>
             </li>
-        
+
             <li class="card">
                 <article class="card-content reverse-dir">
                     <div class="card-header">
                     </div>
-                        <div class="card-body">
+                    <div class="card-body">
                         <h3 class="card-title">Plateau "Granulat"</h3>
                         <p class="card-description">
                             Élaboré à partir de 240 bouchons
@@ -271,18 +285,19 @@
                             <button class="main-green-btn">Ajouter +</button>
                         </a>
                     </div>
-            
+
                     <div class="card-media">
-                    <img class="card-image" src="./assets/images/plastic-plate2.jpg" alt="Planches de chêne de réemploi dans un atelier">
+                        <img class="card-image" src="./assets/images/plastic-plate2.jpg"
+                            alt="Planches de chêne de réemploi dans un atelier">
                     </div>
                 </article>
             </li>
-        
+
             <li class="card">
                 <article class="card-content reverse-dir">
                     <div class="card-header">
                     </div>
-                        <div class="card-body">
+                    <div class="card-body">
                         <h3 class="card-title">Cabas "Alizé 04"</h3>
                         <p class="card-description">
                             Spinnaker de régate réformé assemblé à
@@ -293,16 +308,17 @@
                             <button class="main-green-btn">Ajouter +</button>
                         </a>
                     </div>
-            
+
                     <div class="card-media">
-                    <img class="card-image" src="./assets/images/bag.jpg" alt="Planches de chêne de réemploi dans un atelier">
+                        <img class="card-image" src="./assets/images/bag.jpg"
+                            alt="Planches de chêne de réemploi dans un atelier">
                     </div>
                 </article>
             </li>
-        
+
         </ul>
     </section>
-    
+
     <!-- ==================================== Section 5 (With TailWind css) -->
 
     <section class="flex flex-col ">
@@ -310,7 +326,7 @@
             <p class="text-2xl text-green-900 font-bold m-4 text-center">
                 Une Éthique Sans Concession</p>
             <p class="w-10/12 text-center text-gray-700 m-auto">
-                
+
                 Nous redéfinissons le luxe contemporain : la valeur d'un objet ne réside pas dans l'extraction
                 de nouvelles ressources mais dans la dignité de sa transformation.
             </p>
@@ -354,7 +370,7 @@
                     03
                 </div>
                 <div class="text-xl text-green-800 font-bold py-1">
-                   Zéro Déchet & Éco-
+                    Zéro Déchet & Éco-
                     Durabilité
                 </div>
                 <div class="text-gray-700">
@@ -369,15 +385,15 @@
     </section>
 
     <!-- ==================================== Workshop section -->
-     <hr class="w-1/2 my-9 mx-auto">
+    <hr class="w-1/2 my-9 mx-auto">
     <section class="workshop flex gap-3.5 w-11/12 m-auto bg-gray-100 rounded">
         <!-- <img src="/assets/images/carpenter.jpeg" 
         alt="Carpenter in his workshop"> -->
         <div class="img"></div>
-        
+
         <div class="p-2">
             <h2 class="section-title pt-1.5">Atelier : Façonnez votre plateau
-                        en Terrazzo Écologique</h2>
+                en Terrazzo Écologique</h2>
             <div class="text-gray-700">
                 Rejoignez Claire, artisane-designer, pour transformer vous-même 500g de
                 chutes plastiques et liège naturel en un superbe centre de table aux
@@ -391,7 +407,7 @@
                 <p class="text-gray-700">
                     Matières premières upcyclées et outillage individuel fourni <br>
                     Transmission des règles du thermomoulage à basse consommation <br>
-                    Pause thé bio & échange sur l'économie circulaire locale 
+                    Pause thé bio & échange sur l'économie circulaire locale
                 </p>
             </div>
 
@@ -400,20 +416,20 @@
                     <span class=" text-xl font-bold text-green-900">85 €</span> / participant
                 </div>
                 <!-- To contact -->
-                <a href="contact.html" class="main-red-btn">Réserver mon créneau</a> 
+                <a href="contact.html" class="main-red-btn">Réserver mon créneau</a>
             </div>
         </div>
     </section>
 
     <!-- ================================== Evaluation Section -->
-     <hr class="w-1/2 my-9 mx-auto">
+    <hr class="w-1/2 my-9 mx-auto">
     <section class="flex flex-col w-11/12 m-auto">
         <h2 class="section-title text-center">Ce que disent nos collectionneurs et makers</h2>
 
         <div class="flex justify-between gap-5 flex-wrap">
             <div class="evl-card">
                 <div class="flex justify-between">
-                        Antoine L.
+                    Antoine L.
                     <div class="flex ">
                         <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
                         <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
@@ -432,7 +448,7 @@
 
             <div class="evl-card">
                 <div class="flex justify-between">
-                        Chloé M.
+                    Chloé M.
                     <div class="flex ">
                         <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
                         <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
@@ -451,7 +467,7 @@
 
             <div class="evl-card">
                 <div class="flex justify-between">
-                        Maxime B.
+                    Maxime B.
                     <div class="flex ">
                         <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
                         <img src="./assets/icons/star.svg" alt="Five stars" class="w-5">
@@ -474,8 +490,8 @@
 
 
     <!-- ================================== The last section -->
-     <hr class="w-1/2 my-9 mx-auto">
-     <section class="bg-green-900 p-7">
+    <hr class="w-1/2 my-9 mx-auto">
+    <section class="bg-green-900 p-7">
         <p class="text-2xl text-white text-center">
             Prêt à transformer votre intérieur avec des pièces chargées d'histoire ?
         </p>
@@ -493,7 +509,7 @@
             </a>
         </div>
 
-     </section>
+    </section>
 
 
 
@@ -501,7 +517,7 @@
     <!-- ================================ -->
     <footer class="site-footer">
         <div class="footer-container">
-            
+
             <div class="footer-col">
                 <div class="brand">
                     <img src="assets/images/logo.png" alt="EcoArt Logo">
@@ -555,4 +571,5 @@
 
     </footer>
 </body>
+
 </html>
