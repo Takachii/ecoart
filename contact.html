@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Impact &amp; Contact - EcoArt</title>
+    <meta name="description" content="Contactez EcoArt pour vos commandes sur mesure, partenariats circulaires ou propositions de gisements de rebuts nobles. Suivez nos métriques d'impact.">
+    <title>EcoArt | Impact Écologique & Contact Direct</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -12,8 +13,8 @@
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 
@@ -28,6 +29,10 @@
                 <span>EcoArt</span>
             </a>
             <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menu navigation">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span>|||</span>
+                </label>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="produits.html">Catalogue</a></li>
@@ -307,13 +312,26 @@
             <div class="footer-col">
                 <h3>Newsletter Sobre</h3>
                 <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="email" name="email" placeholder="votre.email@domaine.fr" required>
                     <button type="submit">S'inscrire</button>
                 </form>
                 <small>Désinscription en 1 clic. Données hébergées en France.</small>
             </div>
 
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-info">
+                <span>© 2025 EcoArt (NextLine client). Tous droits réservés.</span>
+                <span>Hébergement vert basse consommation</span>
+                <span>Tél : <a href="tel:+33189452010">+33 (0)1 89 45 20 10</a></span>
+            </div>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Mentions Légales</a></li>
+                <li><a href="#">Accessibilité : Conforme RGAA</a></li>
+                <li><a href="#">Charte Éco-conception</a></li>
+            </ul>
         </div>
 
     </footer>
