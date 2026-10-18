@@ -1,11 +1,12 @@
-.intro-header-hero {
-    display: flex;
+.hero {
+  display: flex;
   flex-direction: column;
   padding: 40px 0px;
   position: relative;
   background-color: #ecf6ee;
 }
-.intro-header-hero .container {
+
+.hero-container {
   display: flex;
   flex-direction: column;
   max-width: 1360px;
@@ -16,7 +17,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.intro-header-hero .div {
+
+.hero-top {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -25,7 +27,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.intro-header-hero .container-2 {
+
+.hero-text {
   display: inline-flex;
   flex-direction: column;
   max-width: 768px;
@@ -35,7 +38,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.intro-header-hero .background {
+
+.hero-tag {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -45,19 +49,22 @@
   background-color: #e6f0e8;
   border-radius: 12px;
 }
-.intro-header-hero .icon-wrapper {
+
+.hero-tag-icon-box {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
   flex: 0 0 auto;
 }
-.intro-header-hero .icon {
+
+.hero-tag-icon {
   position: relative;
   width: 14.67px;
   height: 12px;
 }
-.intro-header-hero .text {
+
+.hero-tag-text {
   display: flex;
   align-items: center;
   margin-top: -1px;
@@ -71,7 +78,8 @@
   position: relative;
   width: fit-content;
 }
-.intro-header-hero .heading-apprenez-l {
+
+.hero-title {
   position: relative;
   width: fit-content;
   font-family: "Space Grotesk-Bold", Helvetica;
@@ -81,7 +89,8 @@
   letter-spacing: -0.9px;
   line-height: 44px;
 }
-.intro-header-hero .text-wrapper {
+
+.hero-description {
   font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
   font-weight: 400;
   color: #414943;
@@ -91,7 +100,9 @@
   position: relative;
   width: fit-content;
 }
-.intro-header-hero .live-impact-capacity {
+
+
+.stats-box {
   display: inline-flex;
   align-items: flex-start;
   gap: 16px;
@@ -102,7 +113,8 @@
   border-radius: 8px;
   box-shadow: 0px 1px 2px #0000000d;
 }
-.intro-header-hero .container-3 {
+
+.stat {
   display: inline-flex;
   flex-direction: column;
   min-width: 130px;
@@ -112,7 +124,8 @@
   align-self: stretch;
   flex: 0 0 auto;
 }
-.intro-header-hero .div-wrapper {
+
+.stat-label-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -121,7 +134,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.intro-header-hero .text-2 {
+
+.stat-label {
   position: relative;
   display: flex;
   align-items: center;
@@ -135,7 +149,8 @@
   line-height: 14px;
   white-space: nowrap;
 }
-.intro-header-hero .paragraph {
+
+.stat-number-row {
   display: flex;
   align-items: flex-end;
   padding: 0px 0px 2px;
@@ -144,7 +159,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.intro-header-hero .text-3 {
+
+.stat-number {
   display: flex;
   align-items: center;
   margin-top: -1px;
@@ -158,10 +174,14 @@
   position: relative;
   width: fit-content;
 }
-.intro-header-hero .text-4 {
+
+.stat-number-brown {
+  color: #944931;
+}
+
+.stat-unit {
   display: flex;
   align-items: center;
-  margin-left: -2.84e-14px;
   font-family: "Space Grotesk-Medium", Helvetica;
   font-weight: 500;
   color: #944931;
@@ -172,7 +192,13 @@
   position: relative;
   width: fit-content;
 }
-.intro-header-hero .text-5 {
+
+.stat-unit-dark {
+  color: #151d19;
+  text-decoration: none;
+}
+
+.stat-caption {
   display: flex;
   align-items: center;
   font-family: "Space Grotesk-Bold", Helvetica;
@@ -185,35 +211,8 @@
   position: relative;
   width: fit-content;
 }
-.intro-header-hero .text-6 {
-  display: flex;
-  align-items: center;
-  margin-top: -1px;
-  font-family: "Space Grotesk-Bold", Helvetica;
-  font-weight: 700;
-  color: #944931;
-  font-size: 48px;
-  letter-spacing: -1.44px;
-  line-height: 48px;
-  white-space: nowrap;
-  position: relative;
-  width: fit-content;
-}
-.intro-header-hero .text-7 {
-  display: flex;
-  align-items: center;
-  margin-left: -0.01px;
-  font-family: "Space Grotesk-Medium", Helvetica;
-  font-weight: 500;
-  color: #151d19;
-  font-size: 24px;
-  letter-spacing: -1.44px;
-  line-height: 32px;
-  white-space: nowrap;
-  position: relative;
-  width: fit-content;
-}
-.intro-header-hero .pill-nav-filter {
+
+.filters {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -223,7 +222,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.intro-header-hero .margin {
+
+.filters-label-box {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -231,36 +231,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.intro-header-hero .button {
-  all: unset;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 16px;
-  position: relative;
-  flex: 0 0 auto;
-  background-color: #14422d;
-  border-radius: 12px;
-}
-.intro-header-hero .text-8 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -1px;
-  font-family: "Space Grotesk-Bold", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 13px;
-  text-align: center;
-  letter-spacing: 0.52px;
-  line-height: 16px;
-  white-space: nowrap;
-  position: relative;
-  width: fit-content;
-}
-.intro-header-hero .button-2 {
+
+.filter-btn {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -273,7 +245,12 @@
   background-color: #e6f0e8;
   border-radius: 12px;
 }
-.intro-header-hero .text-9 {
+
+.filter-btn-active {
+  background-color: #14422d;
+}
+
+.filter-btn-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,13 +266,39 @@
   position: relative;
   width: fit-content;
 }
-.ateliers-grid {
+
+.filter-btn-active .filter-btn-text {
+  color: #ffffff;
+}
+
+
+
+.workshops {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 40px 24px;
 }
-.ateliers-grid .container {
+
+.inline-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.full-width-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.row-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -304,23 +307,66 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.ateliers-grid .div {
+
+.icon-label {
   display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  gap: 4px;
   position: relative;
   flex: 0 0 auto;
+  width: 25%;
 }
-.ateliers-grid .div-wrapper {
+
+.small-text {
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #414943;
+  font-size: 11px;
+  letter-spacing: 0.66px;
+  line-height: 14px;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  white-space: nowrap;
 }
-.ateliers-grid .text {
+
+.small-text-brown {
+  color: #944931;
+}
+
+.green-small-text {
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #14422d;
+  font-size: 11px;
+  letter-spacing: 0.66px;
+  line-height: 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  white-space: nowrap;
+}
+
+.body-small-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
+  font-weight: 400;
+  color: #414943;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.workshops-title {
   font-family: "Space Grotesk-Medium", Helvetica;
   font-weight: 500;
   color: #151d19;
@@ -334,61 +380,27 @@
   margin-top: -1px;
   white-space: nowrap;
 }
-.ateliers-grid .text-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
-  font-weight: 400;
-  color: #414943;
-  font-size: 14px;
-  letter-spacing: 0.14px;
-  line-height: 20px;
-  white-space: nowrap;
-}
-.ateliers-grid .container-2 {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  position: relative;
-  flex: 0 0 auto;
-  width: 25%;
-}
-.ateliers-grid .icon {
+
+.workshops-note-icon {
   position: relative;
   width: 12.75px;
   height: 12.74px;
   bottom: 0.5em;
 }
-.ateliers-grid .text-2 {
-  font-family: "Space Grotesk-Bold", Helvetica;
-  font-weight: 700;
-  color: #414943;
-  font-size: 11px;
-  letter-spacing: 0.66px;
-  line-height: 14px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  margin-top: -1px;
-  white-space: nowrap;
-}
-.ateliers-grid .element-workshop-cards {
+
+
+.cards-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: 564px 560px;
   height: fit-content;
   gap: 50px;
   padding: 20px;
-    
 }
-.ateliers-grid .article-card-bois {
+
+
+.workshop-card {
   position: relative;
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -399,9 +411,9 @@
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 1px 2px #0000000d;
-  
 }
-.ateliers-grid .background {
+
+.card-image-area {
   display: flex;
   flex-direction: column;
   height: 256px;
@@ -413,17 +425,34 @@
   z-index: 1;
   background-color: #e6f0e8;
 }
-.ateliers-grid .div-2 {
+
+.card-image {
   position: relative;
   flex: 1;
   align-self: stretch;
   width: 100%;
   flex-grow: 1;
-  background-image: url(../assets/images/Background-cart1.png);
   background-size: cover;
   background-position: 50% 50%;
 }
-.ateliers-grid .overlay-overlayblur-wrapper {
+
+.image-wood {
+  background-image: url(../assets/images/Background-cart1.png);
+}
+
+.image-glass {
+  background-image: url(../assets/images/background-cart2.png);
+}
+
+.image-textile {
+  background-image: url(../assets/images/background-cart3.png);
+}
+
+.image-plastic {
+  background-image: url(../assets/images/background-cart4.png);
+}
+
+.badge-wrapper {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -432,7 +461,8 @@
   top: 8px;
   left: 8px;
 }
-.ateliers-grid .overlay-overlayblur {
+
+.badge {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -445,26 +475,32 @@
   backdrop-filter: blur(6px) brightness(100%);
   -webkit-backdrop-filter: blur(6px) brightness(100%);
 }
-.ateliers-grid .img {
+
+.badge-icon-wood {
   position: relative;
   width: 14px;
   height: 11.67px;
 }
-.ateliers-grid .text-3 {
-  font-family: "Space Grotesk-Bold", Helvetica;
-  font-weight: 700;
-  color: #14422d;
-  font-size: 11px;
-  letter-spacing: 0.66px;
-  line-height: 14px;
+
+.badge-icon-glass {
   position: relative;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  margin-top: -1px;
-  white-space: nowrap;
+  width: 10.5px;
+  height: 10.5px;
 }
-.ateliers-grid .background-shadow-wrapper {
+
+.badge-icon-textile {
+  position: relative;
+  width: 10.5px;
+  height: 11.67px;
+}
+
+.badge-icon-plastic {
+  position: relative;
+  width: 12.27px;
+  height: 12.25px;
+}
+
+.price-wrapper {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -472,7 +508,8 @@
   right: 8px;
   bottom: 5px;
 }
-.ateliers-grid .background-shadow {
+
+.price-tag {
   display: inline-flex;
   padding: 3px 8px;
   background-color: #944931;
@@ -482,7 +519,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.ateliers-grid .text-4 {
+
+.price-text {
   font-family: "Space Grotesk-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -496,7 +534,8 @@
   margin-top: -1px;
   white-space: nowrap;
 }
-.ateliers-grid .container-3 {
+
+.card-body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -508,7 +547,8 @@
   flex: 0 0 auto;
   z-index: 0;
 }
-.ateliers-grid .container-4 {
+
+.card-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -518,36 +558,26 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.ateliers-grid .icon-2 {
+
+.icon-clock {
   position: relative;
   width: 13.33px;
   height: 13.33px;
 }
-.ateliers-grid .icon-3 {
+
+.icon-signal {
   position: relative;
   width: 10.67px;
   height: 10.67px;
 }
-.ateliers-grid .icon-4 {
+
+.icon-user {
   position: relative;
   width: 14.67px;
   height: 10.67px;
 }
-.ateliers-grid .text-5 {
-  font-family: "Space Grotesk-Bold", Helvetica;
-  font-weight: 700;
-  color: #944931;
-  font-size: 11px;
-  letter-spacing: 0.66px;
-  line-height: 14px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  margin-top: -1px;
-  white-space: nowrap;
-}
-.ateliers-grid .heading {
+
+.card-heading {
   padding: 4px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -557,7 +587,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.ateliers-grid .atelier-menuiserie {
+
+.card-title {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -568,7 +599,8 @@
   letter-spacing: 0;
   line-height: 28px;
 }
-.ateliers-grid .p {
+
+.card-description {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -579,17 +611,19 @@
   letter-spacing: 0.16px;
   line-height: 24px;
 }
-.ateliers-grid .margin {
+
+.card-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 16px 0px 0px;
   position: relative;
   align-self: stretch;
-  width: 100%;
+  width: 90%;
   flex: 0 0 auto;
 }
-.ateliers-grid .background-2 {
+
+.dates-box {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -602,7 +636,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.ateliers-grid .container-5 {
+
+.dates-list {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -612,7 +647,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.ateliers-grid .background-3 {
+
+.date-chip {
   display: inline-flex;
   flex-direction: column;
   padding: 4px 8px;
@@ -623,7 +659,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.ateliers-grid .text-6 {
+
+.date-chip-text {
   font-family: "Space Grotesk-Bold", Helvetica;
   font-weight: 700;
   color: #151d19;
@@ -637,7 +674,8 @@
   margin-top: -1px;
   white-space: nowrap;
 }
-.ateliers-grid .container-6 {
+
+.card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -647,12 +685,32 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.ateliers-grid .icon-5 {
+
+.footer-icon-wood {
   position: relative;
   width: 14.96px;
   height: 15.75px;
 }
-.ateliers-grid .link {
+
+.footer-icon-glass {
+  position: relative;
+  width: 12px;
+  height: 15px;
+}
+
+.footer-icon-textile {
+  position: relative;
+  width: 15px;
+  height: 12px;
+}
+
+.footer-icon-plastic {
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+
+.select-button {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -662,7 +720,8 @@
   background-color: #14422d;
   border-radius: 4px;
 }
-.ateliers-grid .text-7 {
+
+.select-link {
   font-family: "Space Grotesk-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -675,158 +734,39 @@
   width: fit-content;
   margin-top: -1px;
   white-space: nowrap;
+  text-decoration: none;
 }
-.ateliers-grid .icon-6 {
+
+.arrow-icon {
   position: relative;
   width: 12px;
   height: 12px;
 }
-.ateliers-grid .article-card {
-  position: relative;
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: #ecf6ee;
-  border-radius: 8px;
-  
-  box-shadow: 0px 1px 2px #0000000d;
- 
-}
-.ateliers-grid .div-3 {
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
-  background-image: url(../assets/images/background-cart2.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.ateliers-grid .icon-7 {
-  position: relative;
-  width: 10.5px;
-  height: 10.5px;
-}
-.ateliers-grid .container-7 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-  padding: 24px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  z-index: 0;
-}
-.ateliers-grid .text-wrapper-2 {
-  position: relative;
-  display: flex;
-  align-items: center;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Space Grotesk-Bold", Helvetica;
-  font-weight: 700;
-  color: #151d19;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: 28px;
-}
-.ateliers-grid .icon-8 {
-  position: relative;
-  width: 12px;
-  height: 15px;
-}
-.ateliers-grid .article-card-2 {
-  position: relative;
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: #ecf6ee;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 1px 2px #0000000d;
-}
-.ateliers-grid .div-4 {
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
- background-image: url(../assets/images/background-cart3.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.ateliers-grid .icon-9 {
-  position: relative;
-  width: 10.5px;
-  height: 11.67px;
-}
-.ateliers-grid .icon-10 {
-  position: relative;
-  width: 15px;
-  height: 12px;
-}
-.ateliers-grid .article-card-3 {
-  position: relative;
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: #ecf6ee;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0px 1px 2px #0000000d;
-}
-.ateliers-grid .div-5 {
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
-  background-image: url(../assets/images/background-cart4.png);
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.ateliers-grid .icon-11 {
-  position: relative;
-  width: 12.27px;
-  height: 12.25px;
-}
-.ateliers-grid .icon-12 {
-  position: relative;
-  width: 15px;
-  height: 15px;
-}
-.interactive-booking {
+
+.booking {
   padding: 40px 24px;
   background-color: #e1ebe3;
 }
-.interactive-booking .container {
+
+.booking-layout {
   display: grid;
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  align-items: start;
+  gap: 32px;
+  max-width: 1360px;
+  margin: 0 auto;
 }
-.interactive-booking .left-side-context {
+
+
+.booking-info {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 0;
 }
-.interactive-booking .div {
+
+.booking-intro {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -837,7 +777,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.interactive-booking .text {
+
+.booking-label {
   position: relative;
   display: flex;
   align-items: center;
@@ -851,7 +792,8 @@
   line-height: 14px;
   white-space: nowrap;
 }
-.interactive-booking .heading {
+
+.booking-heading-box {
   padding: 4px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -861,7 +803,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.interactive-booking .r-servez-votre-place {
+
+.booking-title {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -872,16 +815,27 @@
   letter-spacing: -0.72px;
   line-height: 44px;
 }
-.interactive-booking .div-wrapper {
+
+.text-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
   align-self: stretch;
   width: 100%;
+  min-width: 0;
   flex: 0 0 auto;
 }
-.interactive-booking .validez-votre-cr {
+
+.column-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.booking-description {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -892,7 +846,8 @@
   letter-spacing: 0.16px;
   line-height: 24px;
 }
-.interactive-booking .feature-cards {
+
+.benefits {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -902,7 +857,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
-.interactive-booking .background-shadow {
+
+.benefit-card {
   display: flex;
   align-items: flex-start;
   gap: 16px;
@@ -915,7 +871,8 @@
   border-radius: 8px;
   box-shadow: 0px 1px 2px #0000000d;
 }
-.interactive-booking .margin {
+
+.benefit-icon-box {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -923,19 +880,26 @@
   position: relative;
   flex: 0 0 auto;
 }
-.interactive-booking .icon {
+
+.benefit-icon-shield {
   position: relative;
   width: 18.67px;
   height: 23.33px;
 }
-.interactive-booking .container-2 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
+
+.benefit-icon-chair {
   position: relative;
-  flex: 0 0 auto;
+  width: 16.33px;
+  height: 23.33px;
 }
-.interactive-booking .text-wrapper {
+
+.benefit-icon-calendar {
+  position: relative;
+  width: 24.5px;
+  height: 25.67px;
+}
+
+.benefit-title {
   position: relative;
   display: flex;
   align-items: center;
@@ -949,7 +913,8 @@
   line-height: 28px;
   white-space: nowrap;
 }
-.interactive-booking .p {
+
+.small-description {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -960,42 +925,39 @@
   letter-spacing: 0.14px;
   line-height: 20px;
 }
-.interactive-booking .img {
-  position: relative;
-  width: 16.33px;
-  height: 23.33px;
-}
-.interactive-booking .icon-2 {
-  position: relative;
-  width: 24.5px;
-  height: 25.67px;
-}
-.interactive-booking .div-2 {
+
+.info-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  flex-wrap: wrap;
+  gap: 20px;
   position: relative;
   align-self: stretch;
-  width: 100%;
   flex: 0 0 auto;
-  background-color: #e6f0e8;
-  border-radius: 8px;
+  width: 100%;
   padding: 12px;
+  box-sizing: border-box;
+  background-color: #e6f0e8;
+  border-top: 1px solid #e6f0e8;
+  border-radius: 8px;
 }
-.interactive-booking .container-3 {
+
+.location-info {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   position: relative;
   flex: 0 0 auto;
 }
-.interactive-booking .icon-3 {
+
+.location-icon {
   position: relative;
   width: 14px;
   height: 20px;
 }
-.interactive-booking .text-2 {
+
+.location-name {
   position: relative;
   display: flex;
   align-items: center;
@@ -1009,7 +971,8 @@
   line-height: 20px;
   white-space: nowrap;
 }
-.interactive-booking .text-3 {
+
+.location-address {
   position: relative;
   display: flex;
   align-items: center;
@@ -1022,7 +985,8 @@
   line-height: 20px;
   white-space: nowrap;
 }
-.interactive-booking .text-4 {
+
+.map-link {
   position: relative;
   display: flex;
   align-items: center;
@@ -1037,49 +1001,38 @@
   text-decoration: underline;
   white-space: nowrap;
 }
-.interactive-booking .right-side-the {
+
+.booking-panel {
   grid-row: 1 / 2;
   grid-column: 2 / 13;
   align-self: start;
   height: fit-content;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px;
+  left: 1em;
+  min-width: 0;
+  padding: 32px;
+  box-sizing: border-box;
   background-color: #ffffff;
-
-  border-radius: 8px;
-}
-.interactive-booking .right-side-the-2 {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #ffffff01;
-  box-shadow:
-    0px 2px 4px -2px #0000001a,
-    0px 4px 6px -1px #0000001a;
-  width: 100%;
   border-radius: 8px;
 }
 
-.interactive-booking .form {
+.booking-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: stretch;
+  gap: 20px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  min-width: 0;
   flex: 0 0 auto;
 }
-.interactive-booking .step-workshop {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 50em;
-}
-.interactive-booking .div-3 {
+
+
+.field-label {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
@@ -1090,22 +1043,71 @@
   letter-spacing: 0.52px;
   line-height: 16px;
 }
-.interactive-booking .span {
+
+.label-text {
   color: #151d19;
   letter-spacing: 0.07px;
 }
-.interactive-booking .text-wrapper-2 {
+
+.required-star {
   color: #ba1a1a;
   letter-spacing: 0.07px;
 }
-.interactive-booking .options {
+
+.plain-label {
+  position: relative;
   display: flex;
-  padding: 8px 32px 8px 20px;
-  width: 50em;
+  align-items: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-weight: 700;
+  color: #151d19;
+  font-size: 13px;
+  letter-spacing: 0.52px;
+  line-height: 16px;
+}
+
+
+.workshop-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  min-width: 0;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  position: relative;
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
+}
+
+.select-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 16px;
+  box-sizing: border-box;
   background-color: #ecf6ee;
   border-radius: 4px;
 }
-.interactive-booking .container-4 {
+
+.select-inner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1113,8 +1115,10 @@
   position: relative;
   flex: 1;
   flex-grow: 1;
+  min-width: 0;
 }
-.interactive-booking .text-wrapper-3 {
+
+.dropdown {
   position: relative;
   display: flex;
   align-items: center;
@@ -1125,47 +1129,52 @@
   color: #151d19;
   font-size: 16px;
   letter-spacing: 0.16px;
-  line-height: 21px;
+  line-height: 22px;
+  overflow-wrap: anywhere;
+  border: none;
+  background-color: #ECF6EE;
 }
-.interactive-booking .div-4 {
+
+.date-box {
   display: flex;
-  width: 50em;
-}
-.interactive-booking .container-5 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-}
-.interactive-booking .input {
-  display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 8px 16px;
+  padding: 8px 12px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
   flex: 0 0 auto;
   background-color: #ecf6ee;
   border-radius: 4px;
   overflow: hidden;
 }
-.interactive-booking .container-6 {
+
+.date-row {
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
 }
-.interactive-booking .container-7 {
+
+.center-row {
   display: flex;
+  align-items: center;
+  min-width: 0;
 }
-.interactive-booking .paragraph {
+
+.date-numbers {
   display: inline-flex;
-  gap: 1px;
+  flex-wrap: wrap;
+  gap: 2px;
   padding: 1px;
 }
-.interactive-booking .text-wrapper-4 {
+
+.date-number {
   position: relative;
   display: flex;
   align-items: center;
@@ -1179,7 +1188,8 @@
   line-height: 24px;
   white-space: nowrap;
 }
-.interactive-booking .button-menu {
+
+.calendar-button {
   display: flex;
   flex-direction: column;
   width: 20px;
@@ -1188,43 +1198,42 @@
   padding: 2px;
   position: relative;
 }
-.interactive-booking .image {
+
+.calendar-icon {
   position: relative;
   width: 16px;
   height: 15px;
 }
-.interactive-booking .container-8 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  padding: 0px 0px 3px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-}
-.interactive-booking .container-9 {
+
+.counter {
   display: flex;
   align-items: center;
-  gap: 4px;
+  flex-wrap: wrap;
+  gap: 6px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
 }
-.interactive-booking .button {
+
+.counter-button {
   all: unset;
   box-sizing: border-box;
   display: flex;
-  width: 40px;
-  height: 40px;
+  flex: 0 0 40px;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
   position: relative;
   background-color: #e6f0e8;
   border-radius: 4px;
 }
-.interactive-booking .text-5 {
+
+.counter-button-text {
   position: relative;
   display: flex;
   align-items: center;
@@ -1239,40 +1248,45 @@
   line-height: 28px;
   white-space: nowrap;
 }
-.interactive-booking .container-wrapper {
+
+.counter-number-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 64px;
-  align-items: flex-start;
-  padding: 8px 0px;
+  min-height: 40px;
+  padding: 4px;
+  box-sizing: border-box;
   position: relative;
   background-color: #ecf6ee;
   border-radius: 4px;
   overflow: hidden;
 }
-.interactive-booking .container-10 {
+
+.counter-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
 }
-.interactive-booking .container-11 {
+
+.counter-number-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  overflow: scroll;
+  overflow: hidden;
 }
-.interactive-booking .container-11::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
-.interactive-booking .text-6 {
+
+.counter-number {
   position: relative;
   display: flex;
   align-items: center;
@@ -1287,20 +1301,23 @@
   line-height: 24px;
   white-space: nowrap;
 }
-.interactive-booking .rectangle-align {
+
+.counter-spacer-box {
   display: inline-flex;
   align-items: flex-start;
   position: relative;
   align-self: stretch;
   flex: 0 0 auto;
 }
-.interactive-booking .rectangle {
+
+.counter-spacer {
   position: relative;
   align-self: stretch;
   width: 15px;
   opacity: 0;
 }
-.interactive-booking .margin-2 {
+
+.counter-hint-box {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1308,7 +1325,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.interactive-booking .text-7 {
+
+.counter-hint {
   position: relative;
   display: flex;
   align-items: center;
@@ -1322,53 +1340,58 @@
   line-height: 14px;
   white-space: nowrap;
 }
-.interactive-booking .container-12 {
+
+.contact-group,
+.accessibility-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  padding: 0px 0px 1px;
+  align-items: stretch;
+  gap: 8px;
   position: relative;
-  flex: 1;
-  flex-grow: 1;
-}
-.interactive-booking .text-wrapper-5 {
-  position: relative;
-  display: flex;
-  align-items: center;
   align-self: stretch;
-  margin-top: -1px;
-  font-family: "Space Grotesk-Bold", Helvetica;
-  font-weight: 700;
-  color: #151d19;
-  font-size: 13px;
-  letter-spacing: 0.52px;
-  line-height: 16px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  flex: 0 0 auto;
 }
-.interactive-booking .step-contact {
+
+.contact-group {
+  padding: 4px 0px 0px;
+}
+
+.accessibility-group {
+  padding: 0px 0px 7px;
+}
+
+.contact-row {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
+  align-items: stretch;
+  justify-content: center;
+  gap: 16px;
   padding: 4px 0px 0px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  min-width: 0;
   flex: 0 0 auto;
 }
-.interactive-booking .input-2 {
+
+.text-input-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 9px 16px 10px;
+  padding: 10px 16px;
   position: relative;
-  flex: 1;
-  flex-grow: 1;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 44px;
+  box-sizing: border-box;
   background-color: #ecf6ee;
   border-radius: 4px;
   overflow: hidden;
 }
-.interactive-booking .text-wrapper-6 {
+
+.text-input {
   position: relative;
   display: flex;
   align-items: center;
@@ -1380,68 +1403,59 @@
   font-size: 16px;
   letter-spacing: 0.16px;
   line-height: normal;
+  border: none;
+  background-color: #ECF6EE;
 }
-.interactive-booking .container-13 {
+
+.message-box {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 16px;
-  padding: 4px 0px 0px;
+  padding: 12px 16px;
   position: relative;
   align-self: stretch;
   width: 100%;
-  flex: 0 0 auto;
-}
-.interactive-booking .accessibility-needs {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  padding: 0px 0px 7px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-.interactive-booking .textarea {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 8px 16px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
   flex: 0 0 auto;
   background-color: #ecf6ee;
   border-radius: 4px;
   overflow: scroll;
+  overflow-wrap: anywhere;
 }
-.interactive-booking .textarea::-webkit-scrollbar {
+
+.message-box::-webkit-scrollbar {
   width: 0;
   display: none;
 }
-.interactive-booking .pr-cisez-tout-besoin {
+
+.message-placeholder {
   position: relative;
   align-self: stretch;
-  margin-top: -1px;
+  margin: 0;
   font-family: "Atkinson Hyperlegible Next-Regular", Helvetica;
   font-weight: 400;
   color: #9ca3af;
   font-size: 16px;
   letter-spacing: 0.16px;
   line-height: 24px;
+  overflow-wrap: anywhere;
 }
-.interactive-booking .consent-checkboxes {
+
+
+.consent-row {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
   padding: 4px 0px 0px;
   position: relative;
   align-self: stretch;
   width: 100%;
+  min-width: 0;
   flex: 0 0 auto;
 }
-.interactive-booking .input-margin {
+
+.checkbox-box {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1449,29 +1463,24 @@
   position: relative;
   flex: 0 0 auto;
 }
-.interactive-booking .input-3 {
-  position: relative;
-  width: 13px;
-  height: 13px;
-  background-color: #ffffff;
-  border-radius: 2.5px;
-  border: 1px solid;
-  border-color: #767676;
+
+.checkbox {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
 }
-.interactive-booking .container-14 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px 68.8px 0px 0px;
+
+
+.total-box {
   position: relative;
+  width: 114px;
+  height: 48px;
+  min-width: 0;
   flex: 0 0 auto;
 }
-.interactive-booking .paragraph-2 {
-  position: relative;
-  width: 113.58px;
-  height: 48px;
-}
-.interactive-booking .text-8 {
+
+.total-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -1486,7 +1495,8 @@
   line-height: 14px;
   white-space: nowrap;
 }
-.interactive-booking .text-9 {
+
+.total-price {
   position: absolute;
   top: 14px;
   left: 0;
@@ -1501,7 +1511,8 @@
   line-height: 34px;
   white-space: nowrap;
 }
-.interactive-booking .text-10 {
+
+.total-tax {
   position: absolute;
   top: 25px;
   left: 70px;
@@ -1516,33 +1527,40 @@
   line-height: 20px;
   white-space: nowrap;
 }
-.interactive-booking .button-2 {
+
+.submit-button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 16px 24px;
+  flex: 1 1 220px;
+  gap: 8px;
+  margin-left: 20em;
+  padding: 12px 16px;
+  border: 0;
+  cursor: pointer;
   position: relative;
-  flex: 0 0 auto;
   background-color: #944931;
   border-radius: 4px;
   box-shadow: 0px 1px 2px #0000000d;
 }
-.interactive-booking .icon-wrapper {
+
+.submit-icon-box {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   flex: 0 0 auto;
 }
-.interactive-booking .icon-4 {
+
+.submit-icon {
   position: relative;
   width: 16.67px;
   height: 16.67px;
 }
-.interactive-booking .text-11 {
+
+.submit-text {
   position: relative;
   display: flex;
   align-items: center;
@@ -1555,340 +1573,6 @@
   font-size: 13px;
   text-align: center;
   letter-spacing: 0.52px;
-  line-height: 16px;
-  white-space: nowrap;
-}
-/* Booking section */
-.interactive-booking {
-    padding: 40px 24px;
-    background-color: #e1ebe3;
-}
-.interactive-booking .container {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-    align-items: start;
-    gap: 32px;
-    max-width: 1360px;
-    margin: 0 auto;
-}
-/* Left content */
-.interactive-booking .left-side-context {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    min-width: 0;
-}
-/* Right booking panel */
-.interactive-booking .right-side-the {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    left: 1em;
-    min-width: 0;
-    padding: 32px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-sizing: border-box;
-}
-.interactive-booking .right-side-the-2 {
-    display: none;
-}
-/* Form layout */
-.interactive-booking .form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 20px;
-    width: 100%;
-    min-width: 0;
-}
-/* Workshop selection */
-.interactive-booking .step-workshop {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 100%;
-    min-width: 0;
-}
-/* Shared field labels */
-.interactive-booking .div-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    min-width: 0;
-}
-/* Select fields */
-.interactive-booking .options {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 44px;
-    padding: 10px 16px;
-    box-sizing: border-box;
-    background-color: #ecf6ee;
-    border-radius: 4px;
-}
-.interactive-booking .container-4 {
-    flex: 1;
-    min-width: 0;
-}
-.interactive-booking .text-wrapper-3 {
-    font-size: 16px;
-    line-height: 22px;
-    overflow-wrap: anywhere;
-}
-/* Two-column form rows */
-.interactive-booking .div-4 {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    width: 100%;
-    min-width: 0;
-}
-.interactive-booking .container-5,
-.interactive-booking .container-8,
-.interactive-booking .container-12 {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 6px;
-    flex: 1 1 0;
-    width: 0;
-    min-width: 0;
-}
-/* Date field */
-.interactive-booking .input {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 44px;
-    padding: 8px 12px;
-    box-sizing: border-box;
-    background-color: #ecf6ee;
-    border-radius: 4px;
-}
-.interactive-booking .container-6 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    width: 100%;
-    min-width: 0;
-}
-.interactive-booking .container-7 {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-}
-.interactive-booking .paragraph {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 2px;
-}
-/* Participants counter */
-.interactive-booking .container-9 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 6px;
-    width: 100%;
-}
-.interactive-booking .button {
-    display: flex;
-    flex: 0 0 40px;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: 0;
-    cursor: pointer;
-    background-color: #e6f0e8;
-    border-radius: 4px;
-}
-.interactive-booking .container-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    min-height: 40px;
-    padding: 4px;
-    box-sizing: border-box;
-    background-color: #ecf6ee;
-    border-radius: 4px;
-}
-
-.interactive-booking .container-10,
-.interactive-booking .container-11 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.interactive-booking .container-11 {
-    overflow: hidden;
-}
-
-.interactive-booking .margin-2 {
-    padding-left: 4px;
-}
-
-/* Contact fields */
-.interactive-booking .step-contact,
-.interactive-booking .accessibility-needs {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-}
-
-.interactive-booking .input-2 {
-    display: flex;
-    flex: 1 1 0;
-    min-width: 0;
-    min-height: 44px;
-    padding: 10px 16px;
-    box-sizing: border-box;
-    background-color: #ecf6ee;
-    border-radius: 4px;
-}
-
-.interactive-booking .container-13 {
-    display: flex;
-    align-items: stretch;
-    gap: 16px;
-    width: 100%;
-    min-width: 0;
-}
-
-/* Accessibility textarea */
-.interactive-booking .textarea {
-    display: flex;
-    width: 100%;
-    min-height: 100px;
-    padding: 12px 16px;
-    box-sizing: border-box;
-    background-color: #ecf6ee;
-    border-radius: 4px;
-    overflow-wrap: anywhere;
-}
-
-.interactive-booking .pr-cisez-tout-besoin {
-    margin: 0;
-    overflow-wrap: anywhere;
-}
-
-/* Consent checkbox */
-.interactive-booking .consent-checkboxes {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    width: 100%;
-    min-width: 0;
-}
-
-.interactive-booking .input-3 {
-    flex: 0 0 16px;
-    width: 16px;
-    height: 16px;
-    box-sizing: border-box;
-}
-
-.interactive-booking .container-14 {
-    flex: 1;
-    min-width: 0;
-    padding: 0;
-}
-
-.interactive-booking .p {
-    overflow-wrap: anywhere;
-}
-
-/* Total and submit button */
-.interactive-booking .div-2 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    padding: 16px 0 0;
-    box-sizing: border-box;
-    border-top: 1px solid #e6f0e8;
-}
-
-.interactive-booking .paragraph-2 {
-    flex: 0 0 auto;
-    width: 114px;
-    min-width: 0;
-}
-
-.interactive-booking .button-2 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 220px;
-    gap: 8px;
-    min-height: 48px;
-    padding: 12px 16px;
-    border: 0;
-    cursor: pointer;
-    background-color: #944931;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.interactive-booking .text-11 {
-    white-space: normal;
-    line-height: 20px;
-}
-
-/* Smaller screens */
-@media (max-width: 900px) {
-    .interactive-booking .container {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .interactive-booking .right-side-the {
-        padding: 24px;
-    }
-}
-
-@media (max-width: 600px) {
-    .interactive-booking {
-        padding: 24px 16px;
-    }
-
-    .interactive-booking .right-side-the {
-        padding: 18px;
-    }
-
-    .interactive-booking .div-4,
-    .interactive-booking .container-13 {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .interactive-booking .container-5,
-    .interactive-booking .container-8,
-    .interactive-booking .container-12,
-    .interactive-booking .input-2 {
-        width: 100%;
-        flex: 1 1 auto;
-    }
-
-    .interactive-booking .div-2 {
-        align-items: stretch;
-        flex-direction: column;
-    }
-
-    .interactive-booking .button-2 {
-        width: 100%;
-        flex-basis: auto;
-    }
+  line-height: 20px;
+  white-space: normal;
 }

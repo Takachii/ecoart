@@ -6,21 +6,33 @@
     <title>Impact &amp; Contact - EcoArt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
 
-<header class="site-header">
-    <a class="logo" href="#"><img src="assets/images/logo.png" alt="">EcoArt</a>
-    <nav aria-label="Navigation principale">
-        <a href="#">Accueil</a>
-        <a href="#">Catalogue</a>
-        <a href="#">Ateliers &amp; Services</a>
-        <a href="#" class="active">Nos Artisans</a>
-        <a href="#">Impact &amp; Contact</a>
-    </nav>
-</header>
+    <header>
+        <div class="header-child">
+            <a href="index.html" class="logo-space"> 
+                <img src="./assets/images/logo.png" alt="">
+                <span>EcoArt</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="produits.html">Catalogue</a></li>
+                    <li><a href="services.html">Ateliers & Services</a></li>
+                    <li><a href="artisans.html">Nos Artisans</a></li>
+                    <li><a href="contact.html" class="active">Impact & Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 <main>
     <!-- Hero -->
@@ -204,47 +216,61 @@
     </section>
 </main>
 
-<footer class="site-footer">
-    <div class="footer-grid">
-        <div>
-            <a class="logo" href="#"><img src="assets/images/logo.png" alt="">EcoArt</a>
-            <p>Plateforme d'artisanat circulaire valorisant les rebuts nobles. Conception numérique sobre, traçabilité certifiée et réduction de l'empreinte carbone matériel.</p>
-            <span class="pill">Index Éco-Index : A</span>
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="footer-col">
+                <div class="brand">
+                    <img src="assets/images/logo.png" alt="EcoArt Logo">
+                    <h3>EcoArt</h3>
+                </div>
+                <p>Plateforme d'artisanat circulaire valorisant
+                    les rebuts nobles. Conception numérique
+                    sobre, traçabilité certifiée et réduction de
+                    l'empreinte carbone matériel.
+                </p>
+                <div class="eco-badge">
+                    <img src="assets/icons/selected.svg" alt="icon selected">
+                    Index Éco-Index : A
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Filière Circulaire</h3>
+                <ul class="footer-list">
+                    <li>Bois de réemploi & chêne sauvé</li>
+                    <li>Verre recyclé au four solaire</li>
+                    <li>Textiles surcyclés d'ateliers</li>
+                    <li>Métaux ferreux reconditionnés</li>
+                    <li>Charte zéro déchet d'atelier</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Labels & Certifications</h3>
+                <div class="cert-card">
+                    <strong>Label Upcycling Certifié UE</strong>
+                    <p>Norme traçabilité matière brute à 100%</p>
+                </div>
+                <div class="cert-card">
+                    <strong>Garantie Artisans d'Art</strong>
+                    <p>Transmission et fabrication locale</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Newsletter Sobre</h3>
+                <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="votre.email@domaine.fr" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+                <small>Désinscription en 1 clic. Données hébergées en France.</small>
+            </div>
+
         </div>
-        <div>
-            <h3>Filière Circulaire</h3>
-            <ul>
-                <li>Bois de réemploi &amp; chêne sauvé</li>
-                <li>Verre recyclé au four solaire</li>
-                <li>Textiles surcyclés d'ateliers</li>
-                <li>Métaux ferreux reconditionnés</li>
-                <li>Charte zéro déchet d'atelier</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Labels &amp; Certifications</h3>
-            <ul class="labels">
-                <li><strong>Label Upcycling Certifié UE</strong>Norme traçabilité matière brute à 100%</li>
-                <li><strong>Garantie Artisans d'Art</strong>Transmission et fabrication locale</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Newsletter Sobre</h3>
-            <p>Une seule édition mensuelle, sans scripts lourds ni pistage publicitaire.</p>
-            <form class="newsletter" action="#" method="post">
-                <input type="email" placeholder="votre.email@domaine.fr" aria-label="Adresse courriel" required>
-                <button type="submit">S'inscrire</button>
-            </form>
-            <small>Désinscription en 1 clic. Données hébergées en France.</small>
-        </div>
-    </div>
-    <div class="legal">
-        <span>© 2025 EcoArt (NextLine client). Tous droits réservés.</span>
-        <span>Hébergement vert basse consommation</span>
-        <span>Tél : +33 (0)1 89 45 20 10</span>
-        <nav><a href="#">Mentions Légales</a><a href="#">Accessibilité : Conforme RGAA</a><a href="#">Charte Éco-conception</a></nav>
-    </div>
-</footer>
+
+    </footer>
 
 </body>
 </html>
