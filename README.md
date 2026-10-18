@@ -5,18 +5,6 @@
 
 ---
 
-## 📌 Liens & Livrables
-
-| Livrable | Lien |
-| :--- | :--- |
-| 🌐 **Site en ligne (GitHub Pages)** | [Voir la démo](https://takachii.github.io/ecoart/) |
-| 🎨 **Maquette & Prototype Figma** | [Lien Figma](#) *(à compléter)* |
-| 📋 **Gestion de projet (GitHub Projects / Trello)** | [Lien Planification](#) *(à compléter)* |
-| 🃏 **Planning Poker** | [Lien Planning Poker](#) *(à compléter)* |
-| 📑 **Support de présentation** | [Lien Présentation](#) *(à compléter)* |
-
----
-
 ## 📑 Pages du Site
 
 Le projet intègre les 5 pages obligatoires, toutes reliées et navigables :
